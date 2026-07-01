@@ -24,8 +24,18 @@ export async function checkKey(key) {
   return r.json();
 }
 
-// Есть ли доступ сейчас. Онлайн — проверяет и кеширует; офлайн — доверяет свежему валидному кешу.
+// --- ДЕМО-доступ: полный доступ на 48 ч у каждого от момента активации (клиентский, без воркера) ---
+const DEMO_MS = 48 * 3600000;
+const demoName = () => EXAM.store + '_demo';
+export function activateDemo() { try { localStorage.setItem(demoName(), String(Date.now() + DEMO_MS)); } catch (e) {} }
+export function demoUntil() { try { return parseInt(localStorage.getItem(demoName()) || '0', 10) || 0; } catch (e) { return 0; } }
+export function demoActive() { return demoUntil() > Date.now(); }
+export function demoExpired() { const u = demoUntil(); return u > 0 && u <= Date.now(); } // демо было и истекло
+export function isDemoCode(k) { return (k || '').trim().toUpperCase() === 'DEMO'; }
+
+// Есть ли доступ сейчас. Демо (48 ч) → сразу true. Иначе онлайн-проверка + кеш; офлайн — грейс.
 export async function hasAccess() {
+  if (demoActive()) return true;
   const key = getKey();
   if (!key) return false;
   const c = readCache();

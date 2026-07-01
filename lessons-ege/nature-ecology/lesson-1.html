@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ЕГЭ · Nature &amp; ecology · Lesson 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:160px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(190px,1fr) 1.4fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">🌍 Nature &amp; ecology · Lesson 1 · B2</span>
+  <button id="bRole" class="on">👩‍🏫 View: teacher</button>
+  <button class="print" onclick="window.print()">🖨 Print / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>EGE · English</b><br>Topic · <b>Nature &amp; ecology</b><br>Lesson 1 of 3 · level B2 · 90 min</div>
+  </div>
+  <h1><span class="sub">Lesson 1 — Input · B2</span>The planet under pressure: climate, pollution, action</h1>
+  <div class="aims"><b>Lesson outcome:</b> the student commands 15 precise B2 phrases of the topic "nature &amp; ecology" (climate change · pollution · conservation) and applies the EGE multiple-choice reading and listening strategy. <b>Lesson flow:</b> the lead-in raises the issue → presentation and controlled practice of the vocabulary → transfer of the vocabulary into a real EGE text (MC reading) → the same "paraphrase, not word-for-word" strategy in listening → free production (a monologue) brings it all together. <b>Through-line:</b> the correct answer always <i>paraphrases</i> the source — and strong vocabulary turns that idea into marks in the speaking and writing parts. <b>Homework:</b> "Vocabulary" and "Reading" + "Listening" in the EGE trainer for this topic.</div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Discussion</h2><span class="tm">10 min</span></div>
+    <ul>
+      <li>Some people say <i>global warming</i> is the most serious problem humanity has ever faced. Do you agree?</li>
+      <li>Can one person really <i>make a difference</i>, or is it only governments that can <i>mitigate the impact of climate change</i>?</li>
+      <li>What is the most pressing environmental problem in <i>your</i> region — and what poses the biggest threat to it?</li>
+    </ul>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 the aim of the lead-in is not "talking in general" but eliciting argumentation (because / on the one hand… / what is more). Note on the board any environmental vocabulary the students offer — you’ll return to it in task 2 and in the monologue.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Vocabulary · B2 topic phrases</h2><span class="tm">25 min</span></div>
+    <div class="subt"><b>2.1 · Study the phrases with their definitions.</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Climate change</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">global warming</span><span class="ddef">the slow increase in the Earth's average temperature</span></div>
+      <div class="drow"><span class="dterm">greenhouse gas emissions</span><span class="ddef">gases released into the air that trap heat</span></div>
+      <div class="drow"><span class="dterm">the carbon footprint</span><span class="ddef">the total amount of carbon dioxide a person or activity produces</span></div>
+      <div class="drow"><span class="dterm">fossil fuels</span><span class="ddef">natural fuels like coal and oil that come from the ground</span></div>
+      <div class="drow"><span class="dterm">to melt at an alarming rate</span><span class="ddef">to change from solid ice to water very quickly</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Pollution &amp; threats</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">air pollution</span><span class="ddef">dirty or harmful substances in the air we breathe</span></div>
+      <div class="drow"><span class="dterm">single-use plastic</span><span class="ddef">plastic items used only once before being thrown away</span></div>
+      <div class="drow"><span class="dterm">to pose a serious threat to</span><span class="ddef">to be a big danger or risk to something or someone</span></div>
+      <div class="drow"><span class="dterm">toxic waste</span><span class="ddef">harmful or poisonous materials that are thrown away</span></div>
+      <div class="drow"><span class="dterm">to dump rubbish</span><span class="ddef">to throw away waste carelessly, not in a bin</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Conservation &amp; action</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">renewable energy sources</span><span class="ddef">energy from sources that can be used again, like sun or wind</span></div>
+      <div class="drow"><span class="dterm">to raise environmental awareness</span><span class="ddef">to teach people to care about and protect the environment</span></div>
+      <div class="drow"><span class="dterm">to go green</span><span class="ddef">to start living in ways that help the environment</span></div>
+      <div class="drow"><span class="dterm">to cut down on waste</span><span class="ddef">to reduce the amount of things you throw away</span></div>
+      <div class="drow"><span class="dterm">to make a difference</span><span class="ddef">to improve a situation or cause a positive change</span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Hide words — recall them from the definitions</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Hide definitions — test yourself</button>
+
+    <div class="subt"><b>2.2 · Matching.</b> Recall the phrase from its definition:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. the slow rise in the Earth's temperature → <span class="gap" data-a="global warming"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. gases that trap heat in the atmosphere → greenhouse <span class="gap" data-a="gas emissions"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. natural fuels such as coal and oil → <span class="gap" data-a="fossil fuels"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to be a big danger or risk to sth → to pose a serious <span class="gap" data-a="threat to"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to start living in eco-friendly ways → to <span class="gap" data-a="go green"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">6. to teach people to protect nature → to raise environmental <span class="gap" data-a="awareness"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Check</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Gap-fill in context.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. Flying less and using public transport are easy ways to reduce your <span class="gap" data-a="carbon footprint"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. Many supermarkets are gradually banning <span class="gap" data-a="single-use plastic"><input></span> bags.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. Because of higher temperatures, glaciers are now <span class="gap" data-a="melting at an alarming rate"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. If we reuse and recycle more, we can really <span class="gap" data-a="cut down on waste"><input></span>.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Check</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Make it your own.</b> Use 4 phrases to say what YOU personally do to <i>go green</i> and <i>cut down on waste</i>, and which problem <i>poses a serious threat</i> to your town. Build full sentences — this exact B2 vocabulary earns the K3 mark in the essay (Lesson 2) and speaking (Lesson 3).</div>
+    <div class="tnote"><b>Answers 2.2:</b> global warming · gas emissions · fossil fuels · threat to · go green · awareness. <b>2.3:</b> carbon footprint · single-use plastic · melting at an alarming rate · cut down on waste. Stress: these 15 phrases are the working minimum of the topic; they return in Lesson 2 (Quiz-Quiz-Trade) and Lesson 3 (Write-Pair-Share).</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Reading · FIPI (tasks 12–18, MC)</h2><span class="tm">25 min</span></div>
+    <p>🔎 <b>Real EGE text.</b> Read and answer questions 12–18 (choose 1–4).</p>
+    <div class="read"><p>Change your food choice While recycling and refillable water bottles were once the most popular fad among the environmentally conscious, there is now a more pressing matter for humans to turn their attention to in order to slow global climate change: the animal industry. When you navigate to the university website on campus sustainability, you find a list of all of the ways the University is making an effort to “go green”. A plan to increase levels of recycling on campus? Great! Printers that reduce paper waste? Fantastic! A garden to collect excess rainwater? Amazing! Let’s go one step farther. If we’re not actively educating students about the immense ways our food choices influence the environment, then we’re not doing enough to really serve the causes we claim to support. It’s not only about giving students the option to eat less meat but telling them how these choices can influence the future of the environment and create sustainable change. The question of whether eating meat is bad for the environment is not a question anymore. And the issue isn’t that people are unwilling to try more plant-based foods or unaware of the perils the environment is currently in, but rather, it’s that people aren’t aware of the effects their demand for meat has on the earth. Lean and Green, a student initiative that strives to promote sustainability on campus through environmentally friendly and healthy diet choices, conducted a study that showed students don’t fully understand the impact their eating habits have on the environment. The livestock industry of chickens, cows and pigs produces more greenhouse gas emissions that all cars and trucks combined, according to Greenpeace. So as we eat more meat, the demand for meat likewise goes up and increases those gases. But when we eat more meat alternatives instead, like nuts or tofu, we can make a big difference. According to Walter, if a person went vegetarian for a year, they would produce three times less carbon than if they were to purchase a hybrid car. And interestingly, more than 92 percent of responders said they would like to see more plant-based foods in the university dining halls. So it’s clear that students are willing to eat less meat and explore more veggie-friendly options. But what’s not clear for students is why these options are imperative for making choices that help our planet. With the student population of about 34,000, the University has the capability to make significant changes for the future of the environment. Give the students want they want – which is more diverse plant-based options – but also tell them why they should want it. Informing students about why these options are environmentally favorable can only inspire students to choose them more often. Posters throughout the dining halls, informational email campaigns, programs in residence halls and even financial incentives can help inform students and shape their knowledge and decision-making. In conjunction with offering more vegetarian options, letting non-vegetarian students know about the sustainable benefits that come from choosing these foods can encourage them to eat them more often. The animal industry is only going to grow if people keep eating meat. If our university wants to have an impact and keep up its reputation as environmentally conscious, it should ensure its students know how they can do their part to help the earth.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="2">
+        <div class="stmt">12. What should people consider to cut in relation to the climate change, according to the author?</div>
+        <div class="mc">
+          <button data-k="1">1) Use of refillable bottles.</button>
+          <button data-k="2">2) Meat production.</button>
+          <button data-k="3">3) Level of environmental consciousness.</button>
+          <button data-k="4">4) Development of eco-industry.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">13. The author thinks that the university’s environmental efforts are …</div>
+        <div class="mc">
+          <button data-k="1">1) incomplete.</button>
+          <button data-k="2">2) irregular.</button>
+          <button data-k="3">3) naive.</button>
+          <button data-k="4">4) too specific.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">14. The author thinks that her university can affect the environmental campaign by …</div>
+        <div class="mc">
+          <button data-k="1">1) reducing meat options in menus on campus.</button>
+          <button data-k="2">2) creating and offering new vegetarian dishes.</button>
+          <button data-k="3">3) educating students about ecological problems.</button>
+          <button data-k="4">4) increasing awareness of the harm the meat industry may incur.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">15. The study conducted by Lean and Green showed that the students …</div>
+        <div class="mc">
+          <button data-k="1">1) initiate environmental campaigns on campus.</button>
+          <button data-k="2">2) are ready to change their eating habits.</button>
+          <button data-k="3">3) prefer environmentally friendly food options.</button>
+          <button data-k="4">4) are unaware of dangerous effects of a meat diet.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">16. The author used the Greenpeace data to show that …</div>
+        <div class="mc">
+          <button data-k="1">1) the animal industry harms the environment greatly.</button>
+          <button data-k="2">2) transport is the main source of greenhouse gases production.</button>
+          <button data-k="3">3) hybrid cars can reduce greenhouse gas emissions.</button>
+          <button data-k="4">4) vegetarian food is much healthier for a person.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">17. <i>It</i> in “… why they should want <i>it</i>” (paragraph 7) refers to …</div>
+        <div class="mc">
+          <button data-k="1">1) ecological action.</button>
+          <button data-k="2">2) vegetarian food.</button>
+          <button data-k="3">3) informed choice.</button>
+          <button data-k="4">4) dietary change.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">18. What does the author say in the last paragraph?</div>
+        <div class="mc">
+          <button data-k="1">1) The university should become environmentally friendly.</button>
+          <button data-k="2">2) Environmentally conscious people should stop eating meat.</button>
+          <button data-k="3">3) The university should educate its students about meat industry.</button>
+          <button data-k="4">4) Ecological education can improve the university’s reputation.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Check</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Exam strategy.</b> In MC the answer is ALWAYS supported by the text — look for a <b>paraphrase</b>, not a word-for-word match (distractors often take words from the text but twist the meaning). First locate the paragraph by a keyword from the question, then check the options. Be especially careful with the reference question (17: what does <i>it</i> point to?).</div>
+    <div class="tnote"><b>Real FIPI text</b> (Change your food choice — food, livestock farming and climate; a precise fit for the topic "Nature &amp; ecology"). <b>Answers:</b> 12→2 · 13→1 · 14→4 · 15→4 · 16→1 · 17→2 · 18→3. Discuss WHERE in the text each answer is confirmed: 12 — "the animal industry" as a way to slow climate change; 14/18 — the verb "tell/educate them WHY" (a paraphrase of "increasing awareness"); 16 — the Greenpeace data on livestock vs cars. The distractors 12→1 and 16→2 are word-for-word traps from the text.</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Listening · FIPI (tasks 3–9, interview)</h2><span class="tm">15 min</span></div>
+    <p>🎧 <b>Real EGE task.</b> Listen to the interview <b>twice</b> (you get 50 sec to read the questions); choose 1, 2 or 3.</p>
+    <audio controls preload="none" src="https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F942526F282F945846B5513F0784DD26/img1_1562918723.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="3">
+        <div class="stmt">3. The first question of the presenter is about …</div>
+        <div class="mc">
+          <button data-k="1">1) the effectiveness of horse therapy.</button>
+          <button data-k="2">2) Diane Smith’s experience with horse therapy.</button>
+          <button data-k="3">3) the reason horses are used in therapy.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">4. According to Diane, hippotherapy is used for …</div>
+        <div class="mc">
+          <button data-k="1">1) teaching languages.</button>
+          <button data-k="2">2) treating neurological problems.</button>
+          <button data-k="3">3) treating blindness.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">5. According to Diane, hippotherapy is more effective than traditional therapy for …</div>
+        <div class="mc">
+          <button data-k="1">1) children.</button>
+          <button data-k="2">2) anybody.</button>
+          <button data-k="3">3) depressed people.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">6. Horse riding helps to improve speech by improving one’s …</div>
+        <div class="mc">
+          <button data-k="1">1) breathing.</button>
+          <button data-k="2">2) balance.</button>
+          <button data-k="3">3) motor skills.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">7. Why is, according to Diane, horse therapy more than just horse riding?</div>
+        <div class="mc">
+          <button data-k="1">1) It’s used on a regular basis.</button>
+          <button data-k="2">2) The therapist organizes it in a special way.</button>
+          <button data-k="3">3) It’s aimed at improving complex skills.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">8. What does the therapist do during the first session of horse therapy?</div>
+        <div class="mc">
+          <button data-k="1">1) Chooses the program of treatment.</button>
+          <button data-k="2">2) Trains the horse.</button>
+          <button data-k="3">3) Selects the right saddle for the patient.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">9. Which of the following groups is NOT mentioned by Diane as potential clients for hippotherapy?</div>
+        <div class="mc">
+          <button data-k="1">1) Disabled children.</button>
+          <button data-k="2">2) Depressed adults.</button>
+          <button data-k="3">3) Professional riders.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Check</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Strategy.</b> Use the full 50 seconds on the questions — underline the keywords. Listen twice: first for the gist, second to confirm. The correct answer PARAPHRASES the recording; the distractor often repeats words verbatim but twists the meaning. Be especially careful with question 9 (NOT) — look for the group that was NOT mentioned.</div>
+    <div class="tnote"><b>Real FIPI audio</b> — the programme "Amazing Animals", an interview with hippotherapy expert Diane Smith (animals and nature in the service of people). <b>This is the closest on-topic real audio: there is no pure "ecology/climate" interview in the task 3–9 format in the FIPI bank</b> — a thematically adjacent "nature/animals" one was taken. <b>Answers:</b> 3→3 · 4→2 · 5→1 · 6→1 · 7→2 · 8→1 · 9→3. Discuss how EACH answer is confirmed by the recording. <b>Listening is a MUST in the trainer (homework).</b></div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · Express &amp; argue</h2><span class="tm">10 min</span></div>
+    <p>Speak for 2 minutes: <b>"Can individual action really stop climate change, or do we need governments to act?"</b> Use at least 5 phrases from section 2 and give arguments for both sides before your own conclusion.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Start 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 require the "both sides → opinion" structure, linkers (admittedly, nevertheless, on balance) and exactly the topic vocabulary (carbon footprint, go green, renewable energy sources, make a difference). This is direct preparation for the essay (Lesson 2) and the speaking part (Lesson 3).</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Homework</h2><span class="tm">5 min</span></div>
+    <ul>
+      <li>📱 <b>S&amp;S EGE trainer</b> — topic "Nature &amp; ecology": "Vocabulary" (B2) + "Reading" (MC) + <b>"Listening"</b> (compulsory).</li>
+    </ul>
+    <div class="tnote"><b>How to set homework (teacher):</b> S&amp;S EGE trainer → teacher panel → <b>"Homework builder"</b> → pick the topic "Nature &amp; ecology" → <b>"Task link"</b> for students (with AI marking) <b>or</b> "Print worksheet" with keys.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ЕГЭ Lab · Nature &amp; ecology · Lesson 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 View: teacher':'🧑‍🎓 View: student';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Answer: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Show words':'🙈 Hide words — recall them from the definitions';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Show definitions':'🙈 Hide definitions — test yourself';
+  }
+  // MC (reading + listening)
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

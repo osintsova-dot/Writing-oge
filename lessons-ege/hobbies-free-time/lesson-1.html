@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ЕГЭ · Hobbies &amp; free time · Lesson 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:160px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(190px,1fr) 1.4fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📘 Hobbies &amp; free time · Lesson 1 · B2</span>
+  <button id="bRole" class="on">👩‍🏫 View: teacher</button>
+  <button class="print" onclick="window.print()">🖨 Print / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>EGE · English</b><br>Topic · <b>Hobbies &amp; free time</b><br>Lesson 1 of 3 · level B2 · 90 min</div>
+  </div>
+  <h1><span class="sub">Lesson 1 — Input · B2</span>Free time: what we do when nobody makes us</h1>
+  <div class="aims"><b>Lesson outcome:</b> the student masters the idiomatic B2 vocabulary of the topic (hobbies, relaxation, screen time) and reads/listens to real EGE texts, proving each answer with its place in the text. <b>Lesson flow:</b> the lead-in raises personal experience → presentation and controlled practice of the vocabulary → bridge "these same words appear in the text" → reading MC (tasks 12–18) and listening (tasks 3–9) for the "paraphrase, not word-for-word match" strategy → speaking gathers the vocabulary into speech. <b>Through-line:</b> the topic vocabulary is the material both for understanding the text and for the essay/speaking parts. <b>Homework:</b> "Vocabulary" + "Reading" + "Listening" in the EGE trainer for this topic.</div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Discussion</h2><span class="tm">8 min</span></div>
+    <ul>
+      <li>How do you usually <i>unwind</i> after a long, busy week — and does it actually work?</li>
+      <li>Is there a hobby you'd love to <i>take up</i> if you had more time? What stops you?</li>
+      <li>Some people say teenagers are <i>glued to a screen</i> instead of having real hobbies. Fair or not?</li>
+    </ul>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 the aim of the lead-in is not just to "get them talking" but to draw out argumentation (because / on the one hand…) and personal experience. Note on the board the leisure words that come up — you’ll reuse them in task 2.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Vocabulary · B2</h2><span class="tm">25 min</span></div>
+    <div class="subt"><b>2.1 · Study the phrases with their definitions.</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Taking up &amp; pursuing hobbies</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to take up a hobby</span><span class="ddef">to start doing a new activity for fun in your free time</span></div>
+      <div class="drow"><span class="dterm">to develop a passion for sth</span><span class="ddef">to become very interested and excited about something</span></div>
+      <div class="drow"><span class="dterm">to get hooked on sth</span><span class="ddef">to become very interested in something and want to do it often</span></div>
+      <div class="drow"><span class="dterm">to be an avid reader</span><span class="ddef">to read a lot of books because you enjoy it very much</span></div>
+      <div class="drow"><span class="dterm">to broaden your horizons</span><span class="ddef">to learn about new things and see the world differently</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Relaxation &amp; downtime</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to unwind after a long week</span><span class="ddef">to rest and relax after several days of hard work</span></div>
+      <div class="drow"><span class="dterm">to recharge your batteries</span><span class="ddef">to rest so you feel full of energy again</span></div>
+      <div class="drow"><span class="dterm">to take your mind off things</span><span class="ddef">to stop thinking about your problems for a while</span></div>
+      <div class="drow"><span class="dterm">a couch potato</span><span class="ddef">someone who stays at home and watches a lot of TV</span></div>
+      <div class="drow"><span class="dterm">to relieve stress</span><span class="ddef">to do something that helps you feel calm and less worried</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Creativity &amp; screen time</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a creative outlet</span><span class="ddef">a way to show your creative ideas or feelings</span></div>
+      <div class="drow"><span class="dterm">to lose track of time</span><span class="ddef">to not notice time passing because you are enjoying something</span></div>
+      <div class="drow"><span class="dterm">to be glued to a screen</span><span class="ddef">to spend a lot of time looking at a screen</span></div>
+      <div class="drow"><span class="dterm">to strike a healthy balance</span><span class="ddef">to find a good mix between two different activities</span></div>
+      <div class="drow"><span class="dterm">a digital detox</span><span class="ddef">a period when you do not use electronic devices</span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Hide words — recall them from the definitions</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Hide definitions — test yourself</button>
+
+    <div class="subt"><b>2.2 · Matching.</b> Recall the phrase from its definition:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to learn about new things and see the world differently → to <span class="gap" data-a="broaden your horizons"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. to become very interested in sth and want to do it often → to get <span class="gap" data-a="hooked on"><input></span> it</li>
+      <li style="border:0;padding:0;margin:6px 0">3. someone who stays at home and watches a lot of TV → a <span class="gap" data-a="couch potato"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. a period when you do not use electronic devices → a <span class="gap" data-a="digital detox"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to rest so you feel full of energy again → to <span class="gap" data-a="recharge your batteries"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">6. to not notice time passing because you enjoy it → to <span class="gap" data-a="lose track of time"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Check</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Gap-fill in context.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. After a stressful week, a long walk in the park helps me <span class="gap" data-a="unwind"><input></span> completely.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. Painting is my main <span class="gap" data-a="creative outlet"><input></span> — it lets me express my feelings.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. She finishes a novel every week; she's a real <span class="gap" data-a="avid reader"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. Teenagers must <span class="gap" data-a="strike a healthy balance"><input></span> between gaming and study.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Check</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Make it your own.</b> Use 4 phrases to describe how YOU spend your free time and relieve stress. Build full sentences: at the EGE it is precisely the B2 idioms that earn the K3 mark in the essay and speaking.</div>
+    <div class="tnote"><b>Answers 2.2:</b> broaden your horizons · hooked on · couch potato · digital detox · recharge your batteries · lose track of time. <b>2.3:</b> unwind · creative outlet · avid reader · strike a healthy balance. Stress: these 15 phrases come back in Lesson 2 (warm-up + writing) and Lesson 3 (speaking).</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Reading · FIPI (tasks 12–18, MC)</h2><span class="tm">27 min</span></div>
+    <p>🔎 <b>Real EGE text.</b> Read and answer questions 12–18 (choose 1–4).</p>
+    <div class="read"><p>Grown-ups and video games Even now, well into the third decade of the 21st century, we tend to view video games as a guilty pleasure. For anyone over the age of 25, they’re often something you sneak off to do when no one is at home. They’re a furtive treat, filled with the cultural equivalent of empty calories. Partly this is to do with how video games have been marketed for the last 30 years – predominantly at teenage boys. The games industry has taught us to see games as loud, brash and arcane. But the last years have seen a huge renaissance in video game design. The democratisation of the medium has brought in new voices and ideas. Fascinating things are happening. So here are reasons why, if you haven’t played many video games in the past, or still feel a little self-conscious about it, you should try more – and not feel bad about it. As the global economy shows few signs of drastically improving, getting the most out of our entertainment choices is important. Most titles have replayability features built in. Big adventure games are filled with sub-quests, hidden areas and collectible items that encourage and reward replay and exploration. Competitive multiplayer titles effectively function like sports – you play and improve over many months, discovering new skill sets and features. And of course, waiting a few weeks before buying a game, or looking out for sales will get you those experiences for even less money. A lot of the people now making, producing and funding television and movies grew up playing video games – and that influence is becoming ever more obvious. We’re now seeing the very structure, culture and design principles of games being expressed and explored in traditional narrative media. So playing video games is effectively preparing you for the future of broadcast media, and ensuring you understand what’s going on in the next season of your favourite television show. The popular stereotype of the lone gamer sitting in a bedroom staring at a screen was never particularly accurate, but now it is laughably out of date. Most titles have multiplayer components that let you easily play against other people online. We learn a lot about our friends through play, and how you cooperate on video game tasks is a pretty good indicator on how you will cope with real-life challenges. In short, video games will save your relationships. I’m only half joking. With the arrival of smartphones and tablets, games are more pervasive than ever. Children are now growing up expecting all screens to be interactive – a phenomenon that’s being referred to as “generation swipe.” They are using tablets in school, they’re being taught to code, and they’re creating apps. Playing together with kids is a way of meeting with your children in a domain they enjoy and feel comfortable with. It lets them take the lead; it lets them show you stuff. The skills are also transferable and can expand into the real world. Did I mention this? Games are fun. They provide fascinating worlds to explore and take part in, they let us do incredible, sometimes ugly things – without recourse or any external help. They test out intelligence and reaction; they posit weird futures and possibilities; they let us take control of lives and bodies that we could never own or experience. They are made by artists and visionaries, and they provide moments of utter transfixing beauty and resonance. These are valid forms of escape and experience; they tell us things. In the years of uncertainty and vast technological change, it is time to see video games alongside – and equal to – books, television and cinema as a popular imaginative medium. It is OK to play.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="2">
+        <div class="stmt">12. According to paragraph 1, video games are seen by adults as a(n) …</div>
+        <div class="mc">
+          <button data-k="1">1) integral part of life.</button>
+          <button data-k="2">2) shameful delight.</button>
+          <button data-k="3">3) individual activity.</button>
+          <button data-k="4">4) part of culture.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">13. <i>This</i> in paragraph 2 (Partly <b>this</b> is to do with how video games have been marketed for the last 30 years) refers to the …</div>
+        <div class="mc">
+          <button data-k="1">1) access to video games.</button>
+          <button data-k="2">2) common way of playing.</button>
+          <button data-k="3">3) positioning of games.</button>
+          <button data-k="4">4) image of video games.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">14. Which benefit of video games is NOT mentioned in the text?</div>
+        <div class="mc">
+          <button data-k="1">1) They train the body as well as the mind.</button>
+          <button data-k="2">2) They provide a medium for interaction.</button>
+          <button data-k="3">3) They introduce players to popular culture.</button>
+          <button data-k="4">4) They inspire players to revisit and discover.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">15. According to the text, children now expect video games to be …</div>
+        <div class="mc">
+          <button data-k="1">1) creative.</button>
+          <button data-k="2">2) physical.</button>
+          <button data-k="3">3) familiar.</button>
+          <button data-k="4">4) responsive.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">16. Which statement about skills acquired while playing video games is FALSE, according to the text?</div>
+        <div class="mc">
+          <button data-k="1">1) They can be used in other situations.</button>
+          <button data-k="2">2) They improve as a result of practice.</button>
+          <button data-k="3">3) They don’t really advance.</button>
+          <button data-k="4">4) They include non-physical abilities.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">17. <i>Recourse</i> in the paragraph before last (they let us do incredible, sometimes ugly things without <b>recourse</b> or any external help) most probably means …</div>
+        <div class="mc">
+          <button data-k="1">1) comfort.</button>
+          <button data-k="2">2) support.</button>
+          <button data-k="3">3) judgement.</button>
+          <button data-k="4">4) doubts.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">18. What is the author’s overall attitude to video games?</div>
+        <div class="mc">
+          <button data-k="1">1) Cautious.</button>
+          <button data-k="2">2) Intrigued.</button>
+          <button data-k="3">3) Enthusiastic.</button>
+          <button data-k="4">4) Astonished.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Check</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Exam strategy.</b> In MC the answer is ALWAYS supported by the text — look for a paraphrase, not a word-for-word match (distractors often reuse words from the text but twist the meaning). First locate the paragraph by a keyword from the question, then check the options. Questions 13 and 17 (on <i>reference</i> and <i>meaning from context</i>) are solved ONLY from the words around the target word.</div>
+    <div class="tnote"><b>Real FIPI text</b> (Grown-ups and video games — video games as adults’ leisure; key topic vocabulary: <i>a guilty pleasure, to feel self-conscious about, to get the most out of</i>). <b>Answers:</b> 12→2 · 13→4 · 14→1 · 15→4 · 16→3 · 17→2 · 18→3. Discuss WHERE in the text each answer is confirmed and why the distractors are traps (14 — "train the body" is NOT in the text; 16 — "don’t really advance" contradicts "play and improve over many months").</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Listening · FIPI (tasks 3–9, interview)</h2><span class="tm">15 min</span></div>
+    <p>🎧 <b>Real EGE task.</b> Listen to the interview <b>twice</b> (you get 50 sec to read the questions); choose 1, 2 or 3.</p>
+    <audio controls preload="none" src="https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A4436F8DC70FB9F044B1700821B593BF/img1_1679489456.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="2">
+        <div class="stmt">3. What is the first step for James in his creative process?</div>
+        <div class="mc">
+          <button data-k="1">1) Drawing a sketch.</button>
+          <button data-k="2">2) Thinking up a story.</button>
+          <button data-k="3">3) Choosing the colours.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">4. James’s favourite artistic tool is …</div>
+        <div class="mc">
+          <button data-k="1">1) pencils.</button>
+          <button data-k="2">2) gouache.</button>
+          <button data-k="3">3) Photoshop.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">5. Which stage does James consider the most creative one?</div>
+        <div class="mc">
+          <button data-k="1">1) The beginning stage.</button>
+          <button data-k="2">2) The middle stage.</button>
+          <button data-k="3">3) The final stage.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">6. James’s morning does NOT include …</div>
+        <div class="mc">
+          <button data-k="1">1) a sports session.</button>
+          <button data-k="2">2) commuting to work.</button>
+          <button data-k="3">3) a large breakfast.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">7. James’s current job involves creating the … for the story.</div>
+        <div class="mc">
+          <button data-k="1">1) characters.</button>
+          <button data-k="2">2) setting.</button>
+          <button data-k="3">3) plot.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">8. According to James, in TV animation it is important to be …</div>
+        <div class="mc">
+          <button data-k="1">1) modest.</button>
+          <button data-k="2">2) ambitious.</button>
+          <button data-k="3">3) selfish.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">9. In the future James hopes to …</div>
+        <div class="mc">
+          <button data-k="1">1) draw cartoons his entire life.</button>
+          <button data-k="2">2) create a film of his own with a group of artists.</button>
+          <button data-k="3">3) make friends with production designers.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Check</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Strategy.</b> Use the full 50 seconds on the questions — underline the keywords. Listen twice: first for the gist and order, second to confirm. The correct answer PARAPHRASES the recording; the distractor often repeats words verbatim but twists the meaning. Question 6 (NOT) — mark what was said and eliminate.</div>
+    <div class="tnote"><b>Real FIPI audio</b> — an interview with illustrator James White (creative process, favourite activity, plans). Thematically — a creative hobby/self-expression. <b>Answers:</b> 3→2 · 4→1 · 5→1 · 6→3 · 7→2 · 8→1 · 9→2. Discuss how EACH answer is confirmed by the recording. <b>Listening is a MUST in the trainer (homework).</b></div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · Express &amp; argue</h2><span class="tm">10 min</span></div>
+    <p>Speak for 2 minutes: <b>"Are screen-based hobbies as valuable as 'real-world' ones?"</b> Use at least 5 phrases from section 2 and give arguments for both sides before your own conclusion.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Start 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 require the "both sides → opinion" structure, linkers (admittedly, nevertheless, on balance) and exactly the topic phrases (<i>strike a healthy balance, a creative outlet, glued to a screen</i>). This feeds directly into the essay (Lesson 2) and speaking (Lesson 3).</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Homework</h2><span class="tm">5 min</span></div>
+    <ul>
+      <li>📱 <b>S&amp;S EGE trainer</b> — topic "Hobbies &amp; free time": "Vocabulary" (B2) + "Reading" (MC) + <b>"Listening"</b> (compulsory).</li>
+    </ul>
+    <div class="tnote"><b>How to set homework (teacher):</b> S&amp;S EGE trainer → teacher panel → <b>"Homework builder"</b> → pick the topic "Hobbies &amp; free time" → <b>"Task link"</b> for students (with AI marking) <b>or</b> "Print worksheet" with keys.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ЕГЭ Lab · Hobbies &amp; free time · Lesson 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 View: teacher':'🧑‍🎓 View: student';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Answer: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Show words':'🙈 Hide words — recall them from the definitions';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Show definitions':'🙈 Hide definitions — test yourself';
+  }
+  // MC (reading + listening)
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

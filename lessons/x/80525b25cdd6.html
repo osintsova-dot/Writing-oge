@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Природа и экология · Урок 2</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:120px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .base{font-weight:800;color:var(--p);text-transform:uppercase;font-size:11.5px;letter-spacing:.04em}
+  .wrong{color:var(--no);font-weight:700;text-decoration:line-through}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  table.wf{border-collapse:collapse;width:100%;margin:10px 0;font-size:12.5px}
+  table.wf th,table.wf td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  table.wf th{background:var(--soft);color:var(--p);font-weight:800}table.wf td b{color:var(--ink)}
+  .tf{margin-top:10px}.tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .email{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fbfaff;font-size:13px;line-height:1.65}
+  .email .em-h{font-size:11.5px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:8px}
+  .plan{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:10px 0;font-size:12.5px}
+  .plan .pn{font-weight:900;color:#fff;background:var(--p);border-radius:6px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:12px}
+  .phrases{columns:2;column-gap:22px;font-size:12px;margin:8px 0}.phrases div{break-inside:avoid;margin:3px 0}
+  .crit{font-size:12px;margin:8px 0}.crit .ct{font-weight:800;color:var(--p)}
+  textarea.write{width:100%;min-height:220px;font:inherit;font-size:13px;line-height:1.6;border:1.5px solid var(--line);border-radius:8px;padding:12px;resize:vertical}
+  textarea.write:focus{outline:0;border-color:var(--p)}
+  .wc{font-weight:800;margin-top:6px;color:var(--muted)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score{display:none!important}.phrases{columns:2}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">🌍 Природа и экология · Урок 2 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Природа и экология</b><br>Урок 2 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 2 — Грамматика и письмо · A2–B1</span>Грамматика, словообразование и личное письмо</h1>
+  <div class="aims"><b>Результат урока:</b> ученик пишет личное письмо другу (зад.35) по теме «экология», грамотно и по формату. <b>Логика урока:</b> разминка-рециркуляция лексики Урока 1 → разбор грамматики и словообразования (зад.20–28) как основы точности → разбор формата письма + редактирование ошибок → собственное письмо. <b>Сквозная идея:</b> точность из первой половины урока даёт балл К3 в письме. <b>Дома:</b> грамматика, словообразование и письмо в ОГЭ-тренажёре.</div>
+
+  <!-- 1 Разминка -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Разминка · рециркуляция лексики (Quiz-Quiz-Trade)</h2><span class="tm">8 мин</span></div>
+    <p>Вспомни фразы Урока 1 — вставь пропущенную в нужной форме:</p>
+    <ul class="tf" id="recall" style="border:0">
+      <li style="border:0;padding:4px 0">1. Cars and factories cause a lot of <span class="gap" data-a="air pollution"><input></span> in our city.</li>
+      <li style="border:0;padding:4px 0">2. We must all do something to <span class="gap" data-a="protect the environment"><input></span>.</li>
+      <li style="border:0;padding:4px 0">3. Last Saturday our class went to the park to <span class="gap" data-a="plant trees"><input></span>.</li>
+      <li style="border:0;padding:4px 0">4. Pandas and tigers are <span class="gap" data-a="endangered animals"><input></span> that need our help.</li>
+      <li style="border:0;padding:4px 0">5. If you cycle to school, you <span class="gap" data-a="reduce your carbon footprint"><input></span>.</li>
+      <li style="border:0;padding:4px 0">6. On Sundays my family loves to <span class="gap" data-a="go hiking"><input></span> in the countryside.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('recall','recallScore')">Проверить</button><span class="score" id="recallScore"></span>
+    <div class="tnote"><b>Учителю — как провести по Kagan:</b> <b>Quiz-Quiz-Trade</b> — каждому карточка (лицо: предложение с пропуском, оборот: ответ); ученик находит пару → «квизит» партнёра → хвалит/подсказывает → меняются карточками → новый партнёр. Или <b>Line Up / Mingle</b>. Цель — поднять лексику Урока 1, она пойдёт в письмо. <b>Ответы:</b> 1 air pollution · 2 protect the environment · 3 plant trees · 4 endangered animals · 5 reduce your carbon footprint · 6 go hiking.</div>
+  </div>
+
+  <!-- 2 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Lead-in · Разговор</h2><span class="tm">4 мин</span></div>
+    <ul>
+      <li>Does your school do anything to help the environment? What exactly?</li>
+      <li>What questions would you ask a foreign friend about ecology in their town?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> настройте на формат дружеского письма про экологию. Запишите 1–2 вопроса на доску — пригодятся в письме.</div>
+  </div>
+
+  <!-- 3 Grammar -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Грамматика и словообразование (зад.20–28)</h2><span class="tm">33 мин</span></div>
+    <div class="box"><b>Два типа заданий (оба — «преобразуй слово ЗАГЛАВНЫМИ»):</b> <b>3A зад.20–25</b> — меняем <b>грамматическую форму</b> (время, число, степень): come → <i>comes</i>, child → <i>children</i>. <b>3B зад.26–28</b> — образуем <b>НОВОЕ слово</b> (часть речи): nature → <i>natural</i>, science → <i>scientist</i>.</div>
+
+    <div class="subt"><b>3A · Грамматические формы (зад.20–25).</b> Поставь слово в нужную форму:</div>
+    <ul class="tf" id="gr" style="border:0">
+      <li style="border:0;padding:4px 0">1. The home is made of natural materials, and its water <span class="gap" data-a="comes"><input></span> from a nearby spring. <span class="base">(come)</span></li>
+      <li style="border:0;padding:4px 0">2. "If the weather is fine, we <span class="gap" data-a="will go"><input></span> on a trip next weekend," Dad said. <span class="base">(go)</span></li>
+      <li style="border:0;padding:4px 0">3. The territory of the zoo was large, and the animals <span class="gap" data-a="were kept"><input></span> in large enclosures that imitated their natural environment. <span class="base">(keep)</span></li>
+      <li style="border:0;padding:4px 0">4. 26,000 square kilometres of the forest were saved for the future and for our <span class="gap" data-a="children"><input></span>. <span class="base">(child)</span></li>
+      <li style="border:0;padding:4px 0">5. The weather was getting <span class="gap" data-a="worse"><input></span> every hour. <span class="base">(bad)</span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('gr','grScore')">Проверить</button><span class="score" id="grScore"></span>
+    <div class="tnote"><b>Ответы 3A:</b> 1 comes (Present Simple, 3-е л. ед.ч., −s) · 2 will go (Future Simple) · 3 were kept (пассив Past) · 4 children (мн.ч., исключение) · 5 worse (сравнит. степень, bad→worse). Часть речи не меняется.</div>
+
+    <div class="subt"><b>3B · Словообразование (зад.26–28).</b> Образуй слово (суффиксы: -al, -y, -ly, -ist):</div>
+    <ul class="tf" id="wf" style="border:0">
+      <li style="border:0;padding:4px 0">1. A company that makes profit without destroying <span class="gap" data-a="natural"><input></span> resources is good for the planet. <span class="base">(nature)</span></li>
+      <li style="border:0;padding:4px 0">2. Dirty air and water make the environment less <span class="gap" data-a="healthy"><input></span>. <span class="base">(health)</span></li>
+      <li style="border:0;padding:4px 0">3. Many people had hunted sharks. <span class="gap" data-a="fortunately"><input></span>, now there are laws protecting them. <span class="base">(fortunate)</span></li>
+      <li style="border:0;padding:4px 0">4. In the future, Sam wanted to be a <span class="gap" data-a="scientist"><input></span> and study sharks in the wild. <span class="base">(science)</span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('wf','wfScore')">Проверить</button><span class="score" id="wfScore"></span>
+    <div class="tnote"><b>Ответы 3B:</b> 1 natural (-al → прилаг.) · 2 healthy (-y → прилаг.) · 3 Fortunately (-ly → наречие, с заглавной — начало предложения) · 4 scientist (-ist → сущ., деятель). <b>Полная отработка — в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 4 Writing зад.35 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Письмо · личное письмо другу (зад.35)</h2><span class="tm">40 мин</span></div>
+    <p style="color:var(--muted);font-size:12.5px;margin:0 0 8px">🔗 <b>Мостик.</b> Грамотность из первой части урока — это балл К3 в письме. Теперь напишем письмо.</p>
+    <p>✉️ <b>Реальное задание ОГЭ.</b> Ты получил(а) письмо от друга по переписке Paul. Напиши ответ.</p>
+    <div class="email">
+      <div class="em-h"><b>From:</b> Paul &nbsp;·&nbsp; <b>Тема:</b> Ecological problems</div>
+      <p>…Yesterday we had a class where we discussed different ecological problems. Our teacher suggested opening an eco-club, where we can do something useful for the environment. <b>What ecological problem do you consider the most serious? What can young people do to protect the environment? Do you think ecological problems should be discussed at school, and why?</b>…</p>
+    </div>
+    <p style="margin-top:8px">Напиши Paul письмо. В письме <b>ответь на его 3 вопроса</b>. Объём <b>100–120 слов</b>. Соблюдай правила написания личного письма.</p>
+
+    <div class="subt"><b>4.1 · Структура личного письма.</b></div>
+    <div class="plan">
+      <span class="pn">1</span><span><b>Обращение:</b> «Dear Paul,» (на отдельной строке, с запятой).</span>
+      <span class="pn">2</span><span><b>Вступление:</b> поблагодари за письмо / отреагируй на новость (Thanks for your letter. It's great that…).</span>
+      <span class="pn">3</span><span><b>Основная часть:</b> ответь на ВСЕ 3 вопроса (по 1–2 предложения).</span>
+      <span class="pn">4</span><span><b>Концовка:</b> завершающая фраза (Write back soon!) + имя на новой строке.</span>
+    </div>
+
+    <div class="subt"><b>4.2 · Полезные фразы.</b></div>
+    <div class="phrases">
+      <div>• Thanks (a lot) for your letter.</div>
+      <div>• It was great to hear from you.</div>
+      <div>• In my opinion, the most serious problem is…</div>
+      <div>• Young people can… / We should…</div>
+      <div>• Yes, I think it's important to… because…</div>
+      <div>• Well, I have to go now.</div>
+      <div>• Write back soon!</div>
+      <div>• Best wishes, / Love,</div>
+    </div>
+
+    <div class="crit"><span class="ct">Критерии:</span> <b>К1 содержание</b> — ответы на все 3 вопроса, верный формат; <b>К2 организация</b> — обращение, абзацы, концовка, логика; <b>К3 язык</b> — лексика и грамматика без грубых ошибок.</div>
+
+    <div class="subt"><b>4.3 · Найди и исправь ошибку (К3).</b> Частые ошибки уровня ОГЭ — напиши верно:</div>
+    <ul class="tf" id="fix" style="border:0">
+      <li style="border:0;padding:4px 0">1. My elder sister wants to be <span class="wrong">ecologist</span>. → <span class="gap" data-a="an ecologist"><input></span></li>
+      <li style="border:0;padding:4px 0">2. Cars produce too <span class="wrong">much</span> harmful gases. → <span class="gap" data-a="many"><input></span></li>
+      <li style="border:0;padding:4px 0">3. We must all protect <span class="wrong">environment</span>. → <span class="gap" data-a="the environment"><input></span></li>
+      <li style="border:0;padding:4px 0">4. Our teacher <span class="wrong">learns</span> us how to recycle paper. → <span class="gap" data-a="teaches"><input></span></li>
+      <li style="border:0;padding:4px 0">5. The air in the forest is <span class="wrong">more cleaner</span> than in the city. → <span class="gap" data-a="cleaner"><input></span></li>
+      <li style="border:0;padding:4px 0">6. Many teenagers are interested <span class="wrong">on</span> ecology today. → <span class="gap" data-a="in"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('fix','fixScore')">Проверить</button><span class="score" id="fixScore"></span>
+    <div class="tnote"><b>Ответы 4.3:</b> 1 an ecologist · 2 many · 3 the environment · 4 teaches · 5 cleaner · 6 in. Типы: 1 артикль a/an перед профессией в ед.ч.; 2 many с исчисляемыми (gases), much — с неисчисляемыми; 3 the с уникальным объектом (the environment); 4 русизм learn≠teach (учить кого-то = teach); 5 двойная сравнительная (нельзя more + -er); 6 устойчивый предлог interested in. Пусть ученики проверят эти же ошибки в своём письме.</div>
+
+    <div class="subt"><b>4.4 · Напиши письмо.</b></div>
+    <textarea class="write" id="essay" oninput="countWords('essay','wc')" placeholder="Dear Paul,&#10;&#10;Thanks a lot for your letter! …"></textarea>
+    <div class="wc" id="wc">0 слов</div>
+
+    <div class="tnote"><b>Образец (≈110 слов):</b><br>
+    Dear Paul,<br>
+    Thanks a lot for your letter! It's great that your class is opening an eco-club.<br>
+    In my opinion, the most serious ecological problem is air pollution, because there are too many cars and factories in big cities. Young people can do a lot to protect the environment: we can recycle paper and plastic, plant trees and take part in clean-up events. Yes, I really think ecological problems should be discussed at school, because it teaches us to be responsible and to care about our planet.<br>
+    Well, I have to go now — it's my turn to take out the recycling!<br>
+    Write back soon!<br>
+    Best wishes,<br>
+    Sasha<br>
+    <b>Разбор с учеником:</b> отметьте ответы на 3 вопроса (К1), обращение/абзацы/концовку (К2), лексику темы (К3). Дайте написать своё письмо и сдать на ИИ-проверку в тренажёре.</div>
+  </div>
+
+  <!-- 5 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Природа и экология»: <b>«Грамматика»</b> + <b>«Словообразование»</b> (зад.20–28) + <b>«Письмо»</b> — написать письмо Paul и сдать на <b>ИИ-проверку</b>.</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → тема «Природа и экология» → отметь «Грамматика», «Словообразование», «Письмо» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Природа и экология · Урок 2</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function countWords(id,outId){
+    var t=document.getElementById(id).value.trim();
+    var n=t?t.split(/\s+/).length:0;
+    var out=document.getElementById(outId);
+    out.textContent=n+' слов'+(n>=100&&n<=120?' ✓':'');
+    out.style.color=(n>=100&&n<=120)?'var(--ok)':(n>120?'var(--no)':'var(--muted)');
+  }
+</script>
+</body>
+</html>

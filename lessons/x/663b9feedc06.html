@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Еда · Урок 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:150px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(180px,1fr) 1.5fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}.ddef i{color:var(--muted)}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">🍎 Еда · Урок 1 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Еда</b><br>Урок 1 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 1 — Лексика и чтение · A2–B1</span>Food: вкусы, блюда и привычки</h1>
+  <div class="aims"><b>Цели:</b> освоить ключевую лексику темы «еда» (15 фраз с переводом и примерами); потренировать <b>чтение ОГЭ — «Верно / Неверно / Не сказано» (зад.13–19)</b> на тексте о появлении картофеля и стратегию работы с утверждениями; потренировать <b>аудирование</b> на реальном задании ФИПИ. <b>Дома:</b> «Лексика» и «Чтение» в ОГЭ-тренажёре по теме «Еда».</div>
+
+  <!-- 1 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Разговор</h2><span class="tm">8 мин</span></div>
+    <ul>
+      <li>What is your favourite food, and why do you like it so much?</li>
+      <li>Do you prefer to eat at home or to eat out? Why?</li>
+      <li>Who is the best cook in your family? What dish do they make best?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> цель — разговорить и поднять знакомую «пищевую» лексику. На A2–B1 поощряйте полные ответы (My favourite food is… because…). Запишите слова, которые всплывут (tasty, healthy, dish, recipe), — пригодятся в задании 2.</div>
+  </div>
+
+  <!-- 2 Vocabulary -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Лексика · ключевые фразы темы</h2><span class="tm">28 мин</span></div>
+    <div class="subt"><b>2.1 · Изучи фразы (англ. → определение и перевод).</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Еда и блюда</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a balanced diet</span><span class="ddef">eating the right amount of different healthy foods <i>(сбалансированное питание)</i></span></div>
+      <div class="drow"><span class="dterm">a national dish</span><span class="ddef">a food that is traditional and typical of a country <i>(национальное блюдо)</i></span></div>
+      <div class="drow"><span class="dterm">fresh fruit and vegetables</span><span class="ddef">fruit and vegetables that are not frozen or old <i>(свежие фрукты и овощи)</i></span></div>
+      <div class="drow"><span class="dterm">fast food and junk food</span><span class="ddef">quick, cheap food that is usually unhealthy <i>(фастфуд и вредная еда)</i></span></div>
+      <div class="drow"><span class="dterm">a tasty and healthy meal</span><span class="ddef">food that tastes good and is good for you <i>(вкусное и полезное блюдо)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Приготовление и рецепты</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to cook at home</span><span class="ddef">to make meals in your own kitchen <i>(готовить дома)</i></span></div>
+      <div class="drow"><span class="dterm">to follow a recipe</span><span class="ddef">to cook by doing each step of the instructions <i>(следовать рецепту)</i></span></div>
+      <div class="drow"><span class="dterm">the ingredients for a dish</span><span class="ddef">the different foods you need to make a dish <i>(ингредиенты для блюда)</i></span></div>
+      <div class="drow"><span class="dterm">to add salt and spices</span><span class="ddef">to put salt and spices in food to make it tastier <i>(добавить соль и специи)</i></span></div>
+      <div class="drow"><span class="dterm">an easy dish to cook</span><span class="ddef">a meal that is simple and quick to prepare <i>(простое в приготовлении блюдо)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Привычки и питание вне дома</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to have breakfast / lunch / dinner</span><span class="ddef">to eat your morning / midday / evening meal <i>(завтракать / обедать / ужинать)</i></span></div>
+      <div class="drow"><span class="dterm">to skip breakfast</span><span class="ddef">to not eat anything in the morning <i>(пропускать завтрак)</i></span></div>
+      <div class="drow"><span class="dterm">eating habits</span><span class="ddef">the way a person usually eats <i>(пищевые привычки)</i></span></div>
+      <div class="drow"><span class="dterm">to eat out</span><span class="ddef">to eat in a cafe or restaurant, not at home <i>(есть вне дома)</i></span></div>
+      <div class="drow"><span class="dterm">to try new dishes</span><span class="ddef">to taste food you have never had before <i>(пробовать новые блюда)</i></span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Скрыть слова — вспомни по определению</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Скрыть определения — проверь себя</button>
+
+    <div class="subt"><b>2.2 · Матчинг.</b> Восстанови фразу по определению:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to make meals in your own kitchen → to <span class="gap" data-a="cook at home"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. quick, cheap and unhealthy food → <span class="gap" data-a="fast food"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. eating the right amount of healthy foods → a <span class="gap" data-a="balanced diet"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to not eat anything in the morning → to <span class="gap" data-a="skip breakfast"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to eat in a cafe or restaurant → to <span class="gap" data-a="eat out"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Проверить</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Подстановка в контекст.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. My grandmother always cooks our <span class="gap" data-a="national dish"><input></span>, borsch, on holidays.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. Doctors say we should eat more <span class="gap" data-a="fresh fruit and vegetables"><input></span> to stay healthy.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. If you <span class="gap" data-a="follow a recipe"><input></span> carefully, your cake will turn out perfect.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. I never <span class="gap" data-a="skip breakfast"><input></span> because it gives me energy for school.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Проверить</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Сделай своим.</b> Составь 4 предложения о своей еде и привычках с этими фразами. Эти же слова отрабатываются в тренажёре (интервальное повторение) и пригодятся в письме (зад.35) и устной части.</div>
+    <div class="tnote"><b>Ответы 2.2:</b> cook at home · fast food · balanced diet · skip breakfast · eat out. <b>2.3:</b> national dish · fresh fruit and vegetables · follow a recipe · skip breakfast. Лексику добивают в ОГЭ-тренажёре (SRS) — на уроке только ядро (15 фраз).</div>
+  </div>
+
+  <!-- 3 Reading T/F/NS -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Чтение · ОГЭ (зад.13–19: Верно / Неверно / Не сказано)</h2><span class="tm">24 мин</span></div>
+    <p>🔎 <b>Реальный текст ФИПИ.</b> Прочитай текст и отметь для каждого утверждения: <b>1 — Верно (True)</b>, <b>2 — Неверно (False)</b>, <b>3 — Не сказано (Not stated)</b>.</p>
+    <div class="read"><p>The potato comes from the high and cool areas of the Andes of Peru. It began to be grown as food more than 7,000 years ago. When Europeans came to South America, they took the potato back to Europe. In 1589, Sir Walter Raleigh, an English explorer and historian known for his expeditions to the Americas, first brought the potato to Ireland and planted the new vegetable there. In spite of the fact that the potatoes grew very well in the poor soil of Ireland, it took nearly 200 years for them to become a widely grown crop in Ireland and Great Britain. People didn't like its unusual appearance and originally bitter taste. Besides, the potato was not mentioned in the Bible and it was often associated with the devil. According to legend, Sir Walter Raleigh presented potato plants to Queen Elizabeth I. A special royal potato dinner was made and the noble men were invited to taste the new American vegetable. But the royal cooks didn't know how to cook potatoes: they cut off and threw away the tubers and brought to the royal table a dish of boiled leaves (which are very poisonous). Most of the guests felt ill after that royal dinner and potatoes were forbidden for many years. The only country which did not accept potatoes was France. To overcome the negative attitude of the French people towards the new vegetable, King Louis XVI started to wear a potato flower as a decoration. He tried to make the people understand the benefit of potatoes as food. Even after the French king had given an order to his citizens to grow potatoes, they still were against the unfamiliar vegetable. Then King Louis XVI decided to trick his people. He ordered to have potatoes planted in a royal field and put guards to watch over the field. When the local farmers saw the guards, they decided that the thing so carefully guarded must be valuable. One day, the guards were allowed to go off duty. The local farmers went into the field, dug out some potatoes and planted them in their own fields. The king's plan was a success. From this small start, the habit of growing and eating potatoes spread all over the country. As Europeans began to grow potatoes, they realized the advantages of the new vegetable. The potato harvest was enough to feed their own families and to sell some to the citizens of towns and cities. The new food stimulated the development of cities and industries. Besides, the health of the people improved as they included potatoes in their diets.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="3" data-e="В тексте сказано, что картофель выращивали в Андах 7000 лет назад, но что он был ОСНОВНОЙ пищей перуанцев — не сказано.">
+        <div class="stmt">13. Potatoes were the basic food for the people of Peru.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«People didn't like its unusual appearance and bitter taste» — британцам картофель сразу НЕ понравился (на это ушло почти 200 лет).">
+        <div class="stmt">14. The British people liked potatoes at once.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«The cooks didn't know how to cook potatoes… brought a dish of boiled leaves» — блюдо приготовили неправильно.">
+        <div class="stmt">15. The potato dish for the royal dinner was prepared in a wrong way.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="Наоборот: король «tried to make the people understand the benefit of potatoes» и приказал их выращивать — он был ЗА.">
+        <div class="stmt">16. King Louis XVI was against the idea of growing potatoes for food.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«The local farmers went into the field, dug out some potatoes and planted them in their own fields» — крестьяне украли картофель с поля короля.">
+        <div class="stmt">17. French farmers stole some potatoes from the King's field.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«The new food stimulated the development of cities and industries» — картофель помог развитию европейских стран.">
+        <div class="stmt">18. The potato helped the development of the European countries.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="То, что картофель — САМЫЙ ПОПУЛЯРНЫЙ овощ Европы сегодня, в тексте не сказано.">
+        <div class="stmt">19. Nowadays the potato is the most popular vegetable in Europe.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Проверить</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Стратегия.</b> «Не сказано» — самый коварный вариант. Правило: <b>Неверно</b> = текст ПРЯМО противоречит утверждению; <b>Не сказано</b> = в тексте об этом НЕТ информации (ни «да», ни «нет»). Не достраивай по логике — отвечай только по тексту.</div>
+    <div class="tnote"><b>Реальный текст ФИПИ</b> («Potatoes» — как картофель завоевал Европу). <b>Ответы:</b> 13→3 · 14→2 · 15→1 · 16→2 · 17→1 · 18→1 · 19→3. На каждом разберите: где подтверждение (True/False) или почему «Не сказано».</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Аудирование · ОГЭ (короткие диалоги)</h2><span class="tm">17 мин</span></div>
+    <p>🎧 <b>Реальное аудио ФИПИ.</b> Услышишь 4 коротких разговора (среди них — заказ в кафе). Прослушай <b>дважды</b> и выбери 1, 2 или 3.</p>
+    <audio controls preload="none" src="https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/C1E3466558A5BBEE433BAC985E1C971C/img1_1701781883.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="1" data-e="«You may take horse-riding lessons from 3 to 8 p.m.» — сейчас доступны уроки верховой езды.">
+        <div class="stmt">1. What activity is available for the language school students at the moment?</div>
+        <div class="mc"><button data-k="1">1) Horse-riding lessons.</button><button data-k="2">2) Swimming lessons.</button><button data-k="3">3) Gymnastics lessons.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«The football match and my swimming competition happened to be at the same time» — у Томаса были соревнования по плаванию.">
+        <div class="stmt">2. Thomas didn't come to support his football team because …</div>
+        <div class="mc"><button data-k="1">1) he confused the time of the game.</button><button data-k="2">2) he had got stuck in a traffic jam.</button><button data-k="3">3) he had to take part in another competition.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«Chocolate cake, then… Yes, I'll take it» — Энн заказывает зелёный чай и шоколадный торт.">
+        <div class="stmt">3. Ann's order in the cafe is a cup of green tea and …</div>
+        <div class="mc"><button data-k="1">1) an apple pie.</button><button data-k="2">2) a vanilla cake.</button><button data-k="3">3) a chocolate cake.</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«The glasses! With high UV protection» + ранее упоминались лыжные очки — подарок Mia это ski glasses.">
+        <div class="stmt">4. What birthday present did Mia get?</div>
+        <div class="mc"><button data-k="1">1) A headphone set.</button><button data-k="2">2) Ski glasses.</button><button data-k="3">3) A smart watch.</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Проверить</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Стратегия.</b> Перед прослушиванием прочитай вопрос и варианты, подчеркни ключевые слова. Верный ответ ПЕРЕФРАЗИРУЕТ запись (chocolate cake → Ann's order), а ловушка часто повторяет другое слово из записи, но смысл другой.</div>
+    <div class="tnote"><b>Реальное аудио ФИПИ</b> (4 коротких диалога; чисто «пищевого» комплекта в банке ФИПИ нет — взят <b>ближайший реальный набор с заказом еды в кафе</b>, вопрос 3). <b>Ответы:</b> 1→1 · 2→3 · 3→3 · 4→2. Разберите, какими словами подтверждается каждый ответ. <b>Аудирование обязательно отрабатывается в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 5 Speaking -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · короткое высказывание</h2><span class="tm">8 мин</span></div>
+    <p>Расскажи <b>1,5–2 минуты</b> на тему <b>"Food in my life"</b>. Используй минимум 4 фразы из задания 2. План: your favourite food and why · who cooks at home and what dishes · your eating habits (breakfast, eating out) · what healthy eating means to you.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Старт 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Учителю:</b> на A2–B1 требуйте связки (because, also, for example) и полные предложения. Это подготовка к монологу (зад.3 устной части) — вернёмся в Уроке 3.</div>
+  </div>
+
+  <!-- 6 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Еда»: «Лексика» + «Чтение» + <b>«Аудирование»</b> (обязательно).</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → выбери тему «Еда» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Еда · Урок 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Показать слова':'🙈 Скрыть слова — вспомни по определению';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Показать определения':'🙈 Скрыть определения — проверь себя';
+  }
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

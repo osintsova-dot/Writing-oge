@@ -15,7 +15,7 @@ import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
 import { exportProgress, importProgress } from './backup.js';
-import { hasAccess, getKey, setKey, checkKey, rememberCheck } from './license.js';
+import { hasAccess, getKey, setKey, checkKey, rememberCheck, activateDemo, demoExpired, isDemoCode } from './license.js';
 import { pushSupported, isSubscribed, enablePush, disablePush, iosNeedsInstall, getHour, heartbeat } from './push.js';
 
 // Heartbeat пушей: при активности шлём «занимался сегодня + серия» (тихо, если есть подписка).
@@ -23,16 +23,32 @@ window.addEventListener('ss:activity', (e) => {
   try { heartbeat((e.detail && e.detail.streak) || 0, true); } catch (err) {}
 });
 
-// ССЫЛКА НА СООБЩЕСТВО VK (откуда берут ключ) — подставить, когда будет
-const VK_URL = 'https://vk.com/';
+// Воркер приёма оплаты (Т-Касса). Оплата идёт прямо в приложении: /pay/create → редирект → /pay/status.
+const PAY_WORKER = 'https://ss-pay.o-sintsova.workers.dev';
+// Контакт поддержки (VK-сообщество новое и в оплате не участвует) — WhatsApp по номеру ИП.
+const SUPPORT_URL = 'https://wa.me/79135309327';
+// Сообщество ВКонтакте под приложение (разборы заданий + напоминания).
+const VK_COMMUNITY = 'https://vk.com/speaksmile_oge_ege';
+const orderName = () => EXAM.store + '_order';   // localStorage: сохранённый заказ {order_id, claim}
 
-// Код перехода в режим учителя (в настройках «Прогресс»). Сравнение без регистра.
-const TEACHER_PASS = 'COOLSCHOOL';
-function enterTeacher() {
+// Переход в режим учителя. Пароль проверяет воркер ss-lessons (не хранится в бандле);
+// в ответ — подписанный токен для доступа к планам уроков (кладём в localStorage).
+const LESSONS_WORKER = 'https://ss-lessons.o-sintsova.workers.dev';
+const TEACHER_TOK = 'ss_teacher_tok';
+async function enterTeacher() {
   const code = prompt(t.teacherPrompt);
   if (code == null) return;
-  if (code.trim().toUpperCase() === TEACHER_PASS) { setRole('teacher'); updateRoleUI(); location.hash = '#/teacher'; route(); }
-  else alert(t.teacherWrong);
+  try {
+    const r = await fetch(LESSONS_WORKER + '/auth', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ pass: code.trim() }),
+    });
+    const res = await r.json();
+    if (res && res.ok && res.token) {
+      try { localStorage.setItem(TEACHER_TOK, res.token); } catch (e) {}
+      setRole('teacher'); updateRoleUI(); location.hash = '#/teacher'; route();
+    } else alert(t.teacherWrong);
+  } catch (e) { alert(t.teacherWrong); }
 }
 // Модули разделов грузятся ЛЕНИВО (import() по требованию) — на главной не тянем весь код.
 // lazy(path, name, arg): показать лоадер → импортировать модуль → вызвать render(view, arg).
@@ -77,6 +93,8 @@ function route() {
   if (hash === 'plan')     return renderPlan();
   if (hash === 'teacher')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderTeacher', { goHome }); }
   if (hash === 'journal')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderJournal', { goHome }); }
+  if (hash === 'lessons')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return lazy('../modules/lessons.js', 'renderLessons', { goHome }); }
+  if (hash === 'free')     { document.body.classList.add('in-flow'); return lazy('../modules/writing.js', 'renderFreeCheck', { goHome }); }
   if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderHomework', { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (hash.split('?')[0] === 'hwr') { document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderHomeworkResult', { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (sec && sec.type === 'drill')   return lazy('../modules/drill.js', 'renderDrill', { ...DRILL[sec.id], goHome });
@@ -527,6 +545,8 @@ async function renderProgress() {
         el('div', { class: 'ach-t', text: a.title }),
       ]))),
     el('div', { class: 'prog-actions' }, [
+      el('a', { class: 'act-name', href: VK_COMMUNITY, target: '_blank', rel: 'noopener',
+        style: { textDecoration: 'none' }, text: '💬 ' + t.vkSubscribe }),
       el('button', { class: 'act-name', text: getSound() ? t.soundOn : t.soundOff,
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
       pushButton(),
@@ -801,17 +821,101 @@ function renderExamIntro() {
   slides(cards, { lastCta: t.go, onDone: () => { setOnboarded(true); goHome(); } });
 }
 
-// --- Замок: экран ввода ключа доступа (paywall) ---
+// --- Оплата прямо в приложении (Т-Касса) ---
+const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+let pendingBuyPlan = null;   // ?buy=month|year — какой тариф подсветить
+let payJustFailed = false;   // ?pay=fail — показать сообщение об ошибке оплаты
+
+// Активировать купленный ключ: ставим и проверяем через тот же /check.
+async function activateBoughtKey(key) {
+  setKey(key);
+  try { const res = await checkKey(key); if (res.valid) { rememberCheck(res); return true; } } catch (e) {}
+  return false;
+}
+
+// Возврат из оплаты (?order=…): опрашиваем статус, при оплате — активируем ключ и входим.
+function renderPayChecking(orderId) {
+  document.body.classList.add('welcome-mode');
+  const p = t.paywall || {};
+  let saved = {}; try { saved = JSON.parse(localStorage.getItem(orderName()) || '{}'); } catch (e) {}
+  const claim = saved.claim || '';
+  if (!orderId || !claim) { renderPaywall(); return; }
+  mount(view, el('div', { class: 'splash' }, [
+    el('div', { class: 'shine' }),
+    el('div', { class: 'inner' }, [
+      el('img', { src: EXAM.splashImg, alt: 'Speaky' }),
+      el('div', { class: 'brandline', text: t.brandline }),
+      el('div', { class: 'greet', text: p.payChecking || 'Проверяю оплату…' }),
+    ]),
+  ]));
+  let tries = 0;
+  const poll = async () => {
+    tries++;
+    try {
+      const r = await fetch(PAY_WORKER + '/pay/status', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ order_id: orderId, claim }),
+      });
+      const d = await r.json();
+      if (d.paid && d.key) {
+        const ok = await activateBoughtKey(d.key);
+        try { localStorage.removeItem(orderName()); } catch (e) {}
+        if (ok) { document.body.classList.remove('welcome-mode'); bootAfterAccess(); return; }
+      }
+    } catch (e) {}
+    if (tries >= 30) { renderPaywall(); return; } // ~60с — дальше paywall с кнопкой «Проверить»
+    setTimeout(poll, 2000);
+  };
+  poll();
+}
+
+// --- Замок: экран доступа (покупка + ввод ключа) ---
 function renderPaywall() {
   document.body.classList.add('welcome-mode');
   const p = t.paywall || {};
+  const expired = demoExpired();
+
+  // Блок покупки
+  const email = el('input', { class: 'name-input', type: 'email', inputmode: 'email', placeholder: p.emailPh || 'Почта для чека', autocomplete: 'email' });
+  const buyYear = el('button', { class: 'go', text: p.buyYear || 'Купить · 4900 ₽ / год' });
+  const buyMonth = el('button', { class: 'go', style: { background: 'transparent', border: '1.5px solid rgba(255,255,255,.5)', color: '#fff', marginTop: '8px' }, text: p.buyMonth || 'Купить · 490 ₽ / мес' });
+  const payNote = el('div', { class: 'note', style: { margin: '6px 0 2px', opacity: '.85' }, text: p.emailNote || 'Оплата картой или СБП. Чек придёт на почту.' });
+  const payMsg = el('div', { class: 'err-msg', style: { display: payJustFailed ? 'block' : 'none' } });
+  if (payJustFailed) { payMsg.textContent = p.payFail || 'Оплата не прошла. Попробуй ещё раз.'; payJustFailed = false; }
+
+  const buy = async (plan) => {
+    const mail = email.value.trim();
+    if (!EMAIL_RE.test(mail)) { payMsg.textContent = p.badEmail || 'Проверь почту — на неё придёт чек.'; payMsg.style.display = 'block'; email.focus(); return; }
+    payMsg.style.display = 'none'; buyYear.disabled = buyMonth.disabled = true;
+    const busyBtn = plan === 'year' ? buyYear : buyMonth; const busyTxt = busyBtn.textContent;
+    busyBtn.textContent = p.buying || 'Открываю оплату…';
+    try {
+      const r = await fetch(PAY_WORKER + '/pay/create', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ plan, exam: EXAM.id, email: mail }),
+      });
+      const d = await r.json();
+      if (!d.payment_url) { payMsg.textContent = p.payFail || 'Оплата не прошла. Попробуй ещё раз.'; payMsg.style.display = 'block'; throw 0; }
+      try { localStorage.setItem(orderName(), JSON.stringify({ order_id: d.order_id, claim: d.claim })); } catch (e) {}
+      window.location.href = d.payment_url; return;
+    } catch (e) {
+      if (!payMsg.textContent) { payMsg.textContent = p.net || 'Нет связи с сервером. Проверь интернет.'; payMsg.style.display = 'block'; }
+    }
+    buyYear.disabled = buyMonth.disabled = false; busyBtn.textContent = busyTxt;
+  };
+  buyYear.addEventListener('click', () => buy('year'));
+  buyMonth.addEventListener('click', () => buy('month'));
+  if (pendingBuyPlan === 'month') buyMonth.style.outline = '2px solid var(--honey,#F5C842)';
+  if (pendingBuyPlan === 'year') buyYear.style.outline = '2px solid var(--honey,#F5C842)';
+
+  // Ввод имеющегося ключа
   const input = el('input', { class: 'name-input', type: 'text', placeholder: p.keyPh || 'XXXX-XXXX-XXXX', autocomplete: 'off', value: getKey() || '' });
-  const go = el('button', { class: 'go', text: p.checkBtn || 'Войти' });
+  const go = el('button', { class: 'go', style: { background: 'transparent', border: '1.5px solid rgba(255,255,255,.5)', color: '#fff' }, text: p.checkBtn || 'Войти' });
   const err = el('div', { class: 'err-msg', style: { display: 'none' } });
-  const vk = el('a', { class: 'skip-link', href: VK_URL, target: '_blank', rel: 'noopener', text: p.getVK || 'Получить ключ в VK →' });
   const submit = async () => {
     const k = input.value.trim().toUpperCase();
     if (!k) { input.focus(); return; }
+    if (isDemoCode(k)) { activateDemo(); document.body.classList.remove('welcome-mode'); bootAfterAccess(); return; }
     err.style.display = 'none'; go.disabled = true; go.textContent = p.checking || 'Проверяю…';
     try {
       const res = await checkKey(k);
@@ -827,18 +931,30 @@ function renderPaywall() {
   go.addEventListener('click', submit);
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
 
+  // Если есть незавершённый заказ — кнопка перепроверить оплату
+  let saved = {}; try { saved = JSON.parse(localStorage.getItem(orderName()) || '{}'); } catch (e) {}
+  const recheck = saved.order_id ? el('a', { class: 'skip-link', href: '#', onclick: (e) => { e.preventDefault(); renderPayChecking(saved.order_id); }, text: p.recheck || 'Уже оплатил? Проверить' }) : null;
+
+  const support = el('a', { class: 'skip-link', href: SUPPORT_URL, target: '_blank', rel: 'noopener', text: p.ask || 'Вопросы? Напиши' });
+
   mount(view, el('div', { class: 'splash' }, [
     el('div', { class: 'shine' }),
     el('div', { class: 'inner' }, [
       el('img', { src: EXAM.splashImg, alt: 'Speaky' }),
       el('div', { class: 'brandline', text: t.brandline }),
-      el('div', { class: 'greet' }, [p.title || 'Доступ к тренажёру', el('br'), el('span', { style: { fontSize: '15px', fontWeight: '400', opacity: '.9' }, text: p.sub || '14 дней бесплатно по ключу из нашего сообщества' })]),
-      vk,
-      el('div', { class: 'note', style: { margin: '14px 0 6px' }, text: p.haveKey || 'Уже есть ключ? Введи его:' }),
+      el('div', { class: 'greet' }, [
+        expired ? (p.expiredTitle || 'Демо закончилось 💜') : (p.title || 'Доступ к тренажёру'), el('br'),
+        el('span', { style: { fontSize: '15px', fontWeight: '400', opacity: '.9' }, text: expired ? (p.expiredSub || 'Понравилось? Оформи доступ.') : (p.sub || 'Оформи доступ — и продолжай готовиться') }),
+      ]),
+      email, buyYear, buyMonth, payNote, payMsg,
+      recheck,
+      el('div', { class: 'note', style: { margin: '16px 0 6px', opacity: '.7' }, text: p.orHaveKey || 'или' }),
+      el('div', { class: 'note', style: { margin: '0 0 6px' }, text: p.haveKey || 'Уже есть ключ? Введи его:' }),
       input, go, err,
+      support,
     ]),
   ]));
-  input.focus();
+  pendingBuyPlan = null;
 }
 
 // Иконки нижнего меню (картинки с откатом на эмодзи) ---
@@ -852,7 +968,14 @@ document.querySelectorAll('#bottom-nav a').forEach((a) => {
 applyTheme(getTheme());
 applySkin();
 updateRoleUI();
-window.addEventListener('hashchange', route);
+// Переход по адресу (#/...) ВСЕГДА перепроверяет доступ — нельзя обойти замок,
+// вписав #/teacher или другой раздел руками после загрузки. Свободны только ДЗ-ссылки ученика.
+function guardedRoute() {
+  const base = location.hash.replace(/^#\/?/, '').split('?')[0];
+  if (['hw', 'hwr'].includes(base)) return route();
+  hasAccess().then((ok) => { if (ok) route(); else renderPaywall(); });
+}
+window.addEventListener('hashchange', guardedRoute);
 
 // продолжение запуска ПОСЛЕ подтверждения доступа (вызывается из paywall и при старте)
 function bootAfterAccess() {
@@ -863,10 +986,26 @@ function bootAfterAccess() {
   route();
 }
 
+// Параметры из ссылки: ?key= (демо/ключ), ?order= (возврат из оплаты), ?pay=fail, ?buy=plan. Затем чистим URL.
+let orderReturn = null;
+(function () {
+  try {
+    const q = new URLSearchParams(location.search);
+    const urlKey = q.get('key');
+    if (urlKey) { if (isDemoCode(urlKey)) activateDemo(); else setKey(urlKey); }
+    orderReturn = q.get('order');
+    if (q.get('pay') === 'fail') payJustFailed = true;
+    const bp = q.get('buy'); if (bp === 'month' || bp === 'year') pendingBuyPlan = bp;
+    if (urlKey || orderReturn || payJustFailed || pendingBuyPlan) history.replaceState({}, '', location.pathname + location.hash);
+  } catch (e) {}
+})();
+
 // ДЗ-ссылки ученика (#/hw, #/hwr) открываются СВОБОДНО, минуя замок и онбординг (платит учитель).
-// Всё остальное (включая учительский кабинет) — за ключом доступа.
+// Возврат из оплаты (?order=) → проверяем статус. Остальное — за ключом доступа.
 const bareHash = location.hash.replace(/^#\/?/, '').split('?')[0];
-if (['hw', 'hwr'].includes(bareHash)) {
+if (orderReturn) {
+  renderPayChecking(orderReturn);
+} else if (['hw', 'hwr'].includes(bareHash)) {
   route();
 } else {
   hasAccess().then((ok) => { if (ok) bootAfterAccess(); else renderPaywall(); });

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Образование и школа · Урок 2</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:120px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .base{font-weight:800;color:var(--p);text-transform:uppercase;font-size:11.5px;letter-spacing:.04em}
+  .wrong{color:var(--no);font-weight:700;text-decoration:line-through}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  table.wf{border-collapse:collapse;width:100%;margin:10px 0;font-size:12.5px}
+  table.wf th,table.wf td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  table.wf th{background:var(--soft);color:var(--p);font-weight:800}table.wf td b{color:var(--ink)}
+  .tf{margin-top:10px}.tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .email{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fbfaff;font-size:13px;line-height:1.65}
+  .email .em-h{font-size:11.5px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:8px}
+  .plan{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:10px 0;font-size:12.5px}
+  .plan .pn{font-weight:900;color:#fff;background:var(--p);border-radius:6px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:12px}
+  .phrases{columns:2;column-gap:22px;font-size:12px;margin:8px 0}.phrases div{break-inside:avoid;margin:3px 0}
+  .crit{font-size:12px;margin:8px 0}.crit .ct{font-weight:800;color:var(--p)}
+  textarea.write{width:100%;min-height:220px;font:inherit;font-size:13px;line-height:1.6;border:1.5px solid var(--line);border-radius:8px;padding:12px;resize:vertical}
+  textarea.write:focus{outline:0;border-color:var(--p)}
+  .wc{font-weight:800;margin-top:6px;color:var(--muted)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score{display:none!important}.phrases{columns:2}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📗 Образование и школа · Урок 2 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Образование и школа</b><br>Урок 2 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 2 — Грамматика и письмо · A2–B1</span>Грамматика, словообразование и личное письмо</h1>
+  <div class="aims"><b>Результат урока:</b> ученик пишет личное письмо другу (зад.35) по теме «школа и предметы», грамотно и по формату. <b>Логика урока:</b> разминка-рециркуляция лексики Урока 1 → разбор грамматики и словообразования (зад.20–28) как основы точности → разбор формата письма + редактирование ошибок → собственное письмо. <b>Сквозная идея:</b> точность из первой половины урока даёт балл К3 в письме. <b>Дома:</b> грамматика, словообразование и письмо в ОГЭ-тренажёре.</div>
+
+  <!-- 1 Разминка -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Разминка · рециркуляция лексики (Quiz-Quiz-Trade)</h2><span class="tm">8 мин</span></div>
+    <p>Вспомни фразы Урока 1 — вставь пропущенную в нужной форме:</p>
+    <ul class="tf" id="recall" style="border:0">
+      <li style="border:0;padding:4px 0">1. Biology is my <span class="gap" data-a="favourite subject"><input></span> because I enjoy learning about animals.</li>
+      <li style="border:0;padding:4px 0">2. I always <span class="gap" data-a="do my homework"><input></span> right after dinner.</li>
+      <li style="border:0;padding:4px 0">3. Before the test you should <span class="gap" data-a="revise"><input></span> all the rules.</li>
+      <li style="border:0;padding:4px 0">4. She studied hard and managed to <span class="gap" data-a="pass the exam"><input></span> easily.</li>
+      <li style="border:0;padding:4px 0">5. In many British schools students wear a <span class="gap" data-a="school uniform"><input></span>.</li>
+      <li style="border:0;padding:4px 0">6. Football is my favourite <span class="gap" data-a="after-class activity"><input></span> at school.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('recall','recallScore')">Проверить</button><span class="score" id="recallScore"></span>
+    <div class="tnote"><b>Учителю — как провести по Kagan:</b> <b>Quiz-Quiz-Trade</b> — каждому карточка (лицо: предложение с пропуском, оборот: ответ); ученик находит пару → «квизит» партнёра → хвалит/подсказывает → меняются карточками → новый партнёр. Или <b>Line Up / Mingle</b>. Цель — поднять лексику Урока 1, она пойдёт в письмо. <b>Ответы:</b> 1 favourite subject · 2 do my homework · 3 revise · 4 pass the exam · 5 school uniform · 6 after-class activity.</div>
+  </div>
+
+  <!-- 2 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Lead-in · Разговор</h2><span class="tm">4 мин</span></div>
+    <ul>
+      <li>Do you write letters or messages to friends? In English or Russian?</li>
+      <li>What questions would you ask a foreign friend about their school and subjects?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> настройте на формат дружеского письма. Запишите 1–2 вопроса на доску — пригодятся в письме.</div>
+  </div>
+
+  <!-- 3 Grammar -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Грамматика и словообразование (зад.20–28)</h2><span class="tm">33 мин</span></div>
+    <div class="box"><b>Два типа заданий (оба — «преобразуй слово ЗАГЛАВНЫМИ»):</b> <b>3A зад.20–25</b> — меняем <b>грамматическую форму</b> (время, число, степень): give → <i>gave</i>, child → <i>children</i>. <b>3B зад.26–28</b> — образуем <b>НОВОЕ слово</b> (часть речи): power → <i>powerful</i>, inform → <i>information</i>.</div>
+
+    <div class="subt"><b>3A · Грамматические формы (зад.20–25).</b> Поставь слово в нужную форму:</div>
+    <ul class="tf" id="gr" style="border:0">
+      <li style="border:0;padding:4px 0">1. "Let me think about it. I <span class="gap" data-a="will give"><input></span> you a call when I decide." <span class="base">(give)</span></li>
+      <li style="border:0;padding:4px 0">2. Anna's plans <span class="gap" data-a="were"><input></span> ambitious — she wanted to buy a professional camera. <span class="base">(be)</span></li>
+      <li style="border:0;padding:4px 0">3. The next morning the girl <span class="gap" data-a="left"><input></span> for the city. <span class="base">(leave)</span></li>
+      <li style="border:0;padding:4px 0">4. His classmates <span class="gap" data-a="were writing"><input></span> something in their notebooks and didn't notice him. <span class="base">(write)</span></li>
+      <li style="border:0;padding:4px 0">5. All the <span class="gap" data-a="children"><input></span> in the class welcomed the new girl warmly. <span class="base">(child)</span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('gr','grScore')">Проверить</button><span class="score" id="grScore"></span>
+    <div class="tnote"><b>Ответы 3A:</b> 1 will give (Future Simple) · 2 were (Past, мн.ч.) · 3 left (Past, неправ. глагол) · 4 were writing (Past Continuous) · 5 children (мн.ч., исключение). Часть речи не меняется.</div>
+
+    <div class="subt"><b>3B · Словообразование (зад.26–28).</b> Образуй слово (суффиксы: -ful, -ation/-ity, -al; приставки un-/in-):</div>
+    <ul class="tf" id="wf" style="border:0">
+      <li style="border:0;padding:4px 0">1. Many people believe computers will soon be more <span class="gap" data-a="powerful"><input></span> than the human brain. <span class="base">(power)</span></li>
+      <li style="border:0;padding:4px 0">2. This <span class="gap" data-a="information"><input></span> is often used in chocolate adverts. <span class="base">(inform)</span></li>
+      <li style="border:0;padding:4px 0">3. Their main <span class="gap" data-a="responsibility"><input></span> is to look after the younger children. <span class="base">(responsible)</span></li>
+      <li style="border:0;padding:4px 0">4. Kazan is one of the most important <span class="gap" data-a="cultural"><input></span> centres of the country. <span class="base">(culture)</span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('wf','wfScore')">Проверить</button><span class="score" id="wfScore"></span>
+    <div class="tnote"><b>Ответы 3B:</b> 1 powerful (-ful → прилаг.) · 2 information (-ation → сущ.) · 3 responsibility (-ity → сущ., responsible→responsibility) · 4 cultural (-al → прилаг.). <b>Полная отработка — в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 4 Writing зад.35 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Письмо · личное письмо другу (зад.35)</h2><span class="tm">40 мин</span></div>
+    <p style="color:var(--muted);font-size:12.5px;margin:0 0 8px">🔗 <b>Мостик.</b> Грамотность из первой части урока — это балл К3 в письме. Теперь напишем письмо.</p>
+    <p>✉️ <b>Реальное задание ОГЭ.</b> Ты получил(а) письмо от друга по переписке Jim. Напиши ответ.</p>
+    <div class="email">
+      <div class="em-h"><b>From:</b> Jim &nbsp;·&nbsp; <b>Тема:</b> School subjects</div>
+      <p>…Next month I'll choose my subjects for the next year. I want to continue learning languages. I also need to improve my academic results in general. <b>How many lessons do you usually have a day? What foreign languages can you learn at school? What subject do you find the most important for your future career, and why?</b>…</p>
+    </div>
+    <p style="margin-top:8px">Напиши Jim письмо. В письме <b>ответь на его 3 вопроса</b>. Объём <b>100–120 слов</b>. Соблюдай правила написания личного письма.</p>
+
+    <div class="subt"><b>4.1 · Структура личного письма.</b></div>
+    <div class="plan">
+      <span class="pn">1</span><span><b>Обращение:</b> «Dear Jim,» (на отдельной строке, с запятой).</span>
+      <span class="pn">2</span><span><b>Вступление:</b> поблагодари за письмо / отреагируй на новость (Thanks for your letter. It's great that…).</span>
+      <span class="pn">3</span><span><b>Основная часть:</b> ответь на ВСЕ 3 вопроса (по 1–2 предложения).</span>
+      <span class="pn">4</span><span><b>Концовка:</b> завершающая фраза (Write back soon!) + имя на новой строке.</span>
+    </div>
+
+    <div class="subt"><b>4.2 · Полезные фразы.</b></div>
+    <div class="phrases">
+      <div>• Thanks (a lot) for your letter.</div>
+      <div>• It was great to hear from you.</div>
+      <div>• We usually have… lessons a day.</div>
+      <div>• At our school we can learn…</div>
+      <div>• I think the most important subject is… because…</div>
+      <div>• Good luck with choosing your subjects!</div>
+      <div>• Well, I have to go now.</div>
+      <div>• Write back soon! / Best wishes,</div>
+    </div>
+
+    <div class="crit"><span class="ct">Критерии:</span> <b>К1 содержание</b> — ответы на все 3 вопроса, верный формат; <b>К2 организация</b> — обращение, абзацы, концовка, логика; <b>К3 язык</b> — лексика и грамматика без грубых ошибок.</div>
+
+    <div class="subt"><b>4.3 · Найди и исправь ошибку (К3).</b> Частые ошибки уровня ОГЭ — напиши верно:</div>
+    <ul class="tf" id="fix" style="border:0">
+      <li style="border:0;padding:4px 0">1. My mum <span class="wrong">learns</span> me French at home. → <span class="gap" data-a="teaches"><input></span></li>
+      <li style="border:0;padding:4px 0">2. I want to be <span class="wrong">scientist</span> in the future. → <span class="gap" data-a="a scientist"><input></span></li>
+      <li style="border:0;padding:4px 0">3. I usually <span class="wrong">make</span> my homework in the evening. → <span class="gap" data-a="do"><input></span></li>
+      <li style="border:0;padding:4px 0">4. My friend is very good <span class="wrong">in</span> History. → <span class="gap" data-a="at"><input></span></li>
+      <li style="border:0;padding:4px 0">5. We get too <span class="wrong">much</span> exams this term. → <span class="gap" data-a="many"><input></span></li>
+      <li style="border:0;padding:4px 0">6. I'm really <span class="wrong">interesting</span> in Maths and Physics. → <span class="gap" data-a="interested"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('fix','fixScore')">Проверить</button><span class="score" id="fixScore"></span>
+    <div class="tnote"><b>Ответы 4.3:</b> 1 teaches · 2 a scientist · 3 do · 4 at · 5 many · 6 interested. Типы: 1 learn≠teach (учиться сам / учить кого-то); 2 артикль a перед профессией в ед.ч.; 3 do homework (не make); 4 good at + предмет/навык; 5 many с исчисляемыми (exams); 6 -ed/-ing прилагательное (interested in = заинтересован сам, не interesting). Пусть ученики проверят эти же ошибки в своём письме.</div>
+
+    <div class="subt"><b>4.4 · Напиши письмо.</b></div>
+    <textarea class="write" id="essay" oninput="countWords('essay','wc')" placeholder="Dear Jim,&#10;&#10;Thanks a lot for your letter! …"></textarea>
+    <div class="wc" id="wc">0 слов</div>
+
+    <div class="tnote"><b>Образец (≈110 слов):</b><br>
+    Dear Jim,<br>
+    Thanks a lot for your letter! It's great that you can choose your subjects for next year.<br>
+    We usually have six or seven lessons a day, so we are quite busy from morning until the afternoon. At our school we can learn English and German, but I study English because I find it the most useful. In my opinion, the most important subject for my future career is English, because I want to work with computers and travel abroad, and you need English everywhere now.<br>
+    Good luck with choosing your subjects!<br>
+    Well, I have to go now — it's time to do my homework.<br>
+    Write back soon!<br>
+    Best wishes,<br>
+    Sasha<br>
+    <b>Разбор с учеником:</b> отметьте ответы на 3 вопроса (К1), обращение/абзацы/концовку (К2), лексику темы (К3). Дайте написать своё письмо и сдать на ИИ-проверку в тренажёре.</div>
+  </div>
+
+  <!-- 5 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Образование и школа»: <b>«Грамматика»</b> + <b>«Словообразование»</b> (зад.20–28) + <b>«Письмо»</b> — написать письмо Jim и сдать на <b>ИИ-проверку</b>.</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → тема «Образование и школа» → отметь «Грамматика», «Словообразование», «Письмо» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Образование и школа · Урок 2</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function countWords(id,outId){
+    var t=document.getElementById(id).value.trim();
+    var n=t?t.split(/\s+/).length:0;
+    var out=document.getElementById(outId);
+    out.textContent=n+' слов'+(n>=100&&n<=120?' ✓':'');
+    out.style.color=(n>=100&&n<=120)?'var(--ok)':(n>120?'var(--no)':'var(--muted)');
+  }
+</script>
+</body>
+</html>

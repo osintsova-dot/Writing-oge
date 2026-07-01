@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Превью Спики — все позы</title>
+  <link rel="stylesheet" href="./css/brand.css">
+  <style>
+    body{margin:0}
+    .picker{position:fixed;top:0;left:0;right:0;z-index:99;display:flex;gap:5px;justify-content:center;
+      flex-wrap:wrap;padding:8px;background:rgba(0,0,0,.4);backdrop-filter:blur(6px)}
+    .picker button{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3);
+      border-radius:13px;padding:6px 11px;font-size:12px;font-weight:700;cursor:pointer}
+    .picker button.on{background:#F5C842;color:#1A1A2E;border-color:#F5C842}
+    .grp{width:100%;text-align:center;color:rgba(255,255,255,.6);font-size:11px;font-weight:800;
+      text-transform:uppercase;letter-spacing:.5px;margin:2px 0 -2px}
+  </style>
+</head>
+<body>
+  <div class="picker" id="picker"></div>
+  <div id="stage"></div>
+  <script>
+    const POSES=[
+      {g:'Награды'},
+      {k:'hero',  img:'spiky-hero',  title:'ГЕРОЙ!',             text:['Весь пак за один заход, Оксана.','Это уровень 🦸']},
+      {k:'cheer', img:'spiky-cheer', title:'Уровень 5 · Знаток', text:['Растёшь на глазах!','Дальше — выше 💪']},
+      {k:'fire',  img:'spiky-fire',  title:'7 дней подряд!',     text:['Привычка побеждать.','Не отпускай 🔥']},
+      {k:'medal', img:'spiky-medal', title:'Новое достижение!',  text:['Грамматик недели — открыто.','Так держать!']},
+      {k:'gift',  img:'spiky-gift',  title:'+2 жетона',          text:['Жетон в копилку, Оксана.','Обменяй на привилегию 🎟']},
+      {g:'Онбординг'},
+      {k:'talk',  img:'spiky-talk',  title:'Что такое ОГЭ',      text:['Экзамен — две части:','письменная и устная.']},
+      {k:'check', img:'spiky-check', title:'Письменная часть',   text:['4 раздела: аудирование,','чтение, грамматика, письмо.']},
+      {k:'idea',  img:'spiky-idea',  title:'Письмо и говорение', text:['Письмо — задание 35.','Говорение — отдельно.']},
+      {k:'thumb', img:'spiky-thumb', title:'Главное — тренировка',text:['Прокачаешь каждый раздел.','Поехали! 💪']},
+      {k:'phone', img:'spiky-phone', title:'Сохрани прогресс',   text:['Нажми «Поделиться» → «На экран','Домой» — как обычное приложение.']},
+      {g:'Сплэш / главная'},
+      {k:'cool',  img:'spiky-cool',  title:'Speak & Smile',      text:['Тренажёр ОГЭ','(сплэш при запуске)']},
+    ];
+    const items=POSES.filter(p=>p.k); let cur=0;
+    function render(){
+      const p=items[cur], stage=document.getElementById('stage'); stage.innerHTML='';
+      const ov=document.createElement('div'); ov.className='celebrate';
+      ov.innerHTML=`
+        <div class="cel-card">
+          <img class="cel-img" src="./assets/${p.img}.png" alt="">
+          <div class="cel-title">${p.title}</div>
+          <div class="cel-text">${p.text.map(t=>'<p>'+t+'</p>').join('')}</div>
+          <div class="cel-dots"><i class="on"></i></div>
+          <button class="btn btn-honey btn-block">Дальше →</button>
+        </div>`;
+      stage.appendChild(ov);
+      [...document.querySelectorAll('.picker button')].forEach((b,i)=>b.classList.toggle('on',i===cur));
+    }
+    const pk=document.getElementById('picker'); let bi=0;
+    POSES.forEach(p=>{
+      if(p.g){ const g=document.createElement('div'); g.className='grp'; g.textContent=p.g; pk.appendChild(g); return; }
+      const idx=bi++; const b=document.createElement('button'); b.textContent=p.k; b.onclick=()=>{cur=idx;render();}; pk.appendChild(b);
+    });
+    render();
+  </script>
+</body>
+</html>

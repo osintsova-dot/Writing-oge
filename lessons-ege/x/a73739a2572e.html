@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ЕГЭ · Books &amp; films · Lesson 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:160px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(190px,1fr) 1.4fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📚 Books &amp; films · Lesson 1 · B2</span>
+  <button id="bRole" class="on">👩‍🏫 View: teacher</button>
+  <button class="print" onclick="window.print()">🖨 Print / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>EGE · English</b><br>Topic · <b>Books &amp; films</b><br>Lesson 1 of 3 · level B2 · 90 min</div>
+  </div>
+  <h1><span class="sub">Lesson 1 — Input · B2</span>Why we read: stories that stay with us</h1>
+  <div class="aims"><b>Lesson outcome:</b> the student masters the idiomatic B2 vocabulary of the topic "books and films" (genres, plot, evaluation), reads a real EGE multiple-choice text (tasks 12–18) and listens to an interview (tasks 3–9), gathering language for the essay and the speaking parts. <b>Through-line:</b> one set of vocabulary serves every section — what we introduce here is recycled in Lessons 2–3. <b>Homework:</b> "Vocabulary" + "Reading" + "Listening" in the EGE trainer for this topic.</div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Discussion</h2><span class="tm">8 min</span></div>
+    <ul>
+      <li>What was the last book you couldn't put down — and what made it <i>a page-turner</i>?</li>
+      <li>Some say a film adaptation can never <i>do justice to</i> the book. Do you agree?</li>
+      <li>Do you prefer a <i>fast-paced</i> plot or a slow story with deep characters? Why?</li>
+    </ul>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 the aim of the lead-in is not just "to chat" but to elicit evaluative vocabulary and argumentation (because / on the one hand…). Note on the board any "book" words that come up — you’ll return to them in task 2.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Vocabulary · B2</h2><span class="tm">27 min</span></div>
+    <div class="subt"><b>2.1 · Study the phrases with their definitions.</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Types of books and films</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a best-seller</span><span class="ddef">a book that is extremely popular and sells a very large number of copies</span></div>
+      <div class="drow"><span class="dterm">a sequel</span><span class="ddef">a story that continues from where an earlier story ended</span></div>
+      <div class="drow"><span class="dterm">a blockbuster</span><span class="ddef">a very successful film that makes a lot of money</span></div>
+      <div class="drow"><span class="dterm">a genre</span><span class="ddef">a type or style of book or film, like comedy or horror</span></div>
+      <div class="drow"><span class="dterm">a documentary</span><span class="ddef">a film that presents real events or facts about a subject</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Talking about plot and content</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a plot twist</span><span class="ddef">a surprising change in the events of a story that you did not expect</span></div>
+      <div class="drow"><span class="dterm">a gripping plot</span><span class="ddef">an exciting story that holds your attention and interest strongly</span></div>
+      <div class="drow"><span class="dterm">a cliffhanger</span><span class="ddef">an ending that leaves you very interested to know what happens next</span></div>
+      <div class="drow"><span class="dterm">to be set in</span><span class="ddef">to take place in a particular time or place</span></div>
+      <div class="drow"><span class="dterm">fast-paced</span><span class="ddef">having a story that moves quickly</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Evaluating books and films</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a page-turner</span><span class="ddef">a book that is so exciting you cannot stop reading</span></div>
+      <div class="drow"><span class="dterm">thought-provoking</span><span class="ddef">making people think deeply about a subject</span></div>
+      <div class="drow"><span class="dterm">to receive rave reviews</span><span class="ddef">to get very positive comments from reviewers</span></div>
+      <div class="drow"><span class="dterm">far-fetched</span><span class="ddef">difficult to believe; not very realistic</span></div>
+      <div class="drow"><span class="dterm">well worth reading</span><span class="ddef">definitely good enough to spend time reading</span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Hide words — recall them from the definitions</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Hide definitions — test yourself</button>
+
+    <div class="subt"><b>2.2 · Matching.</b> Recall the phrase from its definition:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. an exciting story that holds your attention → a <span class="gap" data-a="gripping plot"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. a surprising, unexpected change in the events → a <span class="gap" data-a="plot twist"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. a book so exciting you can't put it down → a <span class="gap" data-a="page-turner"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. hard to believe, not realistic → <span class="gap" data-a="far-fetched"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to get very positive comments from reviewers → to receive <span class="gap" data-a="rave reviews"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">6. an ending that leaves you wanting more → a <span class="gap" data-a="cliffhanger"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Check</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Gap-fill in context.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. The thriller has such a <span class="gap" data-a="gripping plot"><input></span> that I finished it in one night.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. Critics loved it: the novel <span class="gap" data-a="received rave reviews"><input></span> when it came out.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. Her debut is a real <span class="gap" data-a="page-turner"><input></span> — I simply couldn't put it down.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. The plot felt <span class="gap" data-a="far-fetched"><input></span> and rather hard to believe.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Check</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Make it your own.</b> Use 4 phrases to talk about a book or film that gripped you. Build full sentences — these B2 phrases are exactly what earns the K3 mark in the essay and speaking.</div>
+    <div class="tnote"><b>Answers 2.2:</b> gripping plot · plot twist · page-turner · far-fetched · rave reviews · cliffhanger. <b>2.3:</b> gripping plot · received rave reviews · page-turner · far-fetched. Stress: evaluative vocabulary (thought-provoking, well worth reading, far-fetched) is a direct resource for the essay and the spoken monologue.</div>
+  </div>
+
+  <!-- 3 Reading -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Reading · FIPI (tasks 12–18, MC)</h2><span class="tm">25 min</span></div>
+    <p>🔎 <b>Real EGE text.</b> Read and answer questions 12–18 (choose 1–4).</p>
+    <div class="read"><p>Why you need to pick up a book again. According to Pew Research Center findings from 2018, 24 percent of the population had not read a book in the past year. And for those that do read, the American Times Use Survey – conducted by the Bureau of Labor Statistics – found that Americans over the age of 15 spend only about sixteen minutes a day reading for personal development. However, one silver lining of the pandemic may be that we are reading more. In fact, in the past year, 35 percent of the population have been reading more than they had in previous years. You may say, books are not the only sources of written text or, more broadly, information in our lives. We tend to spend two hours and twenty four minutes per day on social media. Interestingly, reading versus using social media have very different outcomes when it comes to our mental health. While many believe their mood will improve after checking their social media, many report that it actually worsens following a social media scroll. Yet, when people engage in reading – whether it is for self-help or for fun – reading has been shown to reduce stress. In fact, just six minutes of reading a day can reduce stress levels. Here are just a few ways that reading can benefit you. Reading is a form of mindfulness. Because we are often multitasking (which puts a heavy cognitive load on our brains), we often experience greater brain fog, difficulty concentrating, and irritability. When you settle down into a book, you are brought into the here and now, where you can focus presently on the story. The key is to stick with it. Especially if you are not used to reading, it can feel really uncomfortable to lean in. However, tell yourself that you are going to read at least ten pages to start. Chances are, you will want to keep going by the time you hit page 10. Reading can improve your emotional intelligence. Citing Christensen’s article from CNN Health, she includes a quote from Keith Oatley, a cognitive psychology professor emeritus at the University of Toronto, and an award-winning novelist. He stated, “Those who read fiction may understand people better than others. A work of fiction is a piece of consciousness that can pass from one mind to another, and that reader can make it their own.” Thus, when we take the time to really listen to another perspective, we can build our empathy in a profound way. In fact, fiction may be even more potent at some point, as it really goes into deep character development, and we gain a better understanding of the “why” behind a character’s motives. Reading has all kinds of cognitive benefits. Not only has reading been shown to improve sleep, but readers are also shown to have improved concentration and demonstrate greater memory retention. So, if you have been feeling cloudy, reading may be the perfect thing to sharpen your ability to recall. Even better is if you take a highlighter or pen to the lines that stand out to you. Write in the margins and include follow-up questions for yourself to build off of the text. Add your ideas that arise when you are reading. This will help you deepen your critical thinking skills. And one of the best parts about reading a good book? You can always pass it along to someone who will enjoy it next. Surprise them with a package in the mail or drop it off on their doorstep. I frequently do this on my social media account, where I offer to ship the books I have read to my community. I find that people love it! This is a great way to ensure that your books are bringing joy to others, rather than just gathering dust.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="2">
+        <div class="stmt">12. Which fact about reading habits is FALSE, according to Paragraph 1?</div>
+        <div class="mc">
+          <button data-k="1">1) In 2018 almost a quarter of the US population did not read books.</button>
+          <button data-k="2">2) Adults in the US read half an hour a day for personal development.</button>
+          <button data-k="3">3) Teenagers and adults spend less than 20 minutes reading for development.</button>
+          <button data-k="4">4) During the previous year, more than a third of the citizens read more than before.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">13. Unlike using social media, reading …</div>
+        <div class="mc">
+          <button data-k="1">1) brings satisfaction.</button>
+          <button data-k="2">2) educates the mind.</button>
+          <button data-k="3">3) decreases stress levels.</button>
+          <button data-k="4">4) reduces concentration.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">14. To benefit from reading, it is necessary to …</div>
+        <div class="mc">
+          <button data-k="1">1) concentrate on it for some time.</button>
+          <button data-k="2">2) find a comfortable place.</button>
+          <button data-k="3">3) increase the page count every day.</button>
+          <button data-k="4">4) choose an interesting story.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">15. <i>Potent</i> in Paragraph 6 (fiction may be even more potent at some point) most probably means …</div>
+        <div class="mc">
+          <button data-k="1">1) powerful.</button>
+          <button data-k="2">2) suitable.</button>
+          <button data-k="3">3) relevant.</button>
+          <button data-k="4">4) interesting.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">16. Which advantage of reading is NOT mentioned in the text?</div>
+        <div class="mc">
+          <button data-k="1">1) Understanding others.</button>
+          <button data-k="2">2) Developing the brain.</button>
+          <button data-k="3">3) Switching from reality.</button>
+          <button data-k="4">4) Enriching your vocabulary.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">17. <i>This</i> in Paragraph 8 (This will help you deepen your critical thinking skills…) refers to …</div>
+        <div class="mc">
+          <button data-k="1">1) developing memory while reading.</button>
+          <button data-k="2">2) actively working with the text.</button>
+          <button data-k="3">3) using margins for doodling.</button>
+          <button data-k="4">4) reading to find necessary information.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">18. The author wants to convince the reader that …</div>
+        <div class="mc">
+          <button data-k="1">1) books have a greater impact than social networks.</button>
+          <button data-k="2">2) reading is necessary for intellectual development.</button>
+          <button data-k="3">3) reading is beneficial for personality and community.</button>
+          <button data-k="4">4) one should share their books after reading them.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Check</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Exam strategy.</b> In MC the answer is ALWAYS supported by the text — look for a paraphrase, not a word-for-word match (distractors often reuse words from the text but twist the meaning). Pay special attention to NOT/FALSE questions: look for the option that is not in the text or contradicts it.</div>
+    <div class="tnote"><b>Real FIPI text</b> ("Why you need to pick up a book again" — the benefits of reading; a perfect fit for the topic "Books &amp; films" and echoes the 2.1 vocabulary: silver lining, work of fiction, character development, gathering dust). <b>Answers:</b> 12→2 · 13→3 · 14→1 · 15→1 · 16→4 · 17→2 · 18→3. Discuss: 12 and 16 are FALSE/NOT questions (look for what is not in the text: "half an hour" vs "sixteen minutes"; vocabulary is not mentioned); 15 is vocabulary-in-context (potent = powerful).</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Listening · FIPI (tasks 3–9, interview)</h2><span class="tm">15 min</span></div>
+    <p>🎧 <b>Real EGE task.</b> Listen to the interview with a young writer <b>twice</b> (you get time to read the questions); choose 1, 2 or 3.</p>
+    <audio controls preload="none" src="https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/9ED00DA6348C96BD4AA3F76D1314A32D/img1_1562919195.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="3">
+        <div class="stmt">3. Which of the following is NOT true about Alice’s novel <i>Stars</i>?</div>
+        <div class="mc">
+          <button data-k="1">1) It’s her debut book.</button>
+          <button data-k="2">2) It’s quite popular with readers.</button>
+          <button data-k="3">3) It’s published all over the world.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">4. What do we learn about Alice at the beginning of the interview?</div>
+        <div class="mc">
+          <button data-k="1">1) She won numerous prizes for her writing.</button>
+          <button data-k="2">2) She became famous when still at college.</button>
+          <button data-k="3">3) Writing is not her only occupation.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">5. What’s the name of the main character of the novel <i>Stars</i>?</div>
+        <div class="mc">
+          <button data-k="1">1) Jessica.</button>
+          <button data-k="2">2) Liam.</button>
+          <button data-k="3">3) Arthur.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">6. Alice’s novel starts with a …</div>
+        <div class="mc">
+          <button data-k="1">1) police investigation.</button>
+          <button data-k="2">2) marriage.</button>
+          <button data-k="3">3) catastrophe.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">7. What is unusual about the format of Alice’s novel?</div>
+        <div class="mc">
+          <button data-k="1">1) It’s narrated by the voice in the character’s head.</button>
+          <button data-k="2">2) It’s a number of e-mail messages.</button>
+          <button data-k="3">3) It’s an exchange of private letters.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">8. According to Alice, what was the biggest difficulty in writing her novel?</div>
+        <div class="mc">
+          <button data-k="1">1) Explaining to the reader every event.</button>
+          <button data-k="2">2) Leaving the reader enough indications on what’s happening.</button>
+          <button data-k="3">3) Keeping the novel not too long.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">9. When does Alice do most of her writing?</div>
+        <div class="mc">
+          <button data-k="1">1) At working hours.</button>
+          <button data-k="2">2) Returning home from work.</button>
+          <button data-k="3">3) At the weekends.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Check</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Strategy.</b> Use the time for reading the questions IN FULL — underline the keywords. Listen twice: first for the gist and order, second to confirm. The correct answer PARAPHRASES the recording; the distractor often repeats words verbatim but twists the meaning.</div>
+    <div class="tnote"><b>Real FIPI audio</b> — an interview with writer Alice Black about her debut novel <i>Stars</i> (a best-seller; the format is an exchange of e-mails). <b>Answers:</b> 3→3 · 4→3 · 5→1 · 6→3 · 7→2 · 8→2 · 9→3. Task 3 is a NOT question (the novel has not yet been published all over the world). Discuss how each answer is confirmed by the recording. <b>Listening is a MUST in the trainer (homework).</b></div>
+  </div>
+
+  <!-- 5 Speaking -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · Express &amp; argue</h2><span class="tm">12 min</span></div>
+    <p>Speak for 2 minutes: <b>"Are books always better than their film adaptations?"</b> Use at least 5 phrases from section 2 and give arguments for both sides before your own conclusion.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Start 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 require the "both sides → opinion" structure, linkers (admittedly, nevertheless, on balance) and exactly the evaluative vocabulary (gripping plot, do justice to, thought-provoking, far-fetched). This is direct preparation for the essay (Lesson 2) and the speaking part (Lesson 3).</div>
+  </div>
+
+  <!-- 6 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Homework</h2><span class="tm">3 min</span></div>
+    <ul>
+      <li>📱 <b>S&amp;S EGE trainer</b> — topic "Books &amp; films": "Vocabulary" (B2) + "Reading" (MC) + <b>"Listening"</b> (compulsory).</li>
+    </ul>
+    <div class="tnote"><b>How to set homework (teacher):</b> S&amp;S EGE trainer → teacher panel → <b>"Homework builder"</b> → pick the topic "Books &amp; films" → <b>"Task link"</b> for students (with AI marking) <b>or</b> "Print worksheet" with keys.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ЕГЭ Lab · Books &amp; films · Lesson 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 View: teacher':'🧑‍🎓 View: student';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Answer: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Show words':'🙈 Hide words — recall them from the definitions';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Show definitions':'🙈 Hide definitions — test yourself';
+  }
+  // MC (reading + listening)
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

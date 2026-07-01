@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ЕГЭ · Work &amp; professions · Lesson 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:160px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(190px,1fr) 1.4fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📘 Work &amp; professions · Lesson 1 · B2</span>
+  <button id="bRole" class="on">👩‍🏫 View: teacher</button>
+  <button class="print" onclick="window.print()">🖨 Print / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>EGE · English</b><br>Topic · <b>Work &amp; professions</b><br>Lesson 1 of 3 · level B2 · 90 min</div>
+  </div>
+  <h1><span class="sub">Lesson 1 — Input · B2</span>Choosing a career: the right path</h1>
+  <div class="aims"><b>Lesson outcome:</b> the student masters 15 idiomatic B2 phrases on the topic of "work and professions" and reads a real EGE multiple-choice text (tasks 12–18) using the "answer = paraphrase" strategy. <b>Through-line:</b> how to choose a profession deliberately — this runs through the lead-in, the text, the audio and the monologue. <b>Bridges:</b> the lead-in raises the theme of choice → the vocabulary gives the language to talk about it → the text "How to choose the right career" shows the strategy of choosing → an audio interview with an actor about his career → the monologue pulls it all together into argumentation. <b>Homework:</b> "Vocabulary" and "Reading" in the EGE trainer for this topic.</div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Discussion</h2><span class="tm">8 min</span></div>
+    <ul>
+      <li>Some people say you should <i>follow in your parents' footsteps</i> and join the family business. Do you agree?</li>
+      <li>What matters more when you <i>choose a career</i> — a high salary or job satisfaction?</li>
+      <li>Is it better to <i>set your heart on</i> one profession early, or to keep your options open?</li>
+    </ul>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 the aim of the lead-in is not just to get students talking but to elicit argumentation (because / on the one hand…). Note on the board the phrases about choosing a profession that come up — you’ll return to them in task 2. This launches the through-line of the lesson, "how to choose a profession".</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Vocabulary · B2</h2><span class="tm">27 min</span></div>
+    <div class="subt"><b>2.1 · Study the phrases with their definitions.</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Choosing a profession &amp; ambitions</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to follow in someone's footsteps</span><span class="ddef">to do the same job as someone else before you</span></div>
+      <div class="drow"><span class="dterm">to have a calling for</span><span class="ddef">to feel very strongly that a job is right for you</span></div>
+      <div class="drow"><span class="dterm">to weigh up the pros and cons</span><span class="ddef">to think about the good and bad sides of something</span></div>
+      <div class="drow"><span class="dterm">to set one's heart on</span><span class="ddef">to strongly want and decide to achieve something</span></div>
+      <div class="drow"><span class="dterm">a stepping stone</span><span class="ddef">a small step that helps you reach a bigger goal</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Skills &amp; the job market</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to gain hands-on experience</span><span class="ddef">to get practical knowledge by doing something yourself</span></div>
+      <div class="drow"><span class="dterm">to climb the career ladder</span><span class="ddef">to move up to higher positions at work</span></div>
+      <div class="drow"><span class="dterm">to land a job</span><span class="ddef">to get a job, especially after trying hard</span></div>
+      <div class="drow"><span class="dterm">a competitive salary</span><span class="ddef">a salary that is equal to or better than other jobs</span></div>
+      <div class="drow"><span class="dterm">to work one's way up</span><span class="ddef">to start at a low position and get promoted over time</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Work-life balance &amp; qualities</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to strike a balance</span><span class="ddef">to manage time or effort between different parts of life</span></div>
+      <div class="drow"><span class="dterm">to burn out</span><span class="ddef">to become very tired or stressed from too much work</span></div>
+      <div class="drow"><span class="dterm">to meet a deadline</span><span class="ddef">to finish a task or project by the required time</span></div>
+      <div class="drow"><span class="dterm">to be a team player</span><span class="ddef">to work well with other people in a group</span></div>
+      <div class="drow"><span class="dterm">to be passionate about</span><span class="ddef">to have a very strong interest or love for something</span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Hide words — recall them from the definitions</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Hide definitions — test yourself</button>
+
+    <div class="subt"><b>2.2 · Matching.</b> Recall the phrase from its definition:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to think about good and bad sides → to <span class="gap" data-a="weigh up the pros and cons"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. to get a job after trying hard → to <span class="gap" data-a="land a job"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. to move up to higher positions at work → to <span class="gap" data-a="climb the career ladder"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to become exhausted from too much work → to <span class="gap" data-a="burn out"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to feel strongly that a job is right for you → to have a <span class="gap" data-a="calling for"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">6. a small step towards a bigger goal → a <span class="gap" data-a="stepping stone"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Check</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Gap-fill in context.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. An unpaid internship can be a useful <span class="gap" data-a="stepping stone"><input></span> to a permanent job.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. She decided to <span class="gap" data-a="follow in her mother's footsteps"><input></span> and become a doctor.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. Volunteering allows young people to <span class="gap" data-a="gain hands-on experience"><input></span> quickly.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. It's hard to <span class="gap" data-a="strike a balance"><input></span> between studying and a part-time job.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Check</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Make it your own.</b> Use 4 phrases to describe your future profession: who you want to become, why (calling? footsteps?), what it takes (experience? skills?). Build full sentences — these B2 idioms are exactly what earns the K3 mark in the essay and speaking.</div>
+    <div class="tnote"><b>Answers 2.2:</b> weigh up the pros and cons · land a job · climb the career ladder · burn out · calling for · stepping stone. <b>2.3:</b> stepping stone · follow in her mother's footsteps · gain hands-on experience · strike a balance. Stress: at the EGE these idioms earn the K3 mark (language) in the essay and the speaking parts. All 15 phrases are recycled in Lesson 2 (Quiz-Quiz-Trade) and Lesson 3 (Write-Pair-Share).</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Reading · FIPI (tasks 12–18, MC)</h2><span class="tm">25 min</span></div>
+    <p>🔎 <b>Real EGE text.</b> Read and answer questions 12–18 (choose 1–4).</p>
+    <div class="read"><p>How to choose the right career. The old saying ‘find a job you love and never work a day in your life’ puts a great deal of pressure on people who are trying to choose the right career. Can you really find one that is so enjoyable it won’t even feel like work? Well, that might be a bit of an exaggeration. No matter how much effort you put into picking an occupation, there are days when it will feel like work. However, there will be others when you will think, ‘I would do this even if I weren’t getting paid.’ The trick is to choose a career that has many more great days than ones that aren’t so great.</p><p>With thousands of occupations to pick from, to increase the odds of career satisfaction, find one that is a good fit for your interests, aptitudes, work-related values, and personality type. It is also essential that you enjoy the majority of the job’s duties, the earnings are acceptable, and the job outlook (that is the potential future of the profession) is good. Here’s how to go about making a good match.</p><p>Your first order of business is to learn as much as possible about yourself. If you think you know all there is to know, the results of a self-assessment will be eye-opening. A career development professional, for example, a career counselor or career development facilitator, can help you with this step, but don’t be discouraged if you can’t afford to hire one. Many public libraries offer free career planning services. If your local library doesn’t, the librarian can recommend local agencies that offer career counseling. Instead of meeting with a counselor, there are also free or low-cost career assessments available online. If you attended college, consider contacting that institution’s career services office. As an alumnus, you may be able to access them. In addition, academic programs that train career counselors often have students work with clients at little-to-no cost to gain experience.</p><p>The results from your self-assessment will include a list of occupations that are a good fit for you based on all the factors it examined, but the quest to find the right career doesn’t end here. While some of the occupations may be nearly perfect for you, others may be all wrong. Even though they are a good match for your personality type, interests, values, and aptitude, they may be unsuitable in other ways. For example, the job duties may not appeal to you, the outlook may be poor, or the required education or training could be more than you are willing to complete.</p><p>Make an informed decision by exploring each of the careers on your list. Read descriptions of the occupations and ignore your prejudices. Unless you have personal experience or have done prior research, there’s still a lot to learn before you can decide whether a career would be right for you. After finding out what it would be like to work in an occupation, see what the educational requirements are. If they don’t match your educational goals, cross them off your list. If you’ve always dreamed of going to college, don’t pick an occupation for which you only need a high school diploma. Finally, you will do yourself a disservice if you don’t consider the job outlook. Investing time in training for a career only to find out there are limited opportunities will waste your time, effort, and money.</p><p>After narrowing down your list to just a few careers, it is time to dig a little deeper. Continue your research by conducting informational interviews with people who work in the occupations you are seriously considering. Getting their perspectives can help you make a more informed decision and study for the career that is ideal for you.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="2">
+        <div class="stmt">12. In the author’s opinion, an ideal occupation is the one that …</div>
+        <div class="mc">
+          <button data-k="1">1) makes you enjoy every moment of your working life.</button>
+          <button data-k="2">2) brings you satisfaction most of the time.</button>
+          <button data-k="3">3) does not require you to work hard.</button>
+          <button data-k="4">4) provides you with a big monetary reward.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">13. Which aspect of a satisfactory occupation is NOT mentioned in Paragraph 2?</div>
+        <div class="mc">
+          <button data-k="1">1) It suits your individuality.</button>
+          <button data-k="2">2) The pay is adequate.</button>
+          <button data-k="3">3) What you do is easy.</button>
+          <button data-k="4">4) Job prospects are bright.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">14. “One” in Paragraph 3 (“if you can’t afford to hire one”) most probably refers to …</div>
+        <div class="mc">
+          <button data-k="1">1) a business counselor.</button>
+          <button data-k="2">2) a career advisor.</button>
+          <button data-k="3">3) a tutor.</button>
+          <button data-k="4">4) a librarian.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">15. “Alumnus” in Paragraph 3 (“As an alumnus, you may be able to access them”) most probably means …</div>
+        <div class="mc">
+          <button data-k="1">1) a job applicant.</button>
+          <button data-k="2">2) a library user.</button>
+          <button data-k="3">3) a member of society.</button>
+          <button data-k="4">4) a college graduate.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">16. According to the text, to choose a career it is necessary to …</div>
+        <div class="mc">
+          <button data-k="1">1) ignore all the advice you get.</button>
+          <button data-k="2">2) take into account your parents’ advice.</button>
+          <button data-k="3">3) try working in different places.</button>
+          <button data-k="4">4) study all the relevant information.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">17. Which statement about the choice of occupation is FALSE, according to the text?</div>
+        <div class="mc">
+          <button data-k="1">1) It is necessary to choose university according to job requirements.</button>
+          <button data-k="2">2) You may need to talk to professionals to understand what their job is like.</button>
+          <button data-k="3">3) You should assess the occupations on your list against important criteria.</button>
+          <button data-k="4">4) You can use internet services to understand what you are inclined to.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">18. The purpose of this text is to …</div>
+        <div class="mc">
+          <button data-k="1">1) persuade.</button>
+          <button data-k="2">2) criticise.</button>
+          <button data-k="3">3) advise.</button>
+          <button data-k="4">4) entertain.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Check</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Exam strategy.</b> In MC the answer is ALWAYS supported by the text — look for a paraphrase, not a word-for-word match (distractors often reuse words from the text but twist the meaning). First locate the paragraph by a keyword from the question, then check the options. Solve "NOT / FALSE" questions by elimination.</div>
+    <div class="tnote"><b>Real FIPI text</b> "How to choose the right career" — directly on the lesson topic. <b>Answers:</b> 12→2 · 13→3 · 14→2 · 15→4 · 16→4 · 17→1 · 18→3. Discuss WHERE each answer is confirmed: 12 — "many more great days than… not so great"; 13 — ease is NOT mentioned (a trap); 14 — "one" = career counselor; 15 — alumnus = a college graduate; 17 — the text says to check the profession against your education goals, not the other way round.</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Listening · FIPI (tasks 3–9, interview)</h2><span class="tm">15 min</span></div>
+    <p>🎧 <b>Real EGE task.</b> Listen to the interview with the actor <b>twice</b> (you get 50 sec to read the questions); choose 1, 2 or 3.</p>
+    <audio controls preload="none" src="https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/907AD75AB4C7A63544D0DC2566FADD14/img2_1562940794.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="2">
+        <div class="stmt">3. What do we learn about Paul at the beginning of the interview?</div>
+        <div class="mc">
+          <button data-k="1">1) He has worked as a fashion model.</button>
+          <button data-k="2">2) He’s planning to finish his acting career.</button>
+          <button data-k="3">3) He’s getting too old to perform.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">4. Which of the following is NOT Paul’s achievement?</div>
+        <div class="mc">
+          <button data-k="1">1) Academy Award.</button>
+          <button data-k="2">2) Two Oscars.</button>
+          <button data-k="3">3) World’s best actor.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">5. What does Paul say about the beginning of his acting career?</div>
+        <div class="mc">
+          <button data-k="1">1) It had many ups and downs.</button>
+          <button data-k="2">2) He was out of work for a year.</button>
+          <button data-k="3">3) He can’t remember any failures.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">6. How does Paul feel about Paris?</div>
+        <div class="mc">
+          <button data-k="1">1) He has mixed feelings about it.</button>
+          <button data-k="2">2) He hates visiting it as a tourist.</button>
+          <button data-k="3">3) He compares it to London unfavourably.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">7. What does Paul say is the best way for him to relax?</div>
+        <div class="mc">
+          <button data-k="1">1) To avoid all the noise.</button>
+          <button data-k="2">2) To go to the mountains.</button>
+          <button data-k="3">3) To stay in a cabin up the hills.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">8. Which of the following is TRUE about Paul’s school friends?</div>
+        <div class="mc">
+          <button data-k="1">1) All of them live in London.</button>
+          <button data-k="2">2) They used to be scandalous fans.</button>
+          <button data-k="3">3) They play football professionally.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">9. Who is Brando for Paul?</div>
+        <div class="mc">
+          <button data-k="1">1) A role model.</button>
+          <button data-k="2">2) An old friend.</button>
+          <button data-k="3">3) A person to admire.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Check</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Strategy.</b> Use the full 50 seconds — underline the keywords. Listen twice: first for the gist and order, second to confirm. The correct answer PARAPHRASES the recording; the distractor often repeats words verbatim but twists the meaning.</div>
+    <div class="tnote"><b>Real FIPI audio</b> — an interview with the actor Paul Lewis about his career (tasks 3–9; the closest match on the "profession/career" theme, as the bank has no separate interview specifically about "choosing a profession"). <b>Answers:</b> 3→2 · 4→3 · 5→1 · 6→1 · 7→1 · 8→2 · 9→3. Link it to the topic: his "career", "achievements", "ups and downs" are the language of a professional journey. <b>Listening is a MUST in the trainer (homework).</b></div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · Express &amp; argue</h2><span class="tm">10 min</span></div>
+    <p>Speak for 2 minutes: <b>"Is it better to choose a well-paid job or a job you are passionate about?"</b> Use at least 5 phrases from section 2 and give arguments for both sides before your own conclusion.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Start 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 require the "both sides → opinion" structure, linkers (admittedly, nevertheless, on balance) and the career idioms in particular (calling, stepping stone, work one's way up). This is direct preparation for the essay (Lesson 2) and the speaking parts (Lesson 3).</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Homework</h2><span class="tm">5 min</span></div>
+    <ul>
+      <li>📱 <b>S&amp;S EGE trainer</b> — topic "Work &amp; professions": "Vocabulary" (B2) + "Reading" (MC) + <b>"Listening"</b> (compulsory).</li>
+    </ul>
+    <div class="tnote"><b>How to set homework (teacher):</b> S&amp;S EGE trainer → teacher panel → <b>"Homework builder"</b> → pick the topic "Work &amp; professions" → <b>"Task link"</b> for students (with AI marking) <b>or</b> "Print worksheet" with keys.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ЕГЭ Lab · Work &amp; professions · Lesson 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 View: teacher':'🧑‍🎓 View: student';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Answer: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Show words':'🙈 Hide words — recall them from the definitions';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Show definitions':'🙈 Hide definitions — test yourself';
+  }
+  // MC (reading + listening)
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

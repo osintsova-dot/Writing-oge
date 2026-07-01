@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Цены · Speak &amp; Smile</title>
+<meta name="theme-color" content="#6C3FC5">
+<link rel="icon" type="image/png" href="./assets/ss-favicon.png">
+<link rel="stylesheet" href="./css/promo.css">
+<style>
+.ex-opt{border:0;background:transparent;font:inherit;font-weight:800;padding:8px 20px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.ex-opt.on{background:var(--grad);color:#fff}
+.buy-btn{cursor:pointer}
+.buy-btn:disabled{opacity:.6;cursor:default}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<meta name="description" content="Цены Speak & Smile: подписка на тренажёр ОГЭ/ЕГЭ — 490 ₽/мес или 4900 ₽/год (год = 10 месяцев, 2 в подарок). Учителю — 4900 ₽/год и весь пак уроков. Демо 48 часов бесплатно.">
+</head>
+<body>
+
+<nav class="topnav"><div class="wrap nav-in">
+  <a class="brand" href="./index.html"><img src="./assets/ss-mark.png" alt="Speak &amp; Smile"><span>Speak &amp; Smile</span></a>
+  <button class="nav-toggle" aria-label="Меню">☰</button>
+  <div class="nav-links">
+    <a href="./index.html">Главная</a>
+    <a href="./students.html">Ученикам</a>
+    <a href="./teachers.html">Учителям</a>
+    <a href="./how.html">Как работает</a>
+    <a href="./pricing.html" class="on">Цены</a>
+    <a class="btn btn-p btn-sm nav-cta openapp" href="./oge.html?key=DEMO">Открыть приложение</a>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<header class="hero sub-hero">
+  <div class="wrap"><div class="hero-in">
+    <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#fff">Цены</span>
+    <h1>Честно и просто: <span class="mark">сначала попробуй</span>, потом решай</h1>
+    <p class="sub" style="max-width:600px">Демо — 48 часов полного доступа бесплатно, без карты. Понравится — оформишь подписку. Год выгоднее: платишь за 10 месяцев, 2 — в подарок.</p>
+    <div class="btns"><a class="btn btn-h openapp" href="./oge.html?key=DEMO">Попробовать бесплатно →</a></div>
+  </div></div>
+</header>
+
+<!-- ТАРИФЫ УЧЕНИКУ -->
+<section class="center">
+  <div class="wrap">
+    <span class="eyebrow reveal">Ученику</span>
+    <h2 class="reveal">Подписка на тренажёр</h2>
+    <p class="lead reveal">Полный доступ ко всем разделам, проверке письма и речи ИИ, пробникам и геймификации — для ОГЭ или ЕГЭ.</p>
+    <div class="buy-box reveal" style="max-width:520px;margin:24px auto 6px">
+      <div class="exam-toggle" style="display:inline-flex;gap:4px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px;margin-bottom:14px">
+        <button type="button" class="ex-opt on" data-exam="oge">ОГЭ</button>
+        <button type="button" class="ex-opt" data-exam="ege">ЕГЭ</button>
+      </div>
+      <input id="buyEmail" type="email" inputmode="email" placeholder="Почта для чека" autocomplete="email"
+        style="display:block;width:100%;max-width:340px;margin:0 auto;padding:13px 16px;border:1.5px solid var(--line);border-radius:14px;font:inherit;background:#fff">
+      <div id="buyMsg" class="mini" style="color:#d05a5a;min-height:18px;margin-top:8px"></div>
+    </div>
+    <div class="price-cards">
+      <div class="price-card reveal d1">
+        <h3>Месяц</h3>
+        <div class="pr">490 ₽<span>/мес</span></div>
+        <p>Полный доступ к тренажёру. Можно отменить в любой момент.</p>
+        <div class="btns" style="justify-content:center;margin-top:18px;flex-direction:column;align-items:center">
+          <button class="btn btn-ghost buy-btn" data-plan="month">Купить · 490 ₽/мес</button>
+          <a class="mini openapp" href="./oge.html?key=DEMO" style="margin-top:6px">или попробовать демо</a>
+        </div>
+      </div>
+      <div class="price-card best reveal d2">
+        <span class="eyebrow best-tag">Выгоднее</span>
+        <h3>Год</h3>
+        <div class="pr">4900 ₽<span>/год</span></div>
+        <p>Платишь за 10 месяцев — <b>2 месяца в подарок</b>. Весь год подготовки по цене ~408 ₽/мес.</p>
+        <div class="btns" style="justify-content:center;margin-top:18px;flex-direction:column;align-items:center">
+          <button class="btn btn-p buy-btn" data-plan="year">Купить · 4900 ₽/год</button>
+          <a class="mini openapp" href="./oge.html?key=DEMO" style="margin-top:6px">или попробовать демо</a>
+        </div>
+      </div>
+    </div>
+    <p class="mini reveal" style="margin-top:20px">Что входит: словарь с интервальным повторением · грамматика и словообразование · чтение и аудирование ФИПИ · письмо и говорение с проверкой ИИ · пробники с прогнозом · проверка по фото · геймификация · офлайн.</p>
+  </div>
+</section>
+
+<!-- ТАРИФ УЧИТЕЛЮ -->
+<section class="alt center">
+  <div class="wrap">
+    <span class="eyebrow reveal">Учителю</span>
+    <h2 class="reveal">Кабинет и весь пак уроков</h2>
+    <p class="lead reveal">Готовые уроки, конструктор ДЗ с ИИ-проверкой, журнал класса и проверка бланков по фото.</p>
+    <div class="price-cards">
+      <div class="price-card best reveal d1" style="max-width:420px">
+        <span class="eyebrow best-tag">Для учителя</span>
+        <h3>Учитель · год</h3>
+        <div class="pr">4900 ₽<span>/год</span></div>
+        <p><b>Весь пак уроков</b> ОГЭ и ЕГЭ (72 урока по 90 мин) + конструктор ДЗ + журнал класса + проверка по фото.</p>
+        <div class="btns" style="justify-content:center;margin-top:18px"><a class="btn btn-p openapp" data-role="teacher" href="./oge.html?key=DEMO#/teacher">Открыть кабинет (демо)</a></div>
+      </div>
+      <div class="price-card reveal d2" style="max-width:420px">
+        <h3>🎁 Класс — бесплатно</h3>
+        <div class="pr" style="font-size:30px">+1 учитель</div>
+        <p>Реферальная лестница: <b>каждые 5 учеников с подпиской</b> — ещё один учитель получает кабинет бесплатно. Учите классом — экономите вместе.</p>
+        <div class="btns" style="justify-content:center;margin-top:18px"><a class="btn btn-ghost" href="mailto:speaksmile2013@gmail.com">Написать нам</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОПЛАТА -->
+<section class="center">
+  <div class="wrap">
+    <span class="eyebrow reveal">Оплата</span>
+    <h2 class="reveal">Просто и по-российски</h2>
+    <div class="grid g3" style="margin-top:42px;text-align:left">
+      <div class="card reveal d1"><span class="ic">📲</span><h3>СБП и карта</h3><p>Оплата по СБП или картой (Т-Банк). Чек от ИП — всё официально.</p></div>
+      <div class="card reveal d1"><span class="ic">🆓</span><h3>Демо 48 часов</h3><p>Полный доступ бесплатно, без карты и регистрации. Решаешь после, а не до.</p></div>
+      <div class="card reveal d2"><span class="ic">💬</span><h3>Вопросы по оплате</h3><p>Напишите — поможем оформить подписку и выставить счёт для школы.</p></div>
+    </div>
+    <div class="btns" style="justify-content:center;margin-top:34px">
+      <a class="btn btn-h openapp" href="./oge.html?key=DEMO">Открыть приложение →</a>
+      <a class="btn btn-ghost" href="mailto:speaksmile2013@gmail.com">Связаться</a>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="final reveal">
+      <img class="final-spiky" src="./assets/spiky-gift.png" alt="Спики">
+      <span class="eyebrow" style="background:rgba(255,255,255,.18);color:#fff">Демо — 48 часов бесплатно</span>
+      <h2>Сначала попробуй — это бесплатно</h2>
+      <p class="trial-note" style="max-width:560px;margin:0 auto">Полный доступ на 48 часов. Без карты. Понравится — оформишь подписку прямо в приложении.</p>
+      <div class="btns"><a class="btn btn-h openapp" href="./oge.html?key=DEMO">Открыть приложение →</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="./assets/ss-logo.png" alt="Speak &amp; Smile" style="height:120px;width:auto;margin:0 auto 12px">
+    <p class="mini">Тренажёр ОГЭ и ЕГЭ по английскому · <span id="yr"></span></p>
+    <div class="foot-links">
+      <a href="./index.html">Главная</a><a href="./students.html">Ученикам</a><a href="./teachers.html">Учителям</a><a href="./how.html">Как работает</a><a href="./pricing.html">Цены</a><a href="./oferta.html">Оферта</a><a href="./privacy.html">Конфиденциальность</a>
+    </div>
+    <p class="mini" style="opacity:.8;margin-top:10px">ИП Синцова Оксана Владимировна · ОГРНИП 312245734100051 · ИНН 245718463277<br>speaksmile2013@gmail.com · +7 913 530-93-27</p>
+  </div>
+</footer>
+<script>
+// Оплата прямо со страницы цен (Т-Касса). Заказ кладём в localStorage <exam>_order;
+// Т-Банк вернёт на <exam>.html?order=… → приложение активирует ключ.
+(function () {
+  var PAY = 'https://ss-pay.o-sintsova.workers.dev';
+  var RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  var box = document.querySelector('.buy-box');
+  if (!box) return;
+  var exam = 'oge';
+  box.querySelectorAll('.ex-opt').forEach(function (b) {
+    b.addEventListener('click', function () {
+      exam = b.getAttribute('data-exam');
+      box.querySelectorAll('.ex-opt').forEach(function (x) { x.classList.toggle('on', x === b); });
+    });
+  });
+  var email = document.getElementById('buyEmail'), msg = document.getElementById('buyMsg');
+  var btns = document.querySelectorAll('.buy-btn');
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', async function () {
+      var mail = (email.value || '').trim();
+      if (!RE.test(mail)) { msg.textContent = 'Проверь почту — на неё придёт чек.'; email.focus(); return; }
+      msg.textContent = ''; var plan = btn.getAttribute('data-plan'); var old = btn.textContent;
+      btns.forEach(function (b) { b.disabled = true; }); btn.textContent = 'Открываю оплату…';
+      try {
+        var r = await fetch(PAY + '/pay/create', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ plan: plan, exam: exam, email: mail }),
+        });
+        var d = await r.json();
+        if (!d.payment_url) { msg.textContent = 'Не удалось открыть оплату. Попробуй ещё раз.'; throw 0; }
+        try { localStorage.setItem(exam + '_order', JSON.stringify({ order_id: d.order_id, claim: d.claim })); } catch (e) {}
+        window.location.href = d.payment_url; return;
+      } catch (e) {
+        if (!msg.textContent) msg.textContent = 'Нет связи с сервером. Попробуй ещё раз.';
+      }
+      btns.forEach(function (b) { b.disabled = false; }); btn.textContent = old;
+    });
+  });
+})();
+</script>
+<script src="./js/promo.js"></script>
+</body>
+</html>

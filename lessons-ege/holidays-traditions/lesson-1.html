@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ЕГЭ · Holidays &amp; traditions · Lesson 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:160px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(190px,1fr) 1.4fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  .match-list{background:var(--soft);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:12.5px}.match-list div{margin:3px 0}.match-list b{color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📘 Holidays &amp; traditions · Lesson 1 · B2</span>
+  <button id="bRole" class="on">👩‍🏫 View: teacher</button>
+  <button class="print" onclick="window.print()">🖨 Print / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>EGE · English</b><br>Topic · <b>Holidays &amp; traditions</b><br>Lesson 1 of 3 · level B2 · 90 min</div>
+  </div>
+  <h1><span class="sub">Lesson 1 — Input · B2</span>Holidays &amp; traditions: keeping culture alive</h1>
+  <div class="aims"><b>Aims:</b> master the topical B2 vocabulary of the topic (celebrating, customs, festive food, cultural identity, the modern debate); practise <b>EGE reading — multiple choice (tasks 12–18)</b> and the strategy for inference / attitude questions; gather language for the email and the speaking parts. <b>Homework:</b> "Vocabulary" and "Reading" in the EGE trainer for this topic.</div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Discussion</h2><span class="tm">10 min</span></div>
+    <ul>
+      <li>Which family holiday do you most look forward to every year, and why?</li>
+      <li>Some people say modern holidays have <i>become too commercialised</i>. Do you agree?</li>
+      <li>Why is it worth trying to <i>keep old traditions alive</i> in a fast-changing world?</li>
+    </ul>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 the lead-in should elicit not just talk but argumentation (because / on the one hand…). Note the topical phrases that come up (<i>commercialised, keep alive, tradition</i>) — you’ll reuse them in task 2 and in the reading about New Year.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Vocabulary · B2 topic phrases</h2><span class="tm">28 min</span></div>
+    <div class="subt"><b>2.1 · Study the phrases with their definitions.</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Celebrating &amp; customs</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to observe a tradition <span style="color:var(--muted);font-weight:400">— соблюдать традицию</span></span><span class="ddef">to do a special thing that people have done for many years</span></div>
+      <div class="drow"><span class="dterm">to celebrate an occasion <span style="color:var(--muted);font-weight:400">— отмечать событие</span></span><span class="ddef">to have fun because something important or happy has happened</span></div>
+      <div class="drow"><span class="dterm">a public holiday <span style="color:var(--muted);font-weight:400">— государственный праздник</span></span><span class="ddef">a day when most people do not go to work or school</span></div>
+      <div class="drow"><span class="dterm">a deep-rooted tradition <span style="color:var(--muted);font-weight:400">— глубоко укоренившаяся традиция</span></span><span class="ddef">a tradition that is very strong and important in a culture</span></div>
+      <div class="drow"><span class="dterm">to pass down through generations <span style="color:var(--muted);font-weight:400">— передавать из поколения в поколение</span></span><span class="ddef">to teach something from older to younger people over many years</span></div>
+      <div class="drow"><span class="dterm">to keep a tradition alive <span style="color:var(--muted);font-weight:400">— сохранять традицию</span></span><span class="ddef">to continue doing a tradition so it does not disappear</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Festive atmosphere &amp; food</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to get into the festive spirit <span style="color:var(--muted);font-weight:400">— проникнуться праздничным настроением</span></span><span class="ddef">to start feeling the happiness and excitement of a celebration</span></div>
+      <div class="drow"><span class="dterm">a festive atmosphere <span style="color:var(--muted);font-weight:400">— праздничная атмосфера</span></span><span class="ddef">a happy and exciting feeling during a celebration</span></div>
+      <div class="drow"><span class="dterm">a lavish feast <span style="color:var(--muted);font-weight:400">— роскошное застолье</span></span><span class="ddef">a very big and expensive special meal</span></div>
+      <div class="drow"><span class="dterm">to exchange gifts <span style="color:var(--muted);font-weight:400">— обмениваться подарками</span></span><span class="ddef">to give presents to each other</span></div>
+      <div class="drow"><span class="dterm">to gather around the table <span style="color:var(--muted);font-weight:400">— собираться за столом</span></span><span class="ddef">to come together and sit at the table</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Cultural identity &amp; the modern debate</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">cultural heritage <span style="color:var(--muted);font-weight:400">— культурное наследие</span></span><span class="ddef">traditions, art and history passed from older people</span></div>
+      <div class="drow"><span class="dterm">a sense of belonging <span style="color:var(--muted);font-weight:400">— чувство принадлежности</span></span><span class="ddef">a feeling of being part of a group</span></div>
+      <div class="drow"><span class="dterm">to become commercialised <span style="color:var(--muted);font-weight:400">— стать коммерциализированным</span></span><span class="ddef">to become focused on making money instead of tradition</span></div>
+      <div class="drow"><span class="dterm">to strike a balance <span style="color:var(--muted);font-weight:400">— найти баланс</span></span><span class="ddef">to find a middle point between two opposing things</span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Hide words — recall them from the definitions</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Hide definitions — test yourself</button>
+
+    <div class="subt"><b>2.2 · Matching.</b> Recall the phrase from its definition:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to do a special thing people have done for years → to <span class="gap" data-a="observe a tradition"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. to continue a tradition so it does not disappear → to <span class="gap" data-a="keep a tradition alive"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. a very big and expensive special meal → a <span class="gap" data-a="lavish feast"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. traditions, art and history passed from older people → <span class="gap" data-a="cultural heritage"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to become focused on making money instead of tradition → to <span class="gap" data-a="become commercialised"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">6. to find a middle point between two opposing things → to <span class="gap" data-a="strike a balance"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Check</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Gap-fill in context.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. Every December we decorate the tree and slowly <span class="gap" data-a="get into the festive spirit"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. On New Year's morning the whole family gathers to <span class="gap" data-a="exchange gifts"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. These recipes have been <span class="gap" data-a="passed down through generations"><input></span> of women in our family.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. New Year is <span class="gap" data-a="a public holiday"><input></span>, so most shops and offices stay closed.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Check</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Make it your own.</b> Use 4 phrases to describe a holiday your family celebrates — what you do, what you eat, why it matters. Build full sentences — these B2 phrases are exactly what scores in the email (K3) and the speaking parts.</div>
+    <div class="tnote"><b>Answers 2.2:</b> observe a tradition · keep a tradition alive · lavish feast · cultural heritage · become commercialised · strike a balance. <b>2.3:</b> get into the festive spirit · exchange gifts · passed down through generations · a public holiday. Stress: at the EGE these phrases earn the lexical mark (K3) in the email and speaking. The reading below ("New Year in Russia") recycles many of them.</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Reading · FIPI (tasks 12–18, MC)</h2><span class="tm">22 min</span></div>
+    <p>🔎 <b>Real EGE text.</b> Read it and answer questions 12–18 (choose 1–4).</p>
+    <div class="read"><p>New Year's time in Russia. To my mind, one of the best times to visit Russia is before New Year's Eve, as it is a big celebration in Russia. During Soviet times, New Year's Eve became a large celebration, complete with a big sit-down dinner. This tradition has continued today. Christmas is also now openly celebrated in Russia, but on a smaller scale. As New Year's Eve in Russia is more of a family holiday, you may not find the kind of rowdy parties that you see in other countries on New Year's Eve. If you're lucky enough to be invited to someone's home, be sure to bring thoughtful gifts and possibly your own slippers, although most families will have spares. Russian hospitality is quite fantastic if you have friends who will host you. And be prepared to answer a million questions about traditions in your home country! A common New Year's expression is "The way you spend New Year's Eve is the same way you'll spend the rest of the year." That's why it's so important for the last day of the year to be free from worries and arguments. You should forgive people, pay off your debts, and clean your home in order to start the new year happy and clean. A lot of Russians will also visit a Russian sauna or at least take a hot bath on the 31st of December to purify their bodies. You definitely should not sleep through the New Year, as it is considered a bad omen and will make the upcoming year sleepy and uneventful for you. Many people will also buy new clothes to wear on the New Year's Eve to celebrate a fresh start. If you're in Moscow, you can head to several look-out points in the city to watch the fireworks. My friend recommended heading to Moscow State University to have the best view over the city, and I don't regret it. Many tourists head towards the Kremlin for iconic beautiful views of the fireworks along the river, although you need to get there early and wait in the cold for hours to see the fireworks. The New Year is a big deal everywhere in Russia. The decorations are lavish, gorgeous, and so rich that at some places they seem over the top. Shops can be so cluttered and even a little kitschy, it makes you feel like a kid in a huge candy store – with gaudy, colourful packaging, and lots of foil and cellophane … everything is in colour and glistening. And still, all those heavy decorations somehow fit Russia. In territorial terms, Russia is the largest country in the world, and this affects everything in it. The buildings are enormous, as are the boulevards and the squares. And of course, they are all given a festive look before the New Year. The facades of the enormous apartment buildings are adorned with huge decorations that light up in the dark and remind you of Las Vegas. Christmas trees are everywhere – on every corner, in front of every shop, every square and so on. What's more, in order to make the atmosphere full of charm, gentle classical music pours through the spaces of malls, restaurants and all other public places. I am absolutely sure that when I was in Vienna, I rarely heard classical music as often as I did in Russia in the winter. And to finish with my advertisement, I should mention that Russians are people with a highly-developed culture, especially musically. I was amazed at their good taste for music. It is impressive how many concerts are performed in Moscow and St. Petersburg, the country's two major cities. At the end of the year, the number of these concerts increases and tickets for the Bolshoi Theatre are sold out months in advance. To sum up, if you want to see Russia all lit up and covered with winter beauty, dress warmly and embark on a trip in December. But don't plan too much for the last week, as it gets very crowded with people doing last-minute preparations.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="2">
+        <div class="stmt">12. How is New Year in Russia different from other places, according to the text?</div>
+        <div class="mc">
+          <button data-k="1">1) It is a bigger holiday than Christmas.</button>
+          <button data-k="2">2) It is celebrated with close relatives.</button>
+          <button data-k="3">3) New Year parties are usually noisier.</button>
+          <button data-k="4">4) People go to clubs and restaurants.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">13. What does the author NOT advise foreigners to do?</div>
+        <div class="mc">
+          <button data-k="1">1) Choose presents for hosts carefully.</button>
+          <button data-k="2">2) Take an extra pair of home shoes.</button>
+          <button data-k="3">3) Ask your hosts questions about traditions.</button>
+          <button data-k="4">4) Get ready to speak about your culture.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">14. What is the worst thing to do on New Year's eve?</div>
+        <div class="mc">
+          <button data-k="1">1) Go to bed early.</button>
+          <button data-k="2">2) Wear old clothes.</button>
+          <button data-k="3">3) Watch fireworks.</button>
+          <button data-k="4">4) Borrow money.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">15. The word "iconic" in Paragraph 4 ("for iconic beautiful views of the fireworks") is closest in meaning to …</div>
+        <div class="mc">
+          <button data-k="1">1) popular.</button>
+          <button data-k="2">2) memorable.</button>
+          <button data-k="3">3) marvellous.</button>
+          <button data-k="4">4) well-known.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">16. The author thinks that New Year decorations in Russia are …</div>
+        <div class="mc">
+          <button data-k="1">1) suitable.</button>
+          <button data-k="2">2) strange.</button>
+          <button data-k="3">3) stylish.</button>
+          <button data-k="4">4) cheap.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">17. What is implied by the author's comparison of Russia with Vienna?</div>
+        <div class="mc">
+          <button data-k="1">1) Vienna is better decorated than Russia.</button>
+          <button data-k="2">2) Russian people love classical music.</button>
+          <button data-k="3">3) The author prefers European countries.</button>
+          <button data-k="4">4) There are more Christmas trees in Russia.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">18. What is the author's overall impression of Russia on New Year's eve?</div>
+        <div class="mc">
+          <button data-k="1">1) It is very noisy.</button>
+          <button data-k="2">2) It is definitely worth visiting.</button>
+          <button data-k="3">3) It is too cold in wintertime.</button>
+          <button data-k="4">4) The major cities are nice.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Check</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Exam strategy.</b> In MC the answer is ALWAYS supported by the text — look for a paraphrase, not a word-for-word match (distractors often reuse words from the text but twist the meaning). First locate the paragraph by a keyword from the question, then check the options. For "attitude/impression" questions (16, 18) read the author's evaluative words ("somehow fit Russia", "worth visiting").</div>
+    <div class="tnote"><b>Real FIPI text</b> ("New Year's time in Russia" — a traveller's account of New Year customs). <b>Answers:</b> 12→2 · 13→3 · 14→1 · 15→4 · 16→1 · 17→2 · 18→2. Discuss WHERE each answer is confirmed: 12 "more of a family holiday"; 13 the text says be PREPARED to answer questions, it does not advise YOU to ask them; 14 "should not sleep through the New Year… bad omen"; 16 "all those heavy decorations somehow fit Russia" = suitable; 17 "I rarely heard classical music as often as I did in Russia". Show why the distractors are traps.</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Listening · FIPI (task 1, matching)</h2><span class="tm">15 min</span></div>
+    <p>🎧 <b>Real EGE task.</b> You will hear six people (A–F) talking about <b>New Year</b>. Match each speaker to a statement (1–7). There is <b>one extra</b> statement. Listen <b>twice</b>.</p>
+    <audio controls preload="none" src="https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/031CCFD2ED8EB9A74D432A6FD37BD74A/img1_1721126638.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="match-list">
+      <div><b>1.</b> Celebrating New Year has a long history.</div>
+      <div><b>2.</b> There are extravagant ways to celebrate New Year.</div>
+      <div><b>3.</b> Good food is the most important thing for New Year.</div>
+      <div><b>4.</b> New Year is the best time for new beginnings.</div>
+      <div><b>5.</b> Properly preparing before New Year is important.</div>
+      <div><b>6.</b> New Year is a great time to be with your relatives.</div>
+      <div><b>7.</b> You don't need a special time to start something.</div>
+    </div>
+    <ul class="tf" id="listening" style="border:0">
+      <li style="border:0;padding:4px 0">Speaker <b>A</b> → statement <span class="gap" data-a="4"><input style="min-width:50px"></span></li>
+      <li style="border:0;padding:4px 0">Speaker <b>B</b> → statement <span class="gap" data-a="7"><input style="min-width:50px"></span></li>
+      <li style="border:0;padding:4px 0">Speaker <b>C</b> → statement <span class="gap" data-a="1"><input style="min-width:50px"></span></li>
+      <li style="border:0;padding:4px 0">Speaker <b>D</b> → statement <span class="gap" data-a="6"><input style="min-width:50px"></span></li>
+      <li style="border:0;padding:4px 0">Speaker <b>E</b> → statement <span class="gap" data-a="2"><input style="min-width:50px"></span></li>
+      <li style="border:0;padding:4px 0">Speaker <b>F</b> → statement <span class="gap" data-a="5"><input style="min-width:50px"></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('listening','lisScore')">Check</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Strategy.</b> Before listening, read all 7 statements and underline a keyword in each. In matching tasks the speaker NEVER repeats the statement word for word — they paraphrase its idea. Cross off statements as you go; the unused one is the "extra". Don't choose a statement just because you heard one matching word.</div>
+    <div class="tnote"><b>Real FIPI audio</b> — six people on how/why they celebrate New Year (links straight to the reading above). <b>Answers:</b> A→4 · B→7 · C→1 · D→6 · E→2 · F→5 (extra = 3). Why: A "where you can refresh, start everything" (new beginnings); B "if you really want to do something, just go ahead" (no special time needed); C "few celebrations have such deep roots" (long history); D "wonderful tradition to spend this night with your nearest and dearest" (relatives); E describes taking a fir tree underwater (extravagant); F "clean your house and decorate it… on the 31st" (preparing). <b>Listening is a MUST in the trainer (homework).</b></div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · Express &amp; argue</h2><span class="tm">10 min</span></div>
+    <p>Speak for 2 minutes: <b>"Have holidays lost their real meaning in the modern world?"</b> Use at least 5 phrases from section 2 and give arguments for both sides before your own conclusion.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Start 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 require the "both sides → opinion" structure, linkers (admittedly, nevertheless, on balance) and the topical phrases (<i>become commercialised, keep a tradition alive, strike a balance, cultural heritage</i>). This feeds directly into the email (Lesson 2) and the speaking (Lesson 3).</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Homework</h2><span class="tm">5 min</span></div>
+    <ul>
+      <li>📱 <b>S&amp;S EGE trainer</b> — topic "Holidays &amp; traditions": "Vocabulary" (B2) + "Reading" (MC) + <b>"Listening"</b> (compulsory).</li>
+    </ul>
+    <div class="tnote"><b>How to set homework (teacher):</b> S&amp;S EGE trainer → teacher panel → <b>"Homework builder"</b> → pick the topic "Holidays &amp; traditions" → <b>"Task link"</b> for students (with AI marking) <b>or</b> "Print worksheet" with keys.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ЕГЭ Lab · Holidays &amp; traditions · Lesson 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 View: teacher':'🧑‍🎓 View: student';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Answer: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Show words':'🙈 Hide words — recall them from the definitions';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Show definitions':'🙈 Hide definitions — test yourself';
+  }
+  // MC (reading)
+  document.querySelectorAll('#reading .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

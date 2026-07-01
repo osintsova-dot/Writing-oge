@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Хобби и досуг · Урок 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:150px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(180px,1fr) 1.5fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}.ddef i{color:var(--muted)}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📗 Хобби и досуг · Урок 1 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Хобби и досуг</b><br>Урок 1 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 1 — Лексика и чтение · A2–B1</span>Hobbies &amp; free time: чем мы увлекаемся</h1>
+  <div class="aims"><b>Цели:</b> освоить ключевую лексику темы «хобби и досуг» (15 фраз с переводом и примерами); потренировать <b>чтение ОГЭ — «Верно / Неверно / Не сказано» (зад.13–19)</b> и стратегию работы с утверждениями; потренировать <b>аудирование</b> на реальном задании ФИПИ. <b>Дома:</b> «Лексика» и «Чтение» в ОГЭ-тренажёре по теме.</div>
+
+  <!-- 1 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Разговор</h2><span class="tm">8 мин</span></div>
+    <ul>
+      <li>What do you usually do in your free time? Do you have a hobby?</li>
+      <li>How much free time do you have on a school day and at the weekend?</li>
+      <li>What new hobby would you like to take up, and why?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> цель — разговорить и поднять знакомую лексику. На A2–B1 поощряйте полные ответы (In my free time I usually… because…). Запишите слова, которые всплывут, — пригодятся в задании 2.</div>
+  </div>
+
+  <!-- 2 Vocabulary -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Лексика · ключевые фразы темы</h2><span class="tm">28 мин</span></div>
+    <div class="subt"><b>2.1 · Изучи фразы (англ. → определение и перевод).</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Виды хобби и занятий</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to take up a new hobby</span><span class="ddef">to start doing a new activity in your free time <i>(заняться новым хобби)</i></span></div>
+      <div class="drow"><span class="dterm">to be keen on collecting stamps</span><span class="ddef">to like collecting stamps very much <i>(увлекаться коллекционированием марок)</i></span></div>
+      <div class="drow"><span class="dterm">to go in for sports</span><span class="ddef">to do sports regularly <i>(заниматься спортом)</i></span></div>
+      <div class="drow"><span class="dterm">to do photography</span><span class="ddef">to take photos as a hobby <i>(заниматься фотографией)</i></span></div>
+      <div class="drow"><span class="dterm">to go to a hobby club</span><span class="ddef">to attend a club where people share the same interest <i>(ходить в кружок по интересам)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Описание и оценка увлечений</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a fascinating / exciting hobby</span><span class="ddef">a very interesting hobby that you enjoy a lot <i>(увлекательное хобби)</i></span></div>
+      <div class="drow"><span class="dterm">a popular pastime among teenagers</span><span class="ddef">a way of spending free time that many teenagers like <i>(популярное занятие среди подростков)</i></span></div>
+      <div class="drow"><span class="dterm">to be passionate about something</span><span class="ddef">to like something very much and care about it a lot <i>(быть страстно увлечённым чем-л.)</i></span></div>
+      <div class="drow"><span class="dterm">to develop useful skills</span><span class="ddef">to get new abilities that help you in life <i>(развивать полезные навыки)</i></span></div>
+      <div class="drow"><span class="dterm">to broaden your mind</span><span class="ddef">to learn new things and see the world more widely <i>(расширять кругозор)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Время и удовольствие от досуга</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to devote your free time to something</span><span class="ddef">to spend your free time on something you love <i>(посвящать своё свободное время чему-л.)</i></span></div>
+      <div class="drow"><span class="dterm">to relax after a busy day</span><span class="ddef">to rest and feel calm after a hard day <i>(расслабиться после напряжённого дня)</i></span></div>
+      <div class="drow"><span class="dterm">a great way to relax</span><span class="ddef">a very good way to rest and feel better <i>(отличный способ расслабиться)</i></span></div>
+      <div class="drow"><span class="dterm">to get pleasure from something</span><span class="ddef">to feel happy and enjoy doing something <i>(получать удовольствие от чего-л.)</i></span></div>
+      <div class="drow"><span class="dterm">to spend a lot of time on it</span><span class="ddef">to give a hobby many hours <i>(тратить на это много времени)</i></span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Скрыть слова — вспомни по определению</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Скрыть определения — проверь себя</button>
+
+    <div class="subt"><b>2.2 · Матчинг.</b> Восстанови фразу по определению:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to start doing a new activity → to <span class="gap" data-a="take up a new hobby"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. to do sports regularly → to <span class="gap" data-a="go in for sports"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. to learn new things and see the world more widely → to <span class="gap" data-a="broaden your mind"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to feel happy doing something → to get <span class="gap" data-a="pleasure from"><input></span> it</li>
+      <li style="border:0;padding:0;margin:6px 0">5. a very interesting hobby you enjoy → a <span class="gap" data-a="fascinating hobby"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Проверить</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Подстановка в контекст.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. Listening to music is a great way to <span class="gap" data-a="relax"><input></span> after a busy school day.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. My grandfather is <span class="gap" data-a="keen on"><input></span> collecting stamps from different countries.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. I really <span class="gap" data-a="get pleasure from"><input></span> drawing and spend a lot of time on it.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. Playing video games is a popular <span class="gap" data-a="pastime"><input></span> among teenagers today.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Проверить</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Сделай своим.</b> Составь 4 предложения о своём досуге и увлечениях с этими фразами. Эти же слова отрабатываются в тренажёре (интервальное повторение) и пригодятся в письме и устной части.</div>
+    <div class="tnote"><b>Ответы 2.2:</b> take up a new hobby · go in for sports · broaden your mind · pleasure from · fascinating hobby. <b>2.3:</b> relax · keen on · get pleasure from · pastime. Лексику добивают в ОГЭ-тренажёре (SRS) — на уроке только ядро (15 фраз).</div>
+  </div>
+
+  <!-- 3 Reading T/F/NS -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Чтение · ОГЭ (зад.13–19: Верно / Неверно / Не сказано)</h2><span class="tm">24 мин</span></div>
+    <p>🔎 <b>Реальный текст ФИПИ.</b> Прочитай текст и отметь для каждого утверждения: <b>1 — Верно (True)</b>, <b>2 — Неверно (False)</b>, <b>3 — Не сказано (Not stated)</b>.</p>
+    <div class="read"><p>Glastonbury Festival is one of the largest open air music and art festivals in the world. It became an example which other festivals followed. Of course, Glastonbury is best known for modern music, but its programme also includes dance, comedy, theatre, circus and other arts. The festival organiser, Michael Eavis, was a common farmer. In 1970 he visited an open air concert which greatly impressed him. So he decided to organise a big festival outdoors in the same year. He knew it wouldn't bring any money, but it didn't matter. At the first festival there were more than one thousand people. Each of them paid £1 for the ticket. The price also included free milk from the farm. Later on, the festival took place almost every year and grew in size and audience. The festival takes place in southwest England on a farm. It's a beautiful and mystical place called the Valley of Avalon. It is surrounded with a lot of legends, symbols, myths, and religious traditions dating back many hundreds of years. Legends say that here King Arthur's sword was made and the king himself was buried there. No wonder that the main stage of the festival, Pyramid Stage, has the form of a pyramid. In many ways, Glastonbury is like a mix of different festivals, which take place in the countryside and last for a weekend. Each area of the festival has its own character, its own fans and its own special attractions. For example, dance lovers go to the Dance Village. There is also a big cinema area, Theatre and Circus. Children can have fun in the Kids' Field. Some people spend the whole weekend in their favourite area. However, most of them prefer walking around and trying lots of different things. Most people who stay at Glastonbury Festival live in tents. There are lots of different camping areas, each one with its own atmosphere. You can choose where to stay: in a quiet place or a lively one. There are also places for families and disabled people. Anyway, you should remember to bring a tent with you. It's possible to rent one, but it's quite expensive. There are hundreds of rubbish bins on the territory. All cans, glass, paper, electrical equipment, wood and waste are separated and recycled. Visitors are asked to clean after themselves and not to leave rubbish. The festival supports those who come by public transport or by bicycle, not by car. If you're thinking about visiting Glastonbury, you should book tickets in advance. Today an average ticket is about £200 for three days, which is quite expensive. Nevertheless, the tickets are sold out in two or three hours. So be quick to catch them.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="3" data-e="Сказано, что концерт под открытым небом впечатлил Майкла, но любил ли он именно кантри-музыку — не сказано.">
+        <div class="stmt">13. Michael Eavis was fond of country music.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«He knew it wouldn't bring any money» — он знал, что денег фестиваль не принесёт, значит организовал НЕ ради заработка.">
+        <div class="stmt">14. Michael Eavis started the festival to earn money.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="Фестиваль проходит на ферме в Долине Авалон, а не в музее короля Артура — это лишь легенда о месте.">
+        <div class="stmt">15. Nowadays the festival is held in King Arthur's museum.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="Сказано, что фестиваль известен современной музыкой, но участвуют ли именно ИЗВЕСТНЫЕ музыканты — в тексте не сказано.">
+        <div class="stmt">16. Famous musicians and singers take part in the festival.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«Most people who stay at Glastonbury Festival live in tents» — гости живут в палатках, а не в придорожных гостиницах.">
+        <div class="stmt">17. During the festival all the visitors stay in nearby country inns.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="Мусор сортируют и перерабатывают, гостей просят не сорить и приезжать на транспорте/велосипеде — это «зелёное» мероприятие.">
+        <div class="stmt">18. Glastonbury Festival is an environmentally-friendly event.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«You should book tickets in advance» — билеты советуют бронировать заранее, ведь они раскупаются за 2–3 часа.">
+        <div class="stmt">19. It's recommended to reserve tickets to the festival beforehand.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Проверить</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Стратегия.</b> «Не сказано» — самый коварный вариант. Правило: <b>Неверно</b> = текст ПРЯМО противоречит утверждению; <b>Не сказано</b> = в тексте об этом НЕТ информации (ни «да», ни «нет»). Не достраивай по логике — отвечай только по тексту.</div>
+    <div class="tnote"><b>Реальный текст ФИПИ</b> («Glastonbury Festival» — крупнейший фестиваль музыки и искусств = досуг). <b>Ответы:</b> 13→3 · 14→2 · 15→2 · 16→3 · 17→2 · 18→1 · 19→1. На каждом разберите: где подтверждение (False) или почему «Не сказано».</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Аудирование · ОГЭ (короткие диалоги)</h2><span class="tm">17 мин</span></div>
+    <p>🎧 <b>Реальное аудио ФИПИ.</b> Услышишь 4 коротких разговора (досуг, спорт, встречи). Прослушай <b>дважды</b> и выбери 1, 2 или 3.</p>
+    <audio controls preload="none" src="https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/3937EFACCA8F9B4D4B6D9635256B40F2/img1_1701781919.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="1" data-e="«Removing any age restrictions» — развлекательный центр теперь для гостей любого возраста.">
+        <div class="stmt">1. This season, the new entertainment centre offers its services to …</div>
+        <div class="mc"><button data-k="1">1) people of all ages.</button><button data-k="2">2) schoolchildren only.</button><button data-k="3">3) children under five.</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«It started to rain and I got wet to the bone» — мальчик опаздывает, потому что попал под дождь.">
+        <div class="stmt">2. The boy is going to be late for the family celebration because he …</div>
+        <div class="mc"><button data-k="1">1) has lost his way in the city.</button><button data-k="2">2) has been caught in the rain.</button><button data-k="3">3) forgot the time of their gathering.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«I'll be at the fitness centre today, too. Let's meet up right there» — договорились встретиться в фитнес-центре.">
+        <div class="stmt">3. Where have Jill and Ben agreed to meet up?</div>
+        <div class="mc"><button data-k="1">1) In the theatre.</button><button data-k="2">2) At a bus stop.</button><button data-k="3">3) In the fitness centre.</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«It's a baseball glove. I've joined our school baseball team» — Кен начинает заниматься бейсболом.">
+        <div class="stmt">4. What sport is Ken going to take up?</div>
+        <div class="mc"><button data-k="1">1) Tennis.</button><button data-k="2">2) Baseball.</button><button data-k="3">3) Boxing.</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Проверить</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Стратегия.</b> Перед прослушиванием прочитай вопрос и варианты, подчеркни ключевые слова. Верный ответ ПЕРЕФРАЗИРУЕТ запись (no age restrictions → people of all ages), а ловушка часто повторяет слово дословно, но смысл другой.</div>
+    <div class="tnote"><b>Реальное аудио ФИПИ</b> (4 коротких диалога: досуг, спорт, встречи). <b>Ответы:</b> 1→1 · 2→2 · 3→3 · 4→2. Разберите, какими словами подтверждается каждый ответ. <b>Аудирование обязательно отрабатывается в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 5 Speaking -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · короткое высказывание</h2><span class="tm">8 мин</span></div>
+    <p>Расскажи <b>1,5–2 минуты</b> на тему <b>"My hobbies and free time"</b>. Используй минимум 4 фразы из задания 2. План: what you usually do in your free time · what your hobby is and how long you've been doing it · how much time a week you give to it · why hobbies are important for you.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Старт 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Учителю:</b> на A2–B1 требуйте связки (because, also, for example) и полные предложения. Это подготовка к монологу (зад.3 устной части) — вернёмся в Уроке 3.</div>
+  </div>
+
+  <!-- 6 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Хобби и досуг»: «Лексика» + «Чтение» + <b>«Аудирование»</b> (обязательно).</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → выбери тему «Хобби и досуг» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Хобби и досуг · Урок 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Показать слова':'🙈 Скрыть слова — вспомни по определению';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Показать определения':'🙈 Скрыть определения — проверь себя';
+  }
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

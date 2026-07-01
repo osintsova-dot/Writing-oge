@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ЕГЭ · Travelling · Lesson 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:160px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(190px,1fr) 1.4fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">🧳 Travelling · Lesson 1 · B2</span>
+  <button id="bRole" class="on">👩‍🏫 View: teacher</button>
+  <button class="print" onclick="window.print()">🖨 Print / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>EGE · English</b><br>Topic · <b>Travelling</b><br>Lesson 1 of 3 · level B2 · 90 min</div>
+  </div>
+  <h1><span class="sub">Lesson 1 — Input · B2</span>Travelling: more than just sightseeing</h1>
+  <div class="aims"><b>Lesson outcome:</b> the student commands idiomatic B2 vocabulary of the "travelling" topic (types of trips, impressions, benefits and challenges) and confidently handles <b>EGE reading — multiple choice (tasks 12–18)</b> and <b>listening (tasks 3–9)</b> using the strategy "paraphrase, not a word-for-word match". <b>Through-line:</b> travelling = stepping out of your comfort zone for the sake of experiences — we gather this idea as vocabulary, then meet it in a real text and apply it in speech. <b>Bridge ahead:</b> the vocabulary gathered here feeds into the essay (Lesson 2) and the speaking part (Lesson 3). <b>Homework:</b> "Vocabulary" and "Reading" + compulsory "Listening" in the EGE trainer for this topic.</div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Discussion</h2><span class="tm">8 min</span></div>
+    <ul>
+      <li>Some people say that travelling is the best way to <i>broaden your horizons</i>. Do you agree, or can you grow just as much at home?</li>
+      <li>What kind of traveller are you — a <i>package holiday</i> person or a <i>backpacking</i> one? Why?</li>
+      <li>Have you ever experienced a <i>culture shock</i> or a <i>language barrier</i> on a trip? What happened?</li>
+    </ul>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 the aim of the lead-in is not "to chat" but to elicit argumentation (because / on the one hand…) and activate the topic. Note on the board the idioms that come up — you’ll reuse them in task 2 and recognise them in the reading text (which is about travelling alone).</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Vocabulary · B2</h2><span class="tm">27 min</span></div>
+    <div class="subt"><b>2.1 · Study the phrases with their definitions.</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Types of travel</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a package holiday</span><span class="ddef">a holiday where travel, hotel and meals are sold together</span></div>
+      <div class="drow"><span class="dterm">a city break</span><span class="ddef">a short holiday to stay in a city for a few days</span></div>
+      <div class="drow"><span class="dterm">backpacking</span><span class="ddef">travelling cheaply, usually carrying everything in a backpack</span></div>
+      <div class="drow"><span class="dterm">a road trip</span><span class="ddef">a journey made by car, often with no fixed plan</span></div>
+      <div class="drow"><span class="dterm">to travel on a shoestring</span><span class="ddef">to travel with very little money, spending as little as possible</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Sights &amp; experiences</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a breathtaking view</span><span class="ddef">a very beautiful sight that makes you feel amazed</span></div>
+      <div class="drow"><span class="dterm">to soak up the atmosphere</span><span class="ddef">to enjoy deeply the feeling and life of a place</span></div>
+      <div class="drow"><span class="dterm">to broaden one's horizons</span><span class="ddef">to learn new things and see life differently</span></div>
+      <div class="drow"><span class="dterm">a hidden gem</span><span class="ddef">a wonderful place that few people know about</span></div>
+      <div class="drow"><span class="dterm">a must-see attraction</span><span class="ddef">a place that everyone should visit</span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Benefits &amp; challenges</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to step out of one's comfort zone</span><span class="ddef">to do things that are new and uncomfortable for you</span></div>
+      <div class="drow"><span class="dterm">a culture shock</span><span class="ddef">the feeling of confusion in a new and different culture</span></div>
+      <div class="drow"><span class="dterm">a language barrier</span><span class="ddef">difficulty communicating because people speak different languages</span></div>
+      <div class="drow"><span class="dterm">to make unforgettable memories</span><span class="ddef">to have experiences you will always remember happily</span></div>
+      <div class="drow"><span class="dterm">to recharge one's batteries</span><span class="ddef">to rest so you feel full of energy again</span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Hide words — recall them from the definitions</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Hide definitions — test yourself</button>
+
+    <div class="subt"><b>2.2 · Matching.</b> Recall the phrase from its definition:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. a short holiday in a city → a <span class="gap" data-a="city break"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. a place that few people know about → a <span class="gap" data-a="hidden gem"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. to travel spending almost no money → to travel on a <span class="gap" data-a="shoestring"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to do something new and uncomfortable → to step out of one's <span class="gap" data-a="comfort zone"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to enjoy deeply the life of a place → to soak up the <span class="gap" data-a="atmosphere"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">6. to rest so you feel full of energy again → to recharge one's <span class="gap" data-a="batteries"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Check</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Gap-fill in context.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. From the top of the hill we had a truly <span class="gap" data-a="breathtaking view"><input></span> of the whole valley.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. Living with a host family abroad really helped me <span class="gap" data-a="broaden my horizons"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. We couldn't afford a hotel, so we went <span class="gap" data-a="backpacking"><input></span> around Europe.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. The hardest part of the trip was the <span class="gap" data-a="language barrier"><input></span> — almost no one spoke English.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Check</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Make it your own.</b> Use at least <b>4 idioms</b> to tell about your most memorable trip (or a dream trip). Build full sentences — these B2 idioms are exactly what earns the K3 mark in the essay and speaking.</div>
+    <div class="tnote"><b>Answers 2.2:</b> city break · hidden gem · shoestring · comfort zone · atmosphere · batteries. <b>2.3:</b> breathtaking view · broaden my horizons · backpacking · language barrier. Stress: at the EGE these idioms raise the K3 mark (language) in the essay (task 37) and in the speaking part (tasks 3–4). The vocabulary is taken from ege_vocab.json (topic travelling).</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Reading · FIPI (tasks 12–18, MC)</h2><span class="tm">25 min</span></div>
+    <p style="color:var(--muted);font-size:12.5px;margin:0 0 6px">🔗 <b>Bridge.</b> The vocabulary "stepping out of the comfort zone → experiences" from task 2 is exactly the storyline of the text: the author goes travelling alone and is afraid, but comes back changed.</p>
+    <p>🔎 <b>Real EGE text.</b> Read and answer questions 12–18 (choose 1–4).</p>
+    <div class="read"><p>What it is really like to travel alone My wanderlust started with a Billy Joel song. Yes, some might say it is unwise to visit a city just because of a catchy tune. But that was how I made my way to Austria with only good old Billy as my travel buddy. In college, I took part in a spring work/study program in London. And while I loved the U.K. and my job working for a health website, what excited me most was the opportunity to travel. I spent my weekends visiting cafés in Barcelona with my roommates, and admiring Edinburgh accompanied by friends. But no one wanted to stay and explore Europe more extensively after our sixteen weeks were up. So, I decided to do it alone. I did not set out wanting to travel by myself. It is something that young women are discouraged from doing. My own mother was desperate to talk me out of the idea. “It’s dangerous for girls to travel by themselves,” she would warn me every time we spoke. I insisted that I knew women my age who had done it, and that I would be fine. My friends back home were skeptical, too. “Wait, no one’s going with you?” they would ask. No doubt they wondered who would be taking photos of me for my posts on the Internet. But after convincing them that just because I am a Millennial woman does not mean I have to be constantly surrounded by a team, I had to convince myself to believe it. The night before my departure I was terrified. While everyone else was flying back to the States, I would be on the Chunnel to Paris to start my two-week trip alone. The thought was disabling. I have always been a person who recharges with alone time, but this suddenly seemed like too much to take on, especially in unfamiliar places. The journey was liberating. While I was nervous that my first meal alone would be awkward, I was not tempted by the idea of eating takeout in my hostel room, either. So, I faced the fear. I slipped on my formal (albeit a bit wrinkled) jacket, channeled my inner Cool French Girl, and stepped out into the cool spring air of the Montmartre quarter. I was going to dinner. It ended up being one of the most memorable dining experiences of my life. I savored the otherworldly steak frites for which the restaurant is famous, observed the elegant Parisian women adorned in their Saturday evening pearls, and even ordered in the language of love. I enjoyed my glass of freshly squeezed orange juice, and devoured a plate of the most delicious eclairs in the entire City of Light. I had no fear of judgment by others, since no one knew me, nor did I know anyone. This freedom ended up being one of the most enjoyable aspects of my trip, and for once, that did not mean feeling guilty. I spent hours riding on a water bus in Venice. I decided not to climb the Duomo in Florence because it just seemed like too many stairs. I read for hours in the lush gardens of the Schönbrunn Palace in Vienna. Though the trip was not without its uncomfortable moments, of course, my solo trip was not a mistake – for sure. I spent the final hours of my trip wandering around the gorgeous, pastel façade-lined streets of Vienna. About fifteen minutes prior to leaving, I pulled out my iPod and listened to “Vienna.” After the familiar piano trills, Billy’s familiar voice flooded in: “Slow down you crazy child,” he sang. “You’re so ambitious for a juvenile.” I began to cry – partially from exhaustion, perhaps, but mostly because the moment felt intensely profound. Here I was, in a city I had always escaped to in my mind through Billy’s song, closing out the most incredible experience of my life. A little crazy, a little ambitious. All me.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="2">
+        <div class="stmt">12. Why did the author decide to travel alone?</div>
+        <div class="mc">
+          <button data-k="1">1) Her friends had job commitments.</button>
+          <button data-k="2">2) Her friends were unwilling to travel more widely.</button>
+          <button data-k="3">3) The author got tired of constant company.</button>
+          <button data-k="4">4) The author had a long vacation.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">13. <i>Disabling</i> in Paragraph 4 (“The thought was disabling.”) most probably means …</div>
+        <div class="mc">
+          <button data-k="1">1) hurting.</button>
+          <button data-k="2">2) paralyzing.</button>
+          <button data-k="3">3) encouraging.</button>
+          <button data-k="4">4) exciting.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">14. What does the author of the essay aim to do?</div>
+        <div class="mc">
+          <button data-k="1">1) To entertain the reader by telling her story.</button>
+          <button data-k="2">2) To describe her personal experience.</button>
+          <button data-k="3">3) To show how a song can guide one's life.</button>
+          <button data-k="4">4) To persuade women to travel alone.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">15. The author cried when finishing her trip because she …</div>
+        <div class="mc">
+          <button data-k="1">1) was full of emotions.</button>
+          <button data-k="2">2) was extremely tired.</button>
+          <button data-k="3">3) did not want to leave.</button>
+          <button data-k="4">4) admired the city.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">16. <i>This freedom</i> in Paragraph 7 (“This freedom ended up being one of the most enjoyable aspects…”) refers to …</div>
+        <div class="mc">
+          <button data-k="1">1) not recognizing anyone.</button>
+          <button data-k="2">2) going out.</button>
+          <button data-k="3">3) eating what you want.</button>
+          <button data-k="4">4) not being judged by others.</button>
+        </div>
+      </div>
+      <div class="row" data-a="3">
+        <div class="stmt">17. Which statement about the author's restaurant experience is FALSE?</div>
+        <div class="mc">
+          <button data-k="1">1) The thought of dining alone was uncomfortable.</button>
+          <button data-k="2">2) The author had a substantial meal.</button>
+          <button data-k="3">3) Everyone in the restaurant was dressed casually.</button>
+          <button data-k="4">4) The dining experience was unforgettable.</button>
+        </div>
+      </div>
+      <div class="row" data-a="4">
+        <div class="stmt">18. The author was not sure her idea to travel alone was good because …</div>
+        <div class="mc">
+          <button data-k="1">1) no one she knew ever travelled alone.</button>
+          <button data-k="2">2) it is difficult to take photos when you are alone.</button>
+          <button data-k="3">3) there was evidence it is dangerous for women.</button>
+          <button data-k="4">4) her relatives and friends did not support it.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Check</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Exam strategy.</b> In MC the answer is ALWAYS supported by the text — look for a paraphrase, not a word-for-word match (distractors often take words from the text but twist the meaning). Pay special attention to the <b>FALSE / NOT</b> question (task 17): you need to find what is NOT in the text or what contradicts it. First locate the paragraph by a keyword from the question, then check the options.</div>
+    <div class="tnote"><b>Real FIPI text</b> (ege_reading.json, mc, group D8BAD1 — "What it is really like to travel alone"). <b>Answers:</b> 12→2 · 13→2 · 14→2 · 15→1 · 16→4 · 17→3 · 18→4. Discuss WHERE in the text each answer is confirmed: 13 "disabling"=paralyzing (from the context of fear, "too much to take on"); 16 "This freedom" = no fear of judgment; 17 — FALSE: the women were elegant, adorned in pearls (not casually). The distractors are traps on verbatim words.</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Listening · FIPI (tasks 3–9, interview)</h2><span class="tm">15 min</span></div>
+    <p>🎧 <b>Real EGE task.</b> Listen to the interview <b>twice</b> (you get 50 sec to read the questions); choose 1, 2 or 3.</p>
+    <audio controls preload="none" src="https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/05AD16E384B295334C1856AB93A2C68C/img1_1562941696.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="3">
+        <div class="stmt">3. What do we learn about Anna's birthplace?</div>
+        <div class="mc">
+          <button data-k="1">1) It's bigger than Lillehammer.</button>
+          <button data-k="2">2) It's located on a lake shore.</button>
+          <button data-k="3">3) It has beautiful nature.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">4. What is wrong for Anna about living in her hometown?</div>
+        <div class="mc">
+          <button data-k="1">1) It's not very comfortable.</button>
+          <button data-k="2">2) It's not motivating enough.</button>
+          <button data-k="3">3) It's too good to be true.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">5. Why does Anna like living in Oslo?</div>
+        <div class="mc">
+          <button data-k="1">1) It's very big.</button>
+          <button data-k="2">2) It's a place full of culture.</button>
+          <button data-k="3">3) There are not many tourists there.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">6. Which of the following is TRUE about Anna's debut album?</div>
+        <div class="mc">
+          <button data-k="1">1) She produced it in three weeks.</button>
+          <button data-k="2">2) Its release has been delayed.</button>
+          <button data-k="3">3) It's a top hit at June festivals.</button>
+        </div>
+      </div>
+      <div class="row" data-a="1">
+        <div class="stmt">7. How does Anna feel about her debut album?</div>
+        <div class="mc">
+          <button data-k="1">1) She can't believe she's done it.</button>
+          <button data-k="2">2) She's on top of the world.</button>
+          <button data-k="3">3) She doubts it'll be successful.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">8. How does Anna explain the title of her album?</div>
+        <div class="mc">
+          <button data-k="1">1) It has a double meaning.</button>
+          <button data-k="2">2) It unites her with her fans.</button>
+          <button data-k="3">3) It's dedicated to happy couples.</button>
+        </div>
+      </div>
+      <div class="row" data-a="2">
+        <div class="stmt">9. How does Anna stand out from other young singers?</div>
+        <div class="mc">
+          <button data-k="1">1) She wears unique clothes.</button>
+          <button data-k="2">2) She is not sophisticated.</button>
+          <button data-k="3">3) She is a fresher.</button>
+        </div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Check</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Strategy.</b> Use the full 50 seconds — underline the keywords. Listen twice: first for the gist and order, second to confirm. The correct answer PARAPHRASES the recording; the distractor often repeats words verbatim but twists the meaning.</div>
+    <div class="tnote"><b>Real FIPI audio</b> (ege_listening.json, group mc24, guid 05AD16E3… — an interview with young singer Anna North about her hometown, moving to Oslo and her debut album). <b>Closest match by topic:</b> the FIPI bank has no MC interview "tasks 3–9" strictly about travelling — an interview thematically linked to "Travel &amp; Places" was taken (hometown ↔ a big cultural city, moving, places). <b>Answers:</b> 3→3 · 4→2 · 5→2 · 6→2 · 7→1 · 8→2 · 9→2. <b>Listening is a MUST in the trainer (homework).</b></div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · Express &amp; argue</h2><span class="tm">10 min</span></div>
+    <p>Speak for 2 minutes: <b>"Does travelling really broaden the mind, or is it just an expensive way to escape everyday life?"</b> Use at least 5 idioms from section 2 and give arguments for both sides before your own conclusion.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Start 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Teacher’s note:</b> at B2 require the "both sides → opinion" structure, linkers (admittedly, nevertheless, on balance) and the idioms themselves (broaden one's horizons, step out of one's comfort zone, make unforgettable memories). This is direct preparation for the essay (Lesson 2) and the speaking part (Lesson 3).</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Homework</h2><span class="tm">5 min</span></div>
+    <ul>
+      <li>📱 <b>S&amp;S EGE trainer</b> — topic "Travelling": "Vocabulary" (B2) + "Reading" (MC) + <b>"Listening"</b> (compulsory).</li>
+    </ul>
+    <div class="tnote"><b>How to set homework (teacher):</b> S&amp;S EGE trainer → teacher panel → <b>"Homework builder"</b> → pick the topic "Travelling" → <b>"Task link"</b> for students (with AI marking) <b>or</b> "Print worksheet" with keys.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ЕГЭ Lab · Travelling · Lesson 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 View: teacher':'🧑‍🎓 View: student';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Answer: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Show words':'🙈 Hide words — recall them from the definitions';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Show definitions':'🙈 Hide definitions — test yourself';
+  }
+  // MC (reading + listening)
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

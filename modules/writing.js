@@ -59,6 +59,53 @@ function critColor(score, max) {
   const r = max ? score / max : 0;
   return r >= 0.8 ? 'var(--ok)' : r >= 0.5 ? 'var(--warn)' : 'var(--bad)';
 }
+
+// Заметный баннер-предупреждение после распознавания фото (рукопись врёт → надо сверить).
+function ocrNoteEl() {
+  return el('div', { class: 'w-photo-note', style: { display: 'none', background: '#FFF3CD',
+    border: '1.5px solid var(--honey,#F5C842)', color: '#3a2b00', padding: '12px 14px', borderRadius: '12px', margin: '10px 0' } }, [
+    el('div', { style: { fontWeight: '800', fontSize: '15px', marginBottom: '4px' }, text: t.wPhotoCheckT }),
+    el('div', { style: { fontSize: '13px', lineHeight: '1.4' }, text: t.wPhotoNote }),
+  ]);
+}
+
+// Отрисовка результата проверки (К1–К5 + ошибки + исправленный текст). Общая для раздела и свободной проверки.
+function paintWritingResult(box, r, critFallback, mx) {
+  const crit = (r.criteria && r.criteria.length) ? r.criteria : critFallback.map((c) => ({ ...c, score: 0, comment: '' }));
+  const critCards = crit.map((c) => el('div', { class: 'crit' }, [
+    el('div', { class: 'c-top' }, [
+      el('div', { class: 'c-name', text: c.code + ' · ' + c.name }),
+      el('div', { class: 'c-score', style: { color: critColor(c.score, c.max) }, text: `${c.score}/${c.max}` }),
+    ]),
+    c.comment ? el('div', { class: 'c-comment', text: c.comment }) : null,
+  ]));
+  const nodes = [
+    el('div', { class: 'letter-result' }, [
+      el('div', { class: 'lr-head' }, [
+        el('div', { class: 'lr-score' }, [String(r.totalScore ?? '–'), el('span', { text: '/' + mx })]),
+        el('div', { class: 'lr-verdict', text: r.verdict || t.wVerdictDefault }),
+      ]),
+      el('div', { class: 'crit-list' }, critCards),
+    ]),
+  ];
+  if (r.errors && r.errors.length) {
+    nodes.push(el('div', { class: 'fixes-card' }, [
+      el('h3', { text: t.wErrorsTitle }),
+      ...r.errors.map((e) => el('div', { class: 'fix-row' }, [
+        el('span', { class: 'was', text: e.quote || '' }),
+        el('span', { class: 'arrow', text: '→' }),
+        el('span', { class: 'now', text: e.fix || '' }),
+      ])),
+    ]));
+  }
+  if (r.corrected) {
+    nodes.push(el('div', { class: 'fixes-card' }, [
+      el('h3', { text: t.wCorrectedTitle }),
+      el('div', { class: 'corrected', text: r.corrected }),
+    ]));
+  }
+  mount(box, el('div', {}, nodes));
+}
 function fmtDate(ts) {
   try { return new Date(ts).toLocaleDateString(undefined, { day: 'numeric', month: 'short' }); }
   catch (e) { return ''; }
@@ -157,6 +204,14 @@ export async function renderWriting(container, cfg) {
     }
 
     const body = [];
+    body.push(el('button', { class: 'all-topics writing', onclick: () => { location.hash = '#/free'; } }, [
+      el('div', { class: 'at-ic' }, [el('span', { text: '🆓' })]),
+      el('div', { style: { flex: '1' } }, [
+        el('div', { class: 'at-t', text: t.freeTitle }),
+        el('div', { class: 'at-s', text: t.freeSub }),
+      ]),
+      el('div', { class: 'at-arrow', text: '→' }),
+    ]));
     body.push(el('button', { class: 'all-topics writing', onclick: worksScreen }, [
       el('div', { class: 'at-ic' }, [iconImg('ic-writing', '✍️', 'at-img')]),
       el('div', { style: { flex: '1' } }, [
@@ -291,21 +346,24 @@ export async function renderWriting(container, cfg) {
     // --- Фото письма (OCR через Yandex Vision). Рукопись врёт → обязателен шаг «сверь и поправь». ---
     function photoBlock() {
       if (!canRecognizePhoto()) return null; // воркер не настроен — кнопки нет
-      const input = el('input', { type: 'file', accept: 'image/*', capture: 'environment', style: { display: 'none' } });
+      const input = el('input', { type: 'file', accept: 'image/*', multiple: true, style: { display: 'none' } });
       const pbtn = el('button', { class: 'btn btn-ghost w-photo', text: t.wPhoto });
-      const note = el('div', { class: 'w-photo-note', style: { display: 'none' }, text: t.wPhotoNote });
+      const note = ocrNoteEl();
       pbtn.addEventListener('click', () => input.click());
       input.addEventListener('change', async () => {
-        const file = input.files && input.files[0];
+        const files = input.files ? Array.from(input.files) : [];
         input.value = ''; // чтобы повторный выбор того же файла тоже сработал
-        if (!file) return;
+        if (!files.length) return;
         errBox.style.display = 'none'; note.style.display = 'none';
-        pbtn.disabled = true; pbtn.textContent = t.wPhotoLoading;
+        pbtn.disabled = true;
         try {
-          const text = await recognizePhoto(file);
-          area.value = (area.value.trim() ? area.value.trim() + '\n' : '') + text;
-          updateWc();
-          note.style.display = 'block';
+          for (let k = 0; k < files.length; k++) {
+            pbtn.textContent = t.wPhotoLoading + (files.length > 1 ? ` (${k + 1}/${files.length})` : '');
+            const text = await recognizePhoto(files[k]);
+            area.value = (area.value.trim() ? area.value.trim() + '\n' : '') + text;
+            updateWc();
+          }
+          note.style.display = 'block'; note.scrollIntoView({ behavior: 'smooth', block: 'center' });
           area.focus();
         } catch (e) {
           errBox.textContent = t.wPhotoErr(e.message); errBox.style.display = 'block';
@@ -396,42 +454,7 @@ export async function renderWriting(container, cfg) {
     return evalWritingApi(text, { lang: EXAM.lang, sectionId: cfg.sectionId, criteria: task.criteria, max: task.max, words: [wMin, wMax], stim, essayKind });
   }
 
-  function renderResult(box, r, mx = task.max) {
-    const crit = (r.criteria && r.criteria.length) ? r.criteria : task.criteria.map((c) => ({ ...c, score: 0, comment: '' }));
-    const critCards = crit.map((c) => el('div', { class: 'crit' }, [
-      el('div', { class: 'c-top' }, [
-        el('div', { class: 'c-name', text: c.code + ' · ' + c.name }),
-        el('div', { class: 'c-score', style: { color: critColor(c.score, c.max) }, text: `${c.score}/${c.max}` }),
-      ]),
-      c.comment ? el('div', { class: 'c-comment', text: c.comment }) : null,
-    ]));
-    const nodes = [
-      el('div', { class: 'letter-result' }, [
-        el('div', { class: 'lr-head' }, [
-          el('div', { class: 'lr-score' }, [String(r.totalScore ?? '–'), el('span', { text: '/' + mx })]),
-          el('div', { class: 'lr-verdict', text: r.verdict || t.wVerdictDefault }),
-        ]),
-        el('div', { class: 'crit-list' }, critCards),
-      ]),
-    ];
-    if (r.errors && r.errors.length) {
-      nodes.push(el('div', { class: 'fixes-card' }, [
-        el('h3', { text: t.wErrorsTitle }),
-        ...r.errors.map((e) => el('div', { class: 'fix-row' }, [
-          el('span', { class: 'was', text: e.quote || '' }),
-          el('span', { class: 'arrow', text: '→' }),
-          el('span', { class: 'now', text: e.fix || '' }),
-        ])),
-      ]));
-    }
-    if (r.corrected) {
-      nodes.push(el('div', { class: 'fixes-card' }, [
-        el('h3', { text: t.wCorrectedTitle }),
-        el('div', { class: 'corrected', text: r.corrected }),
-      ]));
-    }
-    mount(box, el('div', {}, nodes));
-  }
+  function renderResult(box, r, mx = task.max) { paintWritingResult(box, r, task.criteria, mx); }
 
   // первый экран: ДЗ-тема (deep-link #/<section>?z=ZID) → сразу редактор; иначе — список тем
   if (cfg.promptZid) {
@@ -441,4 +464,116 @@ export async function renderWriting(container, cfg) {
     pickScreen();
   }
   autoTipOnce(cfg.sectionId);
+}
+
+// --- Свободная проверка: любая работа (своя тема). Задание по желанию; ответ текстом или фото. ---
+export function renderFreeCheck(container, cfg) {
+  const tasks = EXAM.writing.tasks;
+  let ti = 0;             // выбранный тип задания
+  let essayKind = 'data'; // для эссе: data (с таблицей) | opinion (эссе-мнение)
+
+  const taskArea = el('textarea', { class: 'letter-area', style: { minHeight: '64px' }, placeholder: t.freeTaskPh });
+  const answer = el('textarea', { class: 'letter-area', placeholder: t.freeAnswerPh });
+  const wc = el('div', { class: 'wc' });
+  const note = ocrNoteEl();
+  const btn = el('button', { class: 'btn btn-honey btn-block', text: t.wCheck });
+  const loader = el('div', { class: 'loader', style: { display: 'none' }, text: t.wLoading });
+  const errBox = el('div', { class: 'err-msg', style: { display: 'none' } });
+  const resultBox = el('div', {});
+
+  const curTask = () => tasks[ti];
+  const isEssay = () => curTask().sectionId === 'essay';
+  const countWords = () => answer.value.trim().split(/\s+/).filter(Boolean).length;
+  const updateWc = () => {
+    const [mn, mx] = curTask().words; const w = countWords();
+    wc.textContent = w + ' ' + plural(w, t.wordsWord) + ' · ' + mn + '–' + mx;
+  };
+  answer.addEventListener('input', updateWc);
+
+  const rowStyle = { display: 'flex', gap: '8px', flexWrap: 'wrap', margin: '0 0 10px' };
+  const labStyle = { fontWeight: '700', fontSize: '14px', margin: '12px 0 6px', color: 'var(--muted,#5b5b73)' };
+  const typeRow = el('div', { style: rowStyle });
+  const ekRow = el('div', { style: { ...rowStyle, display: 'none' } });
+  const typeLabel = (tk) => tk.sectionId === 'essay' ? t.freeTypeEssay : (tk.sectionId === 'email' ? t.freeTypeEmail : t.freeTypeLetter);
+  function chip(label, active, on) {
+    return el('button', { onclick: on, text: label, style: {
+      font: 'inherit', fontWeight: '700', fontSize: '14px', padding: '8px 14px', borderRadius: '999px',
+      border: active ? '0' : '1.5px solid var(--line,#e7e7ef)', cursor: 'pointer',
+      background: active ? 'var(--p,#6C3FC5)' : '#fff', color: active ? '#fff' : 'var(--ink,#1A1A2E)',
+    } });
+  }
+  function refresh() {
+    typeRow.replaceChildren(...tasks.map((tk, i) => chip(typeLabel(tk), i === ti, () => { ti = i; refresh(); })));
+    ekRow.replaceChildren(
+      chip(t.freeEssayData, essayKind === 'data', () => { essayKind = 'data'; refresh(); }),
+      chip(t.freeEssayOpinion, essayKind === 'opinion', () => { essayKind = 'opinion'; refresh(); }),
+    );
+    ekRow.style.display = isEssay() ? 'flex' : 'none';
+    updateWc();
+  }
+
+  function photoBlock() {
+    if (!canRecognizePhoto()) return null;
+    const input = el('input', { type: 'file', accept: 'image/*', multiple: true, style: { display: 'none' } });
+    const pbtn = el('button', { class: 'btn btn-ghost w-photo', text: t.wPhoto });
+    pbtn.addEventListener('click', () => input.click());
+    input.addEventListener('change', async () => {
+      const files = input.files ? Array.from(input.files) : []; input.value = '';
+      if (!files.length) return;
+      errBox.style.display = 'none'; pbtn.disabled = true;
+      try {
+        for (let k = 0; k < files.length; k++) {
+          pbtn.textContent = t.wPhotoLoading + (files.length > 1 ? ` (${k + 1}/${files.length})` : '');
+          const txt = await recognizePhoto(files[k]);
+          answer.value = (answer.value.trim() ? answer.value.trim() + '\n' : '') + txt; updateWc();
+        }
+        answer.focus();
+        note.style.display = 'block'; note.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } catch (e) { errBox.textContent = t.wPhotoErr(e.message); errBox.style.display = 'block'; }
+      finally { pbtn.disabled = false; pbtn.textContent = t.wPhoto; }
+    });
+    return el('div', { class: 'w-photo-row' }, [pbtn, input]);
+  }
+
+  btn.addEventListener('click', async () => {
+    const text = answer.value.trim();
+    errBox.style.display = 'none'; resultBox.replaceChildren();
+    if (countWords() < 20) { errBox.textContent = t.wErrShort; errBox.style.display = 'block'; return; }
+    const task = curTask();
+    btn.disabled = true; loader.style.display = 'block';
+    try {
+      const res = await evalWritingApi(text, {
+        lang: EXAM.lang, sectionId: task.sectionId, criteria: task.criteria,
+        max: task.max, words: task.words, stim: taskArea.value.trim(),
+        essayKind: isEssay() ? essayKind : null,
+      });
+      paintWritingResult(resultBox, res, task.criteria, task.max);
+      if (!taskArea.value.trim()) resultBox.insertBefore(el('p', { class: 'voice-msg', text: t.freeNoTaskNote }), resultBox.firstChild);
+      btn.textContent = t.wRecheck;
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } catch (e) {
+      errBox.textContent = t.wErrServer(e.message); errBox.style.display = 'block';
+    } finally { btn.disabled = false; loader.style.display = 'none'; }
+  });
+
+  refresh();
+  mount(container, el('div', { class: 'w-screen view' }, [
+    el('div', { class: 'sec-bar writing' }, [
+      el('button', { class: 'back', text: '←', onclick: cfg.goHome }),
+      el('div', { style: { flex: '1' } }, [
+        el('div', { class: 'sb-title', text: t.freeTitle }),
+        el('div', { class: 'sb-sub', text: t.freeSub }),
+      ]),
+    ]),
+    el('div', { class: 'writing-body' }, [
+      el('div', { style: labStyle, text: t.freeWorkType }), typeRow, ekRow,
+      el('div', { style: labStyle, text: t.freeTaskLabel }), taskArea,
+      el('div', { style: labStyle, text: t.freeAnswerLabel }),
+      el('div', { style: { position: 'relative' } }, [answer, wc]),
+      photoBlock(), note,
+      el('div', { style: { marginTop: '14px' } }, [btn]),
+      loader, errBox, resultBox,
+    ]),
+  ]));
+  answer.focus();
 }

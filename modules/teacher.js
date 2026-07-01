@@ -15,7 +15,7 @@ import { checkAnswer } from '../js/checker.js';
 // Блок «📷 Фото письма» для ДЗ: распознаёт фото, дописывает в поле, требует сверки.
 function ocrPhotoBlock(ta, onText, errBox) {
   if (!canRecognizePhoto()) return null;
-  const input = el('input', { type: 'file', accept: 'image/*', capture: 'environment', style: { display: 'none' } });
+  const input = el('input', { type: 'file', accept: 'image/*', style: { display: 'none' } });
   const pbtn = el('button', { class: 'btn btn-ghost w-photo', text: t.wPhoto });
   const note = el('div', { class: 'w-photo-note', style: { display: 'none' }, text: t.wPhotoNote });
   pbtn.addEventListener('click', () => input.click());
@@ -551,6 +551,7 @@ export async function renderTeacher(container, opts) {
       el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.title }), el('div', { class: 'tch-sub', text: T.sub })]),
     ]));
     view.appendChild(el('div', { class: 'tch-actions' }, [
+      el('button', { class: 'btn tch-journal-btn', text: (EXAM.lang === 'en' ? '📚 Lesson plans' : '📚 Планы уроков'), onclick: () => { location.hash = '#/lessons'; } }),
       el('button', { class: 'btn tch-journal-btn', text: '📋 ' + T.savedBtn, onclick: showSavedSets }),
       el('button', { class: 'btn tch-journal-btn', text: '📊 ' + T.journal, onclick: () => renderJournal(container, opts) }),
     ]));

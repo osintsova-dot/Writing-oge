@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Работа и профессии · Урок 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:150px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(180px,1fr) 1.5fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}.ddef i{color:var(--muted)}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📗 Работа и профессии · Урок 1 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Работа и профессии</b><br>Урок 1 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 1 — Лексика и чтение · A2–B1</span>Work &amp; professions: выбираем путь</h1>
+  <div class="aims"><b>Цели:</b> освоить ключевую лексику темы «работа и профессии» (15 фраз с переводом и примерами); потренировать <b>чтение ОГЭ — «Верно / Неверно / Не сказано» (зад.13–19)</b> и стратегию работы с утверждениями; потренировать <b>аудирование</b> на реальном задании ФИПИ. <b>Сквозная идея:</b> сегодня собираем «топливо» (лексику + смысл темы), которое в Уроке 2 пойдёт в письмо, а в Уроке 3 — в устную часть. <b>Дома:</b> «Лексика» и «Чтение» в ОГЭ-тренажёре по теме.</div>
+
+  <!-- 1 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Разговор</h2><span class="tm">8 мин</span></div>
+    <ul>
+      <li>What job did you dream of when you were a child? Has it changed?</li>
+      <li>What is more important in a job — a high salary or doing what you love? Why?</li>
+      <li>Would you like to work from home or in an office? Why?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> цель — разговорить и поднять знакомую лексику. На A2–B1 поощряйте полные ответы (I'd like to be… because…). Запишите слова, которые всплывут, — пригодятся в задании 2.</div>
+  </div>
+
+  <!-- 2 Vocabulary -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Лексика · ключевые фразы темы</h2><span class="tm">28 мин</span></div>
+    <div class="subt"><b>2.1 · Изучи фразы (англ. → определение и перевод).</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Выбор профессии и планы</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to choose a profession</span><span class="ddef">to decide what kind of work you will do in your life <i>(выбрать профессию)</i></span></div>
+      <div class="drow"><span class="dterm">future profession</span><span class="ddef">the job you are going to do later in your life <i>(будущая профессия)</i></span></div>
+      <div class="drow"><span class="dterm">to have a dream job</span><span class="ddef">to have the job you would most love to do <i>(иметь работу мечты)</i></span></div>
+      <div class="drow"><span class="dterm">a well-paid job</span><span class="ddef">a job that gives you a lot of money <i>(хорошо оплачиваемая работа)</i></span></div>
+      <div class="drow"><span class="dterm">to make up one's mind</span><span class="ddef">to finally decide something after thinking about it <i>(решиться, принять решение)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Учёба и подготовка к карьере</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to enter a university</span><span class="ddef">to become a student at a university <i>(поступить в университет)</i></span></div>
+      <div class="drow"><span class="dterm">to graduate from university</span><span class="ddef">to finish your university course and get a degree <i>(окончить университет)</i></span></div>
+      <div class="drow"><span class="dterm">to be good at a subject</span><span class="ddef">to do something, e.g. a school subject, well <i>(хорошо разбираться в предмете)</i></span></div>
+      <div class="drow"><span class="dterm">to do an internship</span><span class="ddef">to work somewhere for a short time to gain experience <i>(пройти стажировку)</i></span></div>
+      <div class="drow"><span class="dterm">to get work experience</span><span class="ddef">to learn practical skills by doing a real job <i>(получить опыт работы)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Работа и качества</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to apply for a job</span><span class="ddef">to formally ask for a job, usually in writing <i>(подать заявку на работу)</i></span></div>
+      <div class="drow"><span class="dterm">to earn money</span><span class="ddef">to get money by working <i>(зарабатывать деньги)</i></span></div>
+      <div class="drow"><span class="dterm">to be hard-working</span><span class="ddef">to put a lot of effort and energy into your work <i>(быть трудолюбивым)</i></span></div>
+      <div class="drow"><span class="dterm">to be in demand</span><span class="ddef">to be wanted and needed by many employers <i>(быть востребованным)</i></span></div>
+      <div class="drow"><span class="dterm">career opportunities</span><span class="ddef">chances to get a good job and develop in your work <i>(карьерные возможности)</i></span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Скрыть слова — вспомни по определению</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Скрыть определения — проверь себя</button>
+
+    <div class="subt"><b>2.2 · Матчинг.</b> Восстанови фразу по определению:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to finally decide something → to make up one's <span class="gap" data-a="mind"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. a job that gives you a lot of money → a <span class="gap" data-a="well-paid"><input></span> job</li>
+      <li style="border:0;padding:0;margin:6px 0">3. to be wanted by many employers → to be in <span class="gap" data-a="demand"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to finish university and get a degree → to <span class="gap" data-a="graduate from"><input></span> university</li>
+      <li style="border:0;padding:0;margin:6px 0">5. to work somewhere briefly to gain experience → to do an <span class="gap" data-a="internship"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Проверить</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Подстановка в контекст.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. I haven't chosen a profession yet — I just can't <span class="gap" data-a="make up my mind"><input></span>.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. IT specialists are very <span class="gap" data-a="in demand"><input></span> today, so it is easy to find a job.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. A summer job is a good way to <span class="gap" data-a="earn money"><input></span> and become more independent.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. If you want to <span class="gap" data-a="get work experience"><input></span>, try a short internship in a real company.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Проверить</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Сделай своим.</b> Составь 4 предложения о своей будущей профессии с этими фразами: кем хочешь стать, что для этого изучать, где получить опыт. Эти же слова отрабатываются в тренажёре (интервальное повторение) и пригодятся в письме и устной части.</div>
+    <div class="tnote"><b>Ответы 2.2:</b> mind · well-paid · demand · graduate from · internship. <b>2.3:</b> make up my mind · in demand · earn money · get work experience. Лексику добивают в ОГЭ-тренажёре (SRS) — на уроке только ядро (15 фраз).</div>
+  </div>
+
+  <!-- 3 Reading T/F/NS -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Чтение · ОГЭ (зад.13–19: Верно / Неверно / Не сказано)</h2><span class="tm">24 мин</span></div>
+    <p>🔎 <b>Реальный текст ФИПИ.</b> Прочитай текст про карьеру известного повара и отметь для каждого утверждения: <b>1 — Верно (True)</b>, <b>2 — Неверно (False)</b>, <b>3 — Не сказано (Not stated)</b>.</p>
+    <div class="read"><p>Jamie Oliver is a genius in the world of food and one of Britain's most famous cooks. He has encouraged people to spend more time in the kitchen and enjoy it. His programmes are shown in over 100 countries including the USA, Australia, South Africa, Brazil, Japan and Iceland. They were translated into over 30 languages. Jamie Oliver's cookery books are bestsellers not only in the UK but across the world. Jamie Oliver was born in 1975 in England. From an early age he got interested in food. His parents had a pub where he often helped them in the kitchen. He actually began working there at the age of eight. Jamie cut vegetables like any other ordinary worker in the pub. Jamie Oliver left school at 16 without any official certificate. He went to Westminster College to study economics and after that travelled to France. Jamie knew that in France cooking was a kind of art. And he wanted to master that art. It was no doubt the best place to study if he wished to become a professional chef. After returning from France, Jamie worked in a number of British restaurants. At that time there was a programme on the telly about the café where Jamie worked. TV producers were impressed by the young chef. The next day Jamie received calls from five different TV companies wishing to work with him. He soon became the best-liked celebrity chef on television and his programme was a real revolution in cooking shows. Thanks to an informal and friendly manner Jamie Oliver won crowds of fans around the world. However, Jamie devotes his time not only to cooking. He's a family man, with a wife and four children. He also works on a number of projects. For example, Jamie Oliver created the 'Fifteen Foundation'. Each year, fifteen young people are trained and taught to work in the restaurant business. Some of them are from unhappy families and are unemployed. Some of them were in prison or took drugs. In this way Jamie Oliver tries to help them start a new life. Another project by Jamie Oliver is connected with school dinners and lunches. He wants school children to eat healthy food instead of junk food. The British government supported the project. It spent extra 280 million pounds to improve school meals. Part of the money was spent on training cooks and buying modern cooking equipment for schools. It's really hard to name all the TV programmes, shows, projects that Jamie Oliver has had. He's so creative and imaginative, that there's no end to new ideas and projects. Except television, Jamie Oliver is a writer. His every book immediately becomes a bestseller.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="3" data-e="Текст говорит, что Джейми помогал родителям в их пабе, но ХОТЕЛИ ли они, чтобы он стал поваром, — не сказано.">
+        <div class="stmt">13. Jamie's parents wanted their son to be a professional cook.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="Экономику он изучал в Westminster College; во Францию поехал учиться кулинарному искусству, чтобы стать шеф-поваром, — НЕ ради экономики.">
+        <div class="stmt">14. Jamie Oliver went to France to continue studying economics.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«He soon became the best-liked celebrity chef on television» — известность пришла именно благодаря ТВ-шоу.">
+        <div class="stmt">15. Jamie Oliver has become a well-known personality due to his TV show.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="Об отношении жены к проекту 'Fifteen Foundation' в тексте ничего не сказано.">
+        <div class="stmt">16. Jamie's wife was against his project 'Fifteen Foundation'.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«tries to help them start a new life» — проект даёт молодым людям шанс изменить жизнь к лучшему.">
+        <div class="stmt">17. Jamie's project the 'Fifteen Foundation' gives people a chance to improve their lives.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«The British government supported the project» — правительство поддержало, а не проигнорировало.">
+        <div class="stmt">18. The British government ignored Jamie's school meals project.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«Jamie Oliver is a writer. His every book immediately becomes a bestseller» — успешный писатель.">
+        <div class="stmt">19. Jamie Oliver is a successful writer.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Проверить</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Стратегия.</b> «Не сказано» — самый коварный вариант. Правило: <b>Неверно</b> = текст ПРЯМО противоречит утверждению; <b>Не сказано</b> = в тексте об этом НЕТ информации (ни «да», ни «нет»). Не достраивай по логике («раз помогал в пабе — значит, родители хотели») — отвечай только по тексту.</div>
+    <div class="tnote"><b>Реальный текст ФИПИ</b> (биография Джейми Оливера — карьера шеф-повара; тематично для «Работа и профессии»). <b>Ответы:</b> 13→3 · 14→2 · 15→1 · 16→3 · 17→1 · 18→2 · 19→1. На каждом разберите: где подтверждение (False) или почему «Не сказано».</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Аудирование · ОГЭ (короткие диалоги)</h2><span class="tm">17 мин</span></div>
+    <p>🎧 <b>Реальное аудио ФИПИ.</b> Услышишь 4 коротких разговора (быт, планы, работа за границей). Прослушай <b>дважды</b> и выбери 1, 2 или 3.</p>
+    <audio controls preload="none" src="https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/B144DA964CAB8CC9479A8C5092C730D7/img1_1701781600.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="1" data-e="«Your suitcase was collected by another passenger by mistake» — у пассажира забрали (потерялся) багаж.">
+        <div class="stmt">1. The airport officials are looking for a person who …</div>
+        <div class="mc"><button data-k="1">1) has lost their luggage.</button><button data-k="2">2) has missed their check-in time.</button><button data-k="3">3) has found another passenger's documents.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="Чарли звонит, чтобы поделиться впечатлениями о фильме, который они посмотрели.">
+        <div class="stmt">2. Charlie is calling …</div>
+        <div class="mc"><button data-k="1">1) to say sorry for being late to the cinema.</button><button data-k="2">2) to invite Fred to see a film with him.</button><button data-k="3">3) to share his impressions of the film.</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«Dad signed a two-year contract with a construction company in Melbourne» — отец получил там работу.">
+        <div class="stmt">3. Why did Alex spend half a year in Australia?</div>
+        <div class="mc"><button data-k="1">1) He was studying at university there.</button><button data-k="2">2) His father got a job there.</button><button data-k="3">3) He visited his aunt and her family.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«I've just got a new phone number» — у Тима сменился номер, поэтому Джоан не могла дозвониться.">
+        <div class="stmt">4. Why was it a problem for Joan to contact Tim by phone?</div>
+        <div class="mc"><button data-k="1">1) Tim was ignoring Joan's calls.</button><button data-k="2">2) Tim had forgotten to turn on his phone.</button><button data-k="3">3) Tim had got a new phone number.</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Проверить</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Стратегия.</b> Перед прослушиванием прочитай вопрос и варианты, подчеркни ключевые слова. Верный ответ ПЕРЕФРАЗИРУЕТ запись (signed a contract → got a job), а ловушка часто повторяет слово дословно, но смысл другой.</div>
+    <div class="tnote"><b>Реальное аудио ФИПИ</b> (4 коротких диалога). Отдельного «карьерного» аудирования в банке ФИПИ нет — взято <b>ближайшее</b> реальное задание; вопрос 3 прямо про работу за границей (контракт отца). <b>Ответы:</b> 1→1 · 2→3 · 3→2 · 4→3. Разберите, какими словами подтверждается каждый ответ. <b>Аудирование обязательно отрабатывается в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 5 Speaking -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · короткое высказывание</h2><span class="tm">8 мин</span></div>
+    <p>Расскажи <b>1,5–2 минуты</b> на тему <b>"My future profession"</b>. Используй минимум 4 фразы из задания 2. План: what you'd like to be and why · what you are good at · what to study (university / college) · how to get work experience.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Старт 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Учителю:</b> на A2–B1 требуйте связки (because, also, for example) и полные предложения. Это подготовка к монологу (зад.3 устной части) — вернёмся в Уроке 3.</div>
+  </div>
+
+  <!-- 6 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Работа и профессии»: «Лексика» + «Чтение» + <b>«Аудирование»</b> (обязательно).</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → выбери тему «Работа и профессии» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Работа и профессии · Урок 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Показать слова':'🙈 Скрыть слова — вспомни по определению';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Показать определения':'🙈 Скрыть определения — проверь себя';
+  }
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

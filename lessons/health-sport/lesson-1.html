@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Здоровье и спорт · Урок 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:150px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(180px,1fr) 1.5fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}.ddef i{color:var(--muted)}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📗 Здоровье и спорт · Урок 1 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Здоровье и спорт</b><br>Урок 1 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 1 — Лексика и чтение · A2–B1</span>Health &amp; sport: keep fit, stay healthy</h1>
+  <div class="aims"><b>Цели:</b> освоить ключевую лексику темы «здоровье и спорт» (14 фраз с переводом и примерами); потренировать <b>чтение ОГЭ — «Верно / Неверно / Не сказано» (зад.13–19)</b> и стратегию работы с утверждениями; потренировать <b>аудирование</b> на реальном задании ФИПИ. <b>Дома:</b> «Лексика» и «Чтение» в ОГЭ-тренажёре по теме.</div>
+
+  <!-- 1 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Разговор</h2><span class="tm">8 мин</span></div>
+    <ul>
+      <li>What do you do to keep fit? How often do you exercise?</li>
+      <li>Do you think your diet is healthy? Why / why not?</li>
+      <li>What is your favourite sport — to do or to watch? Why?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> цель — разговорить и поднять знакомую лексику. На A2–B1 поощряйте полные ответы (I keep fit by… because…). Запишите слова, которые всплывут, — пригодятся в задании 2.</div>
+  </div>
+
+  <!-- 2 Vocabulary -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Лексика · ключевые фразы темы</h2><span class="tm">28 мин</span></div>
+    <div class="subt"><b>2.1 · Изучи фразы (англ. → определение и перевод).</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Спорт и физическая форма</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to take up a sport</span><span class="ddef">to start doing a new sport or activity <i>(начать заниматься спортом)</i></span></div>
+      <div class="drow"><span class="dterm">to keep fit</span><span class="ddef">to stay strong and healthy by exercising <i>(поддерживать форму)</i></span></div>
+      <div class="drow"><span class="dterm">to work out</span><span class="ddef">to do physical exercise, often in a gym <i>(тренироваться)</i></span></div>
+      <div class="drow"><span class="dterm">to exercise regularly</span><span class="ddef">to do physical activity often, as a habit <i>(регулярно заниматься)</i></span></div>
+      <div class="drow"><span class="dterm">to be a club member</span><span class="ddef">to belong to a sports club and train there <i>(быть членом клуба)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Здоровый образ жизни и питание</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to lead a healthy lifestyle</span><span class="ddef">to live in a way that keeps your body healthy <i>(вести здоровый образ жизни)</i></span></div>
+      <div class="drow"><span class="dterm">a balanced diet</span><span class="ddef">meals with the right mix of healthy food <i>(сбалансированное питание)</i></span></div>
+      <div class="drow"><span class="dterm">to avoid fast food</span><span class="ddef">to keep away from unhealthy quick meals <i>(избегать фастфуда)</i></span></div>
+      <div class="drow"><span class="dterm">to stay in shape</span><span class="ddef">to keep your body fit and in good condition <i>(оставаться в форме)</i></span></div>
+      <div class="drow"><span class="dterm">to get enough sleep</span><span class="ddef">to sleep as much as your body needs <i>(высыпаться)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Польза и проблемы</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to fight stress</span><span class="ddef">to deal with worry and pressure <i>(бороться со стрессом)</i></span></div>
+      <div class="drow"><span class="dterm">to boost your mood</span><span class="ddef">to make yourself feel happier and more positive <i>(улучшать настроение)</i></span></div>
+      <div class="drow"><span class="dterm">to catch a cold</span><span class="ddef">to get a common illness with a runny nose and cough <i>(простудиться)</i></span></div>
+      <div class="drow"><span class="dterm">to put on weight</span><span class="ddef">to become heavier <i>(набирать вес)</i></span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Скрыть слова — вспомни по определению</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Скрыть определения — проверь себя</button>
+
+    <div class="subt"><b>2.2 · Матчинг.</b> Восстанови фразу по определению:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. to stay strong and healthy by exercising → to <span class="gap" data-a="keep fit"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. to keep away from unhealthy quick meals → to <span class="gap" data-a="avoid fast food"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. to deal with worry and pressure → to <span class="gap" data-a="fight stress"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to sleep as much as your body needs → to <span class="gap" data-a="get enough sleep"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">5. to start doing a new sport → to <span class="gap" data-a="take up"><input></span> a sport</li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Проверить</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Подстановка в контекст.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. I try to <span class="gap" data-a="exercise regularly"><input></span> — at least three times a week.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. A <span class="gap" data-a="balanced diet"><input></span> gives your body all the vitamins it needs.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. In winter I often <span class="gap" data-a="catch a cold"><input></span> and have to stay at home.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. Doing sport is a great way to <span class="gap" data-a="fight stress"><input></span> before exams.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Проверить</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Сделай своим.</b> Составь 4 предложения о своём образе жизни с этими фразами: что делаешь, чтобы keep fit, что ешь, как спорт помогает fight stress. Эти же слова отрабатываются в тренажёре (интервальное повторение) и пригодятся в письме и устной части.</div>
+    <div class="tnote"><b>Ответы 2.2:</b> keep fit · avoid fast food · fight stress · get enough sleep · take up. <b>2.3:</b> exercise regularly · balanced diet · catch a cold · fight stress. Лексику добивают в ОГЭ-тренажёре (SRS) — на уроке только ядро (14 фраз).</div>
+  </div>
+
+  <!-- 3 Reading T/F/NS -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Чтение · ОГЭ (зад.13–19: Верно / Неверно / Не сказано)</h2><span class="tm">24 мин</span></div>
+    <p>🔎 <b>Реальный текст ФИПИ.</b> Прочитай текст и отметь для каждого утверждения: <b>1 — Верно (True)</b>, <b>2 — Неверно (False)</b>, <b>3 — Не сказано (Not stated)</b>.</p>
+    <div class="read"><p><b>Running the Thames.</b> Three friends Alan, Tom and Martin decided to run 184 miles along the most famous British river – from the beginning of the Thames down to its mouth, where the river runs into the sea. Their preparations for the marathon didn't take long and they set out. It was not easy to find the place marked on the map as the official source of the river Thames. In reality, it was an old stone under a big tree. Surprisingly, there was practically no water at the source, just a small pit. However, at the end of the first day they came to a narrow stream running under a wooden bridge. The runners were lucky with the weather; it was cool and bright for the whole week. Soft winds blew and the sun shone. In spite of the weather, the start of the marathon was not very promising. On the first day, Martin accidentally fell over a tree root and hurt his foot. In addition to that, Alan said he had damaged his rucksack during their preparation. However, the friends went on running. They passed lovely houses and some wonderful nature. The Thames had grown from a small river into a strong stream. Hypnotised by the view of the river, Tom missed the path and fell into the mud. Cold and angry, he was a real trouble the first day. In the evening, the runners reached the point where the river became possible to navigate. The friends were so tired that they stopped at a cheap hotel for food, drink and sleep. The second day they ran along arched stone bridges and through forty-five river locks, each one having its own history. The runners stopped at the first lock to take a photo by the 19th century statue of Old Father Thames. The other locks and the bridges, dating from the 13th century, could have told much about British royal families, writers and inventors, battles and victories. So the runners spent the second day exploring the locks and the old bridges and taking photos. The next few days Alan, Tom and Martin ran through quiet and peaceful places in Oxfordshire. The calm river occupied all their thoughts and they left their troubles behind them. They spent nights at small Bed-and-Breakfasts with unusual foreign guests who were discovering the old British towns, castles and churches. Closer to London the Thames changed its character. It became wide and busy with numerous boats and ships. The banks were full of grand houses with green lawns, street markets and modern walkways. On the seventh day the runners followed the river as it cut the capital in two. The friends made their way past famous London sights such as The Tower, The London Eye and Greenwich. Finally the friends got to The Thames Barrier, where the river ran into the sea. The marathon was over.</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="1" data-e="«It was an old stone under a big tree» — источник реки был отмечен природным ориентиром (старый камень под деревом).">
+        <div class="stmt">13. There was a natural mark which indicated the start of the river Thames.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«The runners were lucky with the weather; it was cool and bright for the whole week» — погода была хорошей.">
+        <div class="stmt">14. During the marathon the weather was fine.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="Сказано лишь, что Мартин повредил ногу, а у Алана пострадал рюкзак. Нёс ли Том чей-то рюкзак — НЕ сказано.">
+        <div class="stmt">15. After the accident with Martin's leg, Tom carried his rucksack.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="Они ночевали в дешёвом отеле и в Bed-and-Breakfasts — не в палатке.">
+        <div class="stmt">16. During the marathon the friends spent all their nights in the tent.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="Они остановились у статуи сфотографироваться, но было ли там много туристов — в тексте НЕ сказано.">
+        <div class="stmt">17. There were a lot of tourists near the statue of Old Father Thames.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«It became wide and busy with numerous boats and ships» — у Лондона река была судоходной, не закрытой.">
+        <div class="stmt">18. Near London the Thames was closed to navigation.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«The runners followed the river as it cut the capital in two… past famous London sights» — маршрут шёл через Лондон.">
+        <div class="stmt">19. The marathon route went through London.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Проверить</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Стратегия.</b> «Не сказано» — самый коварный вариант. Правило: <b>Неверно</b> = текст ПРЯМО противоречит утверждению; <b>Не сказано</b> = в тексте об этом НЕТ информации (ни «да», ни «нет»). Не достраивай по логике — отвечай только по тексту.</div>
+    <div class="tnote"><b>Реальный текст ФИПИ</b> («Running the Thames» — трое друзей бегут марафон вдоль Темзы; в нём же ядро лексики темы: run a marathon, set out, be lucky with the weather, hurt one's foot, go on running, reach the finishing point). <b>Ответы:</b> 13→1 · 14→1 · 15→3 · 16→2 · 17→3 · 18→2 · 19→1. На каждом разберите: где подтверждение (True/False) или почему «Не сказано».</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Аудирование · ОГЭ (короткие диалоги)</h2><span class="tm">17 мин</span></div>
+    <p>🎧 <b>Реальное аудио ФИПИ.</b> Услышишь 4 коротких разговора (спорт, школа, досуг). Прослушай <b>дважды</b> и выбери 1, 2 или 3.</p>
+    <audio controls preload="none" src="https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/C1E3466558A5BBEE433BAC985E1C971C/img1_1701781883.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="1" data-e="«You may take horse-riding lessons from 3 to 8 p.m.» — сейчас доступны уроки верховой езды.">
+        <div class="stmt">1. What activity is available for the language school students at the moment?</div>
+        <div class="mc"><button data-k="1">1) Horse-riding lessons.</button><button data-k="2">2) Swimming lessons.</button><button data-k="3">3) Gymnastics lessons.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«The football match and my swimming competition happened to be at the same time» — у Томаса было другое соревнование.">
+        <div class="stmt">2. Thomas didn't come to support his football team because …</div>
+        <div class="mc"><button data-k="1">1) he confused the time of the game.</button><button data-k="2">2) he had got stuck in a traffic jam.</button><button data-k="3">3) he had to take part in some other competition.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«Chocolate cake, then… Yes, I'll take it» — Энн заказывает шоколадный торт.">
+        <div class="stmt">3. Ann's order in the café is a cup of green tea and …</div>
+        <div class="mc"><button data-k="1">1) an apple pie.</button><button data-k="2">2) a vanilla cake.</button><button data-k="3">3) a chocolate cake.</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«Oh, the glasses! With high UV protection» — Миа получила лыжные очки.">
+        <div class="stmt">4. What birthday present did Mia get?</div>
+        <div class="mc"><button data-k="1">1) A headphone set.</button><button data-k="2">2) Ski glasses.</button><button data-k="3">3) A smart watch.</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Проверить</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Стратегия.</b> Перед прослушиванием прочитай вопрос и варианты, подчеркни ключевые слова. Верный ответ ПЕРЕФРАЗИРУЕТ запись (swimming competition → some other competition), а ловушка часто повторяет слово дословно, но смысл другой.</div>
+    <div class="tnote"><b>Реальное аудио ФИПИ</b> (4 коротких диалога). <b>Ответы:</b> 1→1 · 2→3 · 3→3 · 4→2. Разберите, какими словами подтверждается каждый ответ. <b>Аудирование обязательно отрабатывается в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 5 Speaking -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · короткое высказывание</h2><span class="tm">8 мин</span></div>
+    <p>Расскажи <b>1,5–2 минуты</b> на тему <b>"Keeping fit and doing sport"</b>. Используй минимум 4 фразы из задания 2. План: what you do to keep fit · whether your diet is healthy · your favourite sport · how sport helps you feel better.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Старт 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Учителю:</b> на A2–B1 требуйте связки (because, also, for example) и полные предложения. Это подготовка к монологу (зад.3 устной части) — вернёмся в Уроке 3.</div>
+  </div>
+
+  <!-- 6 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Здоровье и спорт»: «Лексика» + «Чтение» + <b>«Аудирование»</b> (обязательно).</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → выбери тему «Здоровье и спорт» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Здоровье и спорт · Урок 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Показать слова':'🙈 Скрыть слова — вспомни по определению';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Показать определения':'🙈 Скрыть определения — проверь себя';
+  }
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>

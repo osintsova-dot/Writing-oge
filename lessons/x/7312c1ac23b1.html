@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile · ОГЭ · Наука и технологии · Урок 1</title>
+<style>
+  :root{--p:#6C3FC5;--p2:#8a5cf0;--honey:#F5C842;--ink:#1A1A2E;--muted:#5b5b73;--line:#e3e3ee;--soft:#f5f3fb;--ok:#2faf63;--no:#e05656}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.55;background:#eceaf3}
+  .sheet{max-width:820px;margin:0 auto;background:#fff;padding:34px 40px 30px;box-shadow:0 6px 30px rgba(108,63,197,.12)}
+  .bar{position:sticky;top:0;z-index:20;background:var(--p);color:#fff;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+  .bar .t{font-weight:800;margin-right:auto;font-size:14px}
+  .bar button{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;background:rgba(255,255,255,.16);color:#fff}
+  .bar button.on{background:var(--honey);color:#3a2b00}
+  .bar button.print{background:#fff;color:var(--p)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--p);padding-bottom:10px;margin-bottom:16px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;color:var(--p)}
+  .brand .logo{width:32px;height:32px;border-radius:8px;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px}
+  .meta{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.meta b{color:var(--ink)}
+  h1{font-size:25px;font-weight:900;letter-spacing:-.01em;margin:4px 0 2px}
+  h1 .sub{display:block;font-size:13px;font-weight:700;color:var(--p);letter-spacing:.05em;text-transform:uppercase}
+  .aims{background:var(--soft);border-radius:10px;padding:12px 15px;margin:13px 0 20px;font-size:12.5px}.aims b{color:var(--p)}
+  .sec{margin:20px 0;page-break-inside:avoid}
+  .sec-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .sec-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--p);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+  .sec-h h2{font-size:17px;font-weight:800}
+  .sec-h .tm{margin-left:auto;font-size:11px;color:var(--muted);font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px}
+  ul{margin:6px 0 6px 20px}li{margin:3px 0}
+  .box{border:1px solid var(--line);border-left:4px solid var(--honey);background:#fffdf5;border-radius:8px;padding:11px 14px;margin:11px 0;font-size:12.5px}.box b{color:#7a5a00}
+  .read{border:1px solid var(--line);border-radius:8px;padding:13px 15px;background:#fff;font-size:13.5px;line-height:1.7}.read p{margin:6px 0}
+  .gap{display:inline-block}
+  .gap input{font:inherit;border:0;border-bottom:1.5px solid #b9b3d6;min-width:150px;padding:1px 4px;background:transparent}
+  .gap input:focus{outline:0;border-color:var(--p)}
+  .gap.ok input{border-color:var(--ok);color:var(--ok);font-weight:700}
+  .gap.no input{border-color:var(--no)}
+  .deflist{display:flex;flex-direction:column;gap:4px;margin:8px 0}
+  .drow{display:grid;grid-template-columns:minmax(180px,1fr) 1.5fr;gap:8px 16px;padding:5px 8px;border-radius:6px}
+  .drow:nth-child(odd){background:var(--soft)}
+  .dterm{font-weight:700;color:var(--p)}.ddef{color:#33333f}.ddef i{color:var(--muted)}
+  .deflist.test .ddef{visibility:hidden}
+  .deflist.testw .dterm{visibility:hidden}
+  .subt{font-weight:800;margin:14px 0 4px;font-size:13.5px}.subt b{color:var(--p)}
+  .tf{margin-top:10px}
+  .tf .row{margin:12px 0;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .tf .stmt{font-weight:600;margin-bottom:5px}
+  .mc{display:flex;flex-direction:column;gap:5px}
+  .mc button{font:inherit;font-size:12.5px;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:7px;padding:6px 11px;cursor:pointer;color:var(--ink)}
+  .mc button.sel{background:var(--p);color:#fff;border-color:var(--p)}
+  .mc button.right{background:var(--ok);color:#fff;border-color:var(--ok)}
+  .mc button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+  .expl{display:none;font-size:12px;color:var(--muted);margin-top:6px;padding:6px 10px;background:var(--soft);border-radius:6px}
+  .expl.show{display:block}
+  .check{font:inherit;font-weight:700;font-size:13px;border:0;border-radius:9px;padding:9px 18px;cursor:pointer;background:var(--honey);color:#3a2b00;margin-top:10px}
+  .score{margin-left:12px;font-weight:800;color:var(--p)}
+  .tnote{background:#eef0ff;border:1px solid #c5cdff;border-radius:8px;padding:10px 13px;margin:9px 0;font-size:12px;color:#2a2a6a}.tnote b{color:var(--p)}
+  body.student .tnote{display:none}
+  .foot{border-top:1px solid var(--line);padding-top:8px;margin-top:24px;font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .timer{display:inline-flex;align-items:center;gap:10px;margin-top:8px}
+  .timer button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:7px 14px;background:var(--p);color:#fff;cursor:pointer}
+  .timer .clock{font-weight:900;font-size:18px;color:var(--p)}
+  @media print{@page{size:A4;margin:14mm 14mm}body{background:#fff;font-size:12px}.sheet{box-shadow:none;max-width:none;padding:0}.bar,.check,.score,.timer button{display:none!important}.mc button{border-color:#bbb}body.student .expl{display:none}}
+</style>
+</head>
+<body class="teacher">
+<div class="bar">
+  <span class="t">📗 Наука и технологии · Урок 1 · A2–B1</span>
+  <button id="bRole" class="on">👩‍🏫 Версия: учитель</button>
+  <button class="print" onclick="window.print()">🖨 Печать / PDF</button>
+</div>
+<div class="sheet">
+  <div class="head">
+    <div class="brand"><span class="logo">S</span> Speak &amp; Smile</div>
+    <div class="meta"><b>ОГЭ · Английский язык</b><br>Тема · <b>Наука и технологии</b><br>Урок 1 из 3 · уровень A2–B1 · 90 минут</div>
+  </div>
+  <h1><span class="sub">Урок 1 — Лексика и чтение · A2–B1</span>Science &amp; technology: идеи, которые меняют мир</h1>
+  <div class="aims"><b>Цели:</b> освоить ключевую лексику темы «наука и технологии» (15 фраз с переводом и примерами); потренировать <b>чтение ОГЭ — «Верно / Неверно / Не сказано» (зад.13–19)</b> и стратегию работы с утверждениями; потренировать <b>аудирование</b> на реальном задании ФИПИ. <b>Дома:</b> «Лексика» и «Чтение» в ОГЭ-тренажёре по теме.</div>
+
+  <!-- 1 Lead-in -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">1</span><h2>Lead-in · Разговор</h2><span class="tm">8 мин</span></div>
+    <ul>
+      <li>Which gadget can you not imagine your life without? Why?</li>
+      <li>What scientific discovery or invention do you find the most amazing?</li>
+      <li>Does technology make our life better or just busier? What do you think?</li>
+    </ul>
+    <div class="tnote"><b>Учителю:</b> цель — разговорить и поднять знакомую лексику. На A2–B1 поощряйте полные ответы (I can't live without… because…). Запишите слова, которые всплывут, — пригодятся в задании 2.</div>
+  </div>
+
+  <!-- 2 Vocabulary -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">2</span><h2>Лексика · ключевые фразы темы</h2><span class="tm">28 мин</span></div>
+    <div class="subt"><b>2.1 · Изучи фразы (англ. → определение и перевод).</b></div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">A · Гаджеты и интернет</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">to use a smartphone</span><span class="ddef">to use a mobile phone for calls, messages and apps <i>(пользоваться смартфоном)</i></span></div>
+      <div class="drow"><span class="dterm">the latest device</span><span class="ddef">the newest gadget that has just appeared on the market <i>(новейшее устройство)</i></span></div>
+      <div class="drow"><span class="dterm">to download apps</span><span class="ddef">to copy programs onto your phone from the Internet <i>(скачивать приложения)</i></span></div>
+      <div class="drow"><span class="dterm">to keep in touch with friends</span><span class="ddef">to stay in contact with people you know <i>(поддерживать связь с друзьями)</i></span></div>
+      <div class="drow"><span class="dterm">to spend hours online</span><span class="ddef">to use the Internet for a very long time <i>(проводить часы в сети)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">B · Наука и изобретения</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">a scientific discovery</span><span class="ddef">an important new fact that scientists find out <i>(научное открытие)</i></span></div>
+      <div class="drow"><span class="dterm">to invent something</span><span class="ddef">to create something completely new for the first time <i>(изобрести что-л.)</i></span></div>
+      <div class="drow"><span class="dterm">an invention</span><span class="ddef">a new thing that somebody has made for the first time <i>(изобретение)</i></span></div>
+      <div class="drow"><span class="dterm">to carry out an experiment</span><span class="ddef">to do a scientific test to check an idea <i>(провести эксперимент)</i></span></div>
+      <div class="drow"><span class="dterm">to do research</span><span class="ddef">to study a subject carefully to find new facts <i>(проводить исследования)</i></span></div>
+      <div class="drow"><span class="dterm">a breakthrough</span><span class="ddef">an important discovery that helps solve a big problem <i>(прорыв)</i></span></div>
+    </div>
+    <div class="vgroup" style="font-weight:800;color:var(--p);font-size:12px;margin:10px 0 3px;text-transform:uppercase">C · Польза и риски</div>
+    <div class="deflist">
+      <div class="drow"><span class="dterm">modern technology</span><span class="ddef">the newest machines and electronic systems we use today <i>(современные технологии)</i></span></div>
+      <div class="drow"><span class="dterm">to make life easier</span><span class="ddef">to make everyday life more convenient <i>(облегчать жизнь)</i></span></div>
+      <div class="drow"><span class="dterm">to be dependent on technology</span><span class="ddef">to rely on gadgets too much <i>(зависеть от технологий)</i></span></div>
+      <div class="drow"><span class="dterm">to become addicted to gadgets</span><span class="ddef">to be unable to stop using devices <i>(стать зависимым от гаджетов)</i></span></div>
+    </div>
+    <button class="check" onclick="toggleWords()" id="wordBtn">🙈 Скрыть слова — вспомни по определению</button>
+    <button class="check" onclick="toggleDefs()" id="defBtn">🙈 Скрыть определения — проверь себя</button>
+
+    <div class="subt"><b>2.2 · Матчинг.</b> Восстанови фразу по определению:</div>
+    <ul class="tf" id="match" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. an important discovery that solves a big problem → a <span class="gap" data-a="breakthrough"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">2. to study a subject carefully to find new facts → to do <span class="gap" data-a="research"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">3. to make everyday life more convenient → to <span class="gap" data-a="make life easier"><input></span></li>
+      <li style="border:0;padding:0;margin:6px 0">4. to create something completely new → to <span class="gap" data-a="invent"><input></span> something</li>
+      <li style="border:0;padding:0;margin:6px 0">5. the newest gadget on the market → the <span class="gap" data-a="latest device"><input></span></li>
+    </ul>
+    <button class="check" onclick="checkGroup('match','matchScore')">Проверить</button><span class="score" id="matchScore"></span>
+
+    <div class="subt"><b>2.3 · Подстановка в контекст.</b></div>
+    <ul class="tf" id="gaps" style="border:0">
+      <li style="border:0;padding:0;margin:6px 0">1. Before they trust the results, scientists usually <span class="gap" data-a="carry out an experiment"><input></span> many times.</li>
+      <li style="border:0;padding:0;margin:6px 0">2. The first vaccine was a real <span class="gap" data-a="breakthrough"><input></span> in modern medicine.</li>
+      <li style="border:0;padding:0;margin:6px 0">3. I use my phone to <span class="gap" data-a="keep in touch with"><input></span> my friends every day.</li>
+      <li style="border:0;padding:0;margin:6px 0">4. Many teenagers <span class="gap" data-a="spend hours online"><input></span> instead of doing their homework.</li>
+    </ul>
+    <button class="check" onclick="checkGroup('gaps','gapScore')">Проверить</button><span class="score" id="gapScore"></span>
+
+    <div class="box"><b>2.4 · Сделай своим.</b> Составь 4 предложения о технологиях в своей жизни: любимый гаджет, открытие, которое тебя удивляет, и чем технологии тебе помогают. Эти же слова отрабатываются в тренажёре (интервальное повторение) и пригодятся в письме и устной части.</div>
+    <div class="tnote"><b>Ответы 2.2:</b> breakthrough · research · make life easier · invent · latest device. <b>2.3:</b> carry out an experiment · breakthrough · keep in touch with · spend hours online. Лексику добивают в ОГЭ-тренажёре (SRS) — на уроке только ядро (15 фраз).</div>
+  </div>
+
+  <!-- 3 Reading T/F/NS -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">3</span><h2>Чтение · ОГЭ (зад.13–19: Верно / Неверно / Не сказано)</h2><span class="tm">24 мин</span></div>
+    <p>🔎 <b>Реальный текст ФИПИ.</b> Прочитай текст и отметь для каждого утверждения: <b>1 — Верно (True)</b>, <b>2 — Неверно (False)</b>, <b>3 — Не сказано (Not stated)</b>.</p>
+    <div class="read"><p>Sir Christopher Wren was a designer, astronomer, geometer, and one of the greatest English architects of his time. Christopher Wren was born into a rich family in 1632. He was a weak and sickly child and was taught at home by private tutors and his father. Wren's schooling is a mystery: there are no documents about whether he attended school or not. However, there is written evidence that he entered Oxford University in 1650 to study science and mathematics. On graduating from university, Wren was appointed Professor of Astronomy at Gresham College, London. He was required to give weekly lectures in both Latin and English to all who wished to attend; admission was free. His lectures and the following discussions led to establishing the Royal Society, England's first scientific organization. Later, Christopher Wren taught at Oxford University. His scientific work included astronomy, optics, mechanics, medicine and meteorology. He invented and improved lots of things. He experimented with submarine design, road paving, and design of telescopes. It was also around these times that his attention turned to architecture. In Wren's time, the profession of an architect did not exist. In the past, buildings had been constructed to the requirements of the patron and the suggestions of building professionals, such as master carpenters or master bricklayers. Since the early years of the 17th century, it was not unusual for the well-educated gentleman to take up architecture as a hobby. Wren designed 51 London churches, including St Paul's Cathedral, and several buildings after the Great Fire in 1666. Each church was different, though all were classical in style. He insisted on the finest materials, and only skillful workers were hired for the job. Actually, St Paul's Cathedral is still Wren's masterpiece. The foundation stone of the Cathedral was laid in 1675 when Wren was 43 years old, and the last stone was put in place by his son, 35 years later. Nowadays, St Paul's Cathedral is the largest working Protestant church in England. Wren died on 25th February 1723. His gravestone in St Paul's Cathedral features a Latin inscription which translates as: 'If you seek his memorial, look about you.'</p></div>
+    <div class="tf" id="reading">
+      <div class="row" data-a="3" data-e="В тексте сказано, что он родился в богатой семье в 1632 г., но в честь кого его назвали — НЕ сказано.">
+        <div class="stmt">13. Christopher Wren was named after his father.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«there is written evidence that he entered Oxford University in 1650» — доказательство ЕСТЬ, значит утверждение неверно.">
+        <div class="stmt">14. There is no proof that Christopher Wren studied at Oxford University.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«His scientific work included astronomy, optics, mechanics, medicine and meteorology» — интересы были в разных областях.">
+        <div class="stmt">15. Christopher Wren's scientific interests were in different spheres.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«In Wren's time, the profession of an architect did not exist» — профессии архитектора ещё не было, значит популярной она быть не могла.">
+        <div class="stmt">16. The profession of an architect was very popular in the 17th century.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«He insisted on the finest materials, and only skillful workers were hired» — был требователен к материалам и работникам.">
+        <div class="stmt">17. Christopher Wren was demanding when choosing materials and builders.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«the last stone was put in place by his son» — последний камень собора положил его сын.">
+        <div class="stmt">18. Christopher Wren's son completed the construction of St Paul's Cathedral.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="Собор назван его «masterpiece» (шедевром), но был ли он его ЛЮБИМЫМ проектом — в тексте не сказано.">
+        <div class="stmt">19. St Paul's Cathedral was Sir Christopher Wren's favourite project.</div>
+        <div class="mc"><button data-k="1">1) Верно (True)</button><button data-k="2">2) Неверно (False)</button><button data-k="3">3) Не сказано (Not stated)</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('reading','readScore')">Проверить</button><span class="score" id="readScore"></span>
+    <div class="box"><b>Стратегия.</b> «Не сказано» — самый коварный вариант. Правило: <b>Неверно</b> = текст ПРЯМО противоречит утверждению; <b>Не сказано</b> = в тексте об этом НЕТ информации (ни «да», ни «нет»). Не достраивай по логике — отвечай только по тексту.</div>
+    <div class="tnote"><b>Реальный текст ФИПИ</b> (Sir Christopher Wren — учёный, астроном, изобретатель и архитектор). <b>Ответы:</b> 13→3 · 14→2 · 15→1 · 16→2 · 17→1 · 18→1 · 19→3. На каждом разберите: где подтверждение (True/False) или почему «Не сказано» (named after, favourite — домыслы).</div>
+  </div>
+
+  <!-- 4 Listening -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">4</span><h2>Аудирование · ОГЭ (короткие диалоги)</h2><span class="tm">17 мин</span></div>
+    <p>🎧 <b>Реальное аудио ФИПИ.</b> Услышишь 4 коротких разговора (объявление о компьютерном клубе, быт, учёба, хобби). Прослушай <b>дважды</b> и выбери 1, 2 или 3.</p>
+    <audio controls preload="none" src="https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/D054C1AEBDD1B21C4F8AEBF4C4FFEBBA/img1_1701781501.mp3" style="width:100%;margin:6px 0;height:38px"></audio>
+    <div class="tf" id="listening">
+      <div class="row" data-a="3" data-e="«we hold classes for young people age 12 to 20 at weekends» — для подростков клуб работает по выходным.">
+        <div class="stmt">1. Teenagers can study in the computer club …</div>
+        <div class="mc"><button data-k="1">1) any day of the week.</button><button data-k="2">2) from Monday to Friday.</button><button data-k="3">3) at weekends.</button></div>
+      </div>
+      <div class="row" data-a="1" data-e="«My dog, Buddy, got very sick. We took him to hospital… I waited there» — Кэти ухаживала за питомцем.">
+        <div class="stmt">2. Yesterday Cathy …</div>
+        <div class="mc"><button data-k="1">1) was taking care of her pet.</button><button data-k="2">2) was at her friend's birthday party.</button><button data-k="3">3) was very busy with her homework.</button></div>
+      </div>
+      <div class="row" data-a="2" data-e="«my friend and I decided to stay in the hostel» — Оливер живёт в студенческом общежитии.">
+        <div class="stmt">3. Where is Oliver staying while studying at the language school?</div>
+        <div class="mc"><button data-k="1">1) With his relatives.</button><button data-k="2">2) In a student hostel.</button><button data-k="3">3) With a host family.</button></div>
+      </div>
+      <div class="row" data-a="3" data-e="«I hate knitting and drawing… what I like is making cakes, pies and biscuits» — хобби Джейн — готовка.">
+        <div class="stmt">4. What's Jane's hobby?</div>
+        <div class="mc"><button data-k="1">1) Drawing.</button><button data-k="2">2) Photography.</button><button data-k="3">3) Cooking.</button></div>
+      </div>
+    </div>
+    <button class="check" onclick="checkMC('listening','lisScore')">Проверить</button><span class="score" id="lisScore"></span>
+    <div class="box"><b>Стратегия.</b> Перед прослушиванием прочитай вопрос и варианты, подчеркни ключевые слова. Верный ответ ПЕРЕФРАЗИРУЕТ запись (making cakes → cooking), а ловушка часто повторяет слово дословно, но смысл другой (drawing звучит, но Джейн его ненавидит).</div>
+    <div class="tnote"><b>Реальное аудио ФИПИ</b> (4 коротких диалога; первый — объявление о бесплатном компьютерном клубе). <b>Ответы:</b> 1→3 · 2→1 · 3→2 · 4→3. Разберите, какими словами подтверждается каждый ответ. <b>Аудирование обязательно отрабатывается в тренажёре (ДЗ).</b></div>
+  </div>
+
+  <!-- 5 Speaking -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">5</span><h2>Speaking · короткое высказывание</h2><span class="tm">8 мин</span></div>
+    <p>Расскажи <b>1,5–2 минуты</b> на тему <b>"Technology in my life"</b>. Используй минимум 4 фразы из задания 2. План: which gadget you use most and what for · a discovery or invention you find amazing · how technology makes your life easier · whether you spend too much time online.</p>
+    <div class="timer"><button onclick="startTimer()">▶ Старт 2:00</button><span class="clock" id="clock">2:00</span></div>
+    <div class="tnote"><b>Учителю:</b> на A2–B1 требуйте связки (because, also, for example) и полные предложения. Это подготовка к монологу (зад.3 устной части) — вернёмся в Уроке 3.</div>
+  </div>
+
+  <!-- 6 Homework -->
+  <div class="sec">
+    <div class="sec-h"><span class="sec-n">6</span><h2>Домашнее задание</h2><span class="tm">5 мин</span></div>
+    <ul>
+      <li>📱 <b>ОГЭ-тренажёр S&amp;S</b> — тема «Наука и технологии»: «Лексика» + «Чтение» + <b>«Аудирование»</b> (обязательно).</li>
+    </ul>
+    <div class="tnote"><b>Как задать ДЗ (учителю):</b> ОГЭ-тренажёр S&amp;S → учительский блок → <b>«Конструктор ДЗ»</b> → выбери тему «Наука и технологии» → <b>«Ссылка-задание»</b> ученикам <b>или</b> «Печать worksheet» с ключами.</div>
+  </div>
+
+  <div class="foot"><span>S&amp;S ОГЭ Lab · Наука и технологии · Урок 1</span><span>© Speak &amp; Smile</span></div>
+</div>
+<script>
+  var role='teacher';
+  document.getElementById('bRole').onclick=function(){
+    role=role==='teacher'?'student':'teacher';document.body.className=role;
+    this.classList.toggle('on',role==='teacher');
+    this.textContent=role==='teacher'?'👩‍🏫 Версия: учитель':'🧑‍🎓 Версия: ученик';
+  };
+  function norm(s){return (s||'').toLowerCase().replace(/[.,!?]/g,'').replace(/\s+/g,' ').trim();}
+  function checkGroup(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .gap').forEach(function(g){
+      total++;var inp=g.querySelector('input');var good=norm(inp.value)===norm(g.dataset.a);
+      g.classList.toggle('ok',good);g.classList.toggle('no',!good);
+      if(good)ok++; else inp.title='Ответ: '+g.dataset.a;
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  function toggleWords(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('testw');hidden=d.classList.contains('testw');});
+    var b=document.getElementById('wordBtn'); if(b) b.textContent=hidden?'👁 Показать слова':'🙈 Скрыть слова — вспомни по определению';
+  }
+  function toggleDefs(){
+    var hidden=false;
+    document.querySelectorAll('.deflist').forEach(function(d){d.classList.toggle('test');hidden=d.classList.contains('test');});
+    document.getElementById('defBtn').textContent=hidden?'👁 Показать определения':'🙈 Скрыть определения — проверь себя';
+  }
+  document.querySelectorAll('#reading .row, #listening .row').forEach(function(row){
+    row.querySelectorAll('.mc button').forEach(function(b){
+      b.onclick=function(){row.querySelectorAll('.mc button').forEach(function(x){x.classList.remove('sel');});b.classList.add('sel');row.dataset.sel=b.dataset.k;};
+    });
+  });
+  function checkMC(id,scoreId){
+    var ok=0,total=0;
+    document.querySelectorAll('#'+id+' .row').forEach(function(row){
+      total++;var sel=row.dataset.sel,ans=row.dataset.a;
+      row.querySelectorAll('.mc button').forEach(function(b){
+        b.classList.remove('right','wrong');
+        if(b.dataset.k===ans)b.classList.add('right');
+        if(b.dataset.k===sel&&sel!==ans)b.classList.add('wrong');
+      });
+      if(sel===ans)ok++;
+      var e=row.querySelector('.expl');
+      if(!e){e=document.createElement('div');row.appendChild(e);}
+      e.className='expl show';e.textContent='→ '+ans+(row.dataset.e?'. '+row.dataset.e:'');
+    });
+    document.getElementById(scoreId).textContent=ok+' / '+total;
+  }
+  var tLeft=120,tId=null;
+  function startTimer(){if(tId){clearInterval(tId);tId=null;return;}tLeft=120;tick();tId=setInterval(function(){tLeft--;tick();if(tLeft<=0){clearInterval(tId);tId=null;}},1000);}
+  function tick(){var m=Math.floor(tLeft/60),s=tLeft%60;document.getElementById('clock').textContent=m+':'+(s<10?'0':'')+s;}
+</script>
+</body>
+</html>
