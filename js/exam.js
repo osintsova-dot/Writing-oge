@@ -65,7 +65,7 @@ const CONFIGS = {
             { code: 'К2', name: 'Text organisation', max: 2 },
             { code: 'К3', name: 'Language', max: 2 },
           ] },
-        { id: 'essay', dataFile: 'ege_essay', sectionId: 'essay', max: 14, words: [200, 250],
+        { id: 'essay', dataFile: 'ege_essay', dataFile2: 'ege_essay_b', sectionId: 'essay', max: 14, words: [200, 250],
           criteria: [
             { code: 'К1', name: 'Solving the communicative task', max: 3 },
             { code: 'К2', name: 'Text organisation', max: 3 },

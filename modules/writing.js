@@ -126,7 +126,11 @@ export async function renderWriting(container, cfg) {
   const task = (EXAM.writing.tasks.find((x) => x.sectionId === cfg.sectionId)) || EXAM.writing.tasks[0];
   mount(container, el('div', { class: 'loader', text: t.wLoading }));
   let items;
-  try { items = await loadJSON(task.dataFile); }
+  try {
+    items = await loadJSON(task.dataFile);
+    // крупные наборы делятся на файлы (VPN режет FTP > ~128КБ) — догружаем вторую часть и склеиваем
+    if (task.dataFile2) items = items.concat(await loadJSON(task.dataFile2));
+  }
   catch (e) { mount(container, el('div', { class: 'err-msg', text: e.message })); return; }
 
   const headTitle = t.sections[cfg.sectionId];
@@ -285,19 +289,20 @@ export async function renderWriting(container, cfg) {
       ['Sign-off', "Best wishes,\n(your name)"],
     ],
     essay: [
-      ['Intro', "Nowadays the issue of … attracts a lot of attention. People hold different views on it."],
-      ['The data', "According to the chart/table, … . The figure for … is … , while …"],
-      ['Comment', "It is worth noting that … . This can be explained by …"],
-      ['Problem & solution', "However, there is a problem: … . One possible solution is …"],
-      ['Conclusion / opinion', "In my opinion, … . All in all, …"],
+      ['Intro (project + survey)', "As part of my project on … , I found a survey carried out among … in (country). The results are shown in the (table / pie chart)."],
+      ['Data (2–3 facts + figures)', "According to the survey, … % of the respondents … , while … % of them … ."],
+      ['Comparison + comment', "Comparing the figures, … is twice as popular as … . This may be because … ."],
+      ['Problem & solution', "However, there is a problem: … . To solve it, … could … ."],
+      ['Opinion + conclusion', "As for me, I think … because … . To conclude, … ."],
     ],
   };
   const CONNECTORS = [
     ['+', 'Moreover, Furthermore, In addition'],
     ['≠', 'However, On the other hand, Nevertheless'],
-    ['☺', 'In my view, I believe, As far as I am concerned'],
+    ['⇄', 'while, whereas, twice as many … as, compared to'],
+    ['☺', 'I think, In my opinion, As for me'],
     ['→', 'Therefore, That is why, As a result'],
-    ['✓', 'All in all, To sum up, In conclusion'],
+    ['✓', 'All in all, To sum up, To conclude'],
   ];
 
   function collapsible(title, kids) {
@@ -324,6 +329,12 @@ export async function renderWriting(container, cfg) {
   function ideasBlock(it) {
     if (!it.ideas || !it.ideas.length) return null;
     return collapsible('💡 ' + t.wIdeas, [el('ul', { class: 'w-ideas' }, it.ideas.map((x) => el('li', { text: x })))]);
+  }
+
+  // Эталонный ответ (написан по критериям ФИПИ-2026). Свёрнут по умолчанию — сначала пробуй сам(а).
+  function modelBlock(it) {
+    if (!it.model) return null;
+    return collapsible('📝 ' + t.wModel, [el('div', { class: 'w-model', style: { whiteSpace: 'pre-wrap' }, text: it.model })]);
   }
 
   function taskScreen(i) {
@@ -436,6 +447,7 @@ export async function renderWriting(container, cfg) {
         stimulus,
         frameBlock(),
         ideasBlock(it),
+        modelBlock(it),
         resultBox,
         el('div', { style: { position: 'relative' } }, [area, wc]),
         photoBlock(),

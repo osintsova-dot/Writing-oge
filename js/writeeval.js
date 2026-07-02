@@ -2,6 +2,7 @@
 // opts = { lang:'ru'|'en', sectionId:'writing'|'email'|'essay', criteria:[{code,name,max}], max, words:[min,max], stim }
 
 import { fetchRetry, parseModelJSON } from './net.js';
+import { loadJSON } from './data.js';
 
 const WORKER = 'https://oge-eval.o-sintsova.workers.dev'; // прокси DeepSeek
 
@@ -27,51 +28,58 @@ export async function evalWriting(text, opts) {
   const stimRu = hasStim
     ? `Контекст письма друга: ${stim}`
     : `Задание НЕ указано. Оцени К1 по самому письму, ОСТОРОЖНО: проверь обращение, завершающую фразу и подпись, нормы вежливости (благодарность, ссылка на контакты) и полноту/связность ответов по смыслу. Не выдумывай конкретные вопросы друга; в спорном случае ставь К1 НИЖЕ.`;
-  const conserveEn = ' Grade conservatively: NEVER overscore. If you hesitate between two scores, always choose the LOWER one — overscoring is far worse than underscoring.';
-  const conserveRu = ' Оценивай консервативно: НИКОГДА не завышай. В спорном случае выбирай МЕНЬШИЙ балл — завысить хуже, чем занизить.';
+  const conserveEn = ' Grade strictly and never overscore. BUT do NOT invent errors: penalise only GENUINE mistakes. Correct, standard English — natural phrasing, acceptable synonyms, valid collocations (e.g. "turn something into"), a slightly less formal but correct word — must NOT be marked as an error. If you are not sure something is truly a mistake, do NOT count it. Award the full score for a criterion when it is genuinely met (a clean, complete answer deserves full marks).';
+  const conserveRu = ' Оценивай строго и не завышай. НО не выдумывай ошибок: снижай балл только за РЕАЛЬНЫЕ ошибки. Корректный стандартный английский — естественные обороты, допустимые синонимы, нормальные сочетания (например «turn something into»), чуть менее формальное, но верное слово — НЕ помечай как ошибку. Если не уверен(а), что это действительно ошибка, — НЕ считай её ошибкой. Ставь полный балл за критерий, если он реально выполнен (чистый, полный ответ заслуживает максимума).';
 
-  // Для письма/email (К3 «Language», max 2) — явная шкала по числу ошибок (как в ОГЭ), чтобы ИИ не завышал.
-  const langRuleEn = sectionId !== 'essay'
-    ? `\nК3 (Language, max 2): your score MUST match the number of language errors you actually find — first find ALL errors (word order, articles, agreement, word choice, tense, prepositions, spelling), then: 1-2 errors → 2; 3-4 errors → 1; 5+ errors OR any error that blurs meaning → 0. List the worst 4-5 of them in "errors". Do NOT give 2 if there are 4+ errors.`
-    : '';
+  // Единый источник правил оценивания — app/data/scoring.json (checkRubric по заданию).
+  const examKey = lang === 'en' ? 'ege' : 'oge';
+  const taskKey = sectionId === 'essay' ? 'task38_opinion' : (sectionId === 'email' ? 'task37_email' : 'task35_letter');
+  let rubric = '';
+  try { const sc = await loadJSON('scoring'); rubric = (((sc || {})[examKey] || {})[taskKey] || {}).checkRubric || ''; } catch {}
+  // Легаси «Моё мнение» (старый формат эссе) — в scoring.json нет, задаём краткую рубрику.
+  if (sectionId === 'essay' && essayKind === 'opinion') {
+    rubric = 'OLD opinion-essay format (NO data table — do NOT require figures). Plan: 1) intro stating the problem; 2) the student\'s opinion + 2-3 reasons; 3) an opposing opinion + 1-2 reasons; 4) why the student disagrees; 5) conclusion restating the position. К1 (max 3) content & all 5 plan points; К2 (max 3) organisation, paragraphs, linkers; К3 (max 3) vocabulary; К4 (max 3) grammar; К5 (max 2) spelling & punctuation (apostrophe = punctuation).';
+  }
+  if (!rubric) rubric = 'Grade strictly by the official ФИПИ-2026 criteria listed above; if К1 (communicative task) is 0, the whole task scores 0.';
+
   let sys, user;
   if (lang === 'en') {
     const kind = sectionId !== 'essay'
-      ? 'task 37, a personal email (100-140 words). The student must answer the friend\'s questions AND ask 3 questions, with a correct opening, closing phrase and name.'
-      : (essayKind === 'opinion'
-        ? 'an opinion essay (200-250 words, OLD format). Plan: 1) introduction stating the problem; 2) the student\'s personal opinion with 2-3 reasons; 3) an opposing opinion with 1-2 reasons; 4) explanation why the student disagrees with the opposing opinion; 5) a conclusion restating the position. There is NO data table here — do NOT require reporting figures.'
-        : 'task 38, a data-based essay (200-250 words) on the survey data (a table or a pie chart). Plan: 1) opening statement on the subject; 2) select and report 2-3 facts from the data; 3) make 1-2 comparisons with comments; 4) outline a problem and suggest a solution; 5) conclude with the student\'s opinion.');
-    sys = 'You are a strict but kind English exam examiner. You assess a student\'s writing strictly by the official criteria and reply ONLY with valid JSON, no markdown. All comments must be IN ENGLISH at B1 level — short and clear.';
+      ? 'task 37, a personal email'
+      : (essayKind === 'opinion' ? 'an opinion essay (OLD format)' : 'task 38, a data-based project essay on survey data (a table or a pie chart)');
+    sys = 'You are a strict but kind English exam examiner. You assess a student\'s writing strictly by the official ФИПИ-2026 criteria and reply ONLY with valid JSON, no markdown. All comments must be IN ENGLISH at B1 level — short and clear.';
     user =
-`Task: ${kind}
+`Task: ${kind}.
 Criteria: ${critSpec}
-Word limit: ${wMin}-${wMax} words. Tolerance ±10%: ${wLo}-${wHi} words is fine — do NOT lower the score for length if the count is within ${wLo}-${wHi}. Under ${wLo} → the whole task scores 0. Over ${wHi} → assess ONLY the first ${wMax} words: anything after that cut-off does NOT exist. If a required answer or one of the 3 questions appears only AFTER the first ${wMax} words, it does NOT count — lower К1 accordingly (e.g. fewer than 3 questions within the limit → К1 cannot be full).${langRuleEn}
+Word limit: ${wMin}-${wMax} words. Tolerance ±10%: ${wLo}-${wHi} words is fine — do NOT lower the score for length within ${wLo}-${wHi}. Under ${wLo} → the whole task scores 0. Over ${wHi} → assess ONLY the first ${wMax} words; anything after that cut-off does NOT exist.
+
+GRADING RUBRIC (ФИПИ-2026 — apply strictly):
+${rubric}
 
 ${stimEn}
 
-Student's writing (${wcN} words${overLimit ? `, OVER the limit — only the first ${wMax} words are shown below and assessed; everything the student wrote after that was cut and does NOT count (missing closing/sign-off or questions beyond the cut lower К1 and К2)` : ''}):
+Student's writing (${wcN} words${overLimit ? `, OVER the limit — only the first ${wMax} words below are assessed; the rest was cut and does NOT count (missing closing/sign-off or questions beyond the cut lower К1 and К2)` : ''}):
 """${assessed}"""
 
 Return JSON exactly like this:
 {"totalScore":<sum 0-${max}>,"criteria":[${critJson}],"verdict":"<1-2 sentences in English, encouraging>","errors":[{"quote":"<exact phrase from the text>","what":"<what is wrong, in English>","fix":"<correct version>"}],"corrected":"<the full corrected text>"}
-Score every criterion within its max. totalScore = sum of criteria scores. Be THOROUGH finding language errors: re-read every sentence for missing/extra articles, subject-verb agreement, prepositions, word order, word choice and spelling. A weak student text usually has 5+ errors — do NOT stop at 1-2; under-reporting errors wrongly inflates the language score. List the 4-6 most serious in "errors". IMPORTANT (official rule): if К1 (solving the communicative task) is 0, the whole task scores 0 — set every other criterion to 0 and totalScore = 0.${conserveEn}`;
+Score every criterion within its max; totalScore = sum. Be THOROUGH finding language errors: re-read every sentence for missing/extra articles, subject-verb agreement, prepositions, word order, word choice and spelling. A weak text usually has 5+ errors — do NOT stop at 1-2; list the 4-6 most serious in "errors". IMPORTANT (official rule): if К1 (solving the communicative task) is 0, the whole task scores 0 — set every other criterion to 0 and totalScore = 0.${conserveEn}`;
   } else {
-    sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
+    sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ-2026. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
     user =
-`Критерии: ${critSpec}. Объём ${wMin}–${wMax} слов.
+`Критерии: ${critSpec}. Объём ${wMin}–${wMax} слов (норма ${wLo}–${wHi}; меньше ${wLo} → всё задание 0; больше ${wHi} → проверяются только первые ${wMax} слов).
+
+РУБРИКА ОЦЕНИВАНИЯ (ФИПИ-2026 — применяй строго):
+${rubric}
+
 ${stimRu}
 
-Письмо ученика (${wcN} слов${overLimit ? `, ПРЕВЫШЕН лимит — ниже показаны и проверяются только первые ${wMax} слов; всё, что ученик написал дальше, обрезано и НЕ засчитывается (отсутствие концовки/подписи или вопросов за обрезкой снижают К1 и К2)` : ''}):
+Письмо ученика (${wcN} слов${overLimit ? `, ПРЕВЫШЕН лимит — ниже показаны только первые ${wMax} слов; остальное обрезано и НЕ засчитывается (отсутствие концовки/подписи за обрезкой снижают К1 и К2)` : ''}):
 """${assessed}"""
 
 Верни JSON строго так:
 {"totalScore":<сумма 0-${max}>,"criteria":[${critJson}],"verdict":"<1-2 предложения по-русски>","errors":[{"quote":"<точная фраза>","what":"<что не так>","fix":"<как правильно>"}],"corrected":"<полный исправленный текст>"}
-ОЦЕНИВАЙ СТРОГО ПО ШКАЛЕ ФИПИ:
-К1 — РЕШЕНИЕ КОММУНИКАТИВНОЙ ЗАДАЧИ (макс 3): 3 — даны полные ответы на ВСЕ вопросы друга и соблюдены нормы вежливости (благодарность за письмо + ссылка на дальнейшие контакты). ⚠️ Завершающие фразы «Write back soon», «Hope to hear from you (soon)», «Drop me a line», «Looking forward to hearing from you», «Keep in touch» СЧИТАЮТСЯ ссылкой на дальнейшие контакты — НЕ снижай К1 за её «отсутствие», если такая фраза есть; 2 — мелкие недочёты (один аспект раскрыт неполно ИЛИ 1–2 нарушения вежливости); 1 — не дан ответ на часть вопросов; 0 — задача не решена. ⚠️ ПРО ОБЪЁМ: норма ${wMin}–${wMax} слов, но диапазон ${wLo}–${wHi} слов считается НОРМОЙ — НЕ снижай К1 за объём, если слов ${wLo}–${wHi}. Меньше ${wLo} → всё задание 0. Больше ${wHi} → проверяются только первые ${wMax} слов (тоже без штрафа за объём как таковой).
-К2 — ОРГАНИЗАЦИЯ (макс 2): 2 — ТОЛЬКО при чётком делении на смысловые абзацы И уместных средствах связи И правильном оформлении (обращение/завершающая фраза/подпись на отдельных строках); 1 — есть недочёты (нет явного деления на абзацы ИЛИ слабые/формальные связки вроде простого 'Firstly/Then'); 0 — текст сплошной и плохо связан. ⚠️ Если деление на абзацы неочевидно — ставь 1, НЕ 2.
-К3 — ЛЕКСИКА+ГРАММАТИКА (макс 3): сначала найди ВСЕ лексико-грамматические ошибки (порядок слов, согласование, артикли, предлоги, время глагола, выбор слова, двойное отрицание), затем по их числу: 3 — 1–2 негрубые; 2 — РОВНО 3 ошибки, не затрудняющие понимание; 1 — 4 ошибки; 0 — 5+ ошибок (ДАЖЕ если смысл угадывается) ИЛИ есть искажающие смысл. ⚠️ Балл К3 ОБЯЗАН соответствовать числу найденных ошибок: при 5+ ставь 0 (НЕ 1, НЕ 2).
-К4 — ОРФОГРАФИЯ И ПУНКТУАЦИЯ (макс 2): 2 — почти нет ошибок (1–2); 1 — несколько (3–4); 0 — много (5+).
-В ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям. ВАЖНО (правило ФИПИ): если К1=0 (коммуникативная задача не решена), то ВСЁ задание = 0 — остальные критерии тоже 0 и totalScore=0.${conserveRu}`;
+totalScore = сумма по критериям. Сначала найди ВСЕ ошибки (артикли, согласование, предлоги, порядок слов, время, выбор слова, орфография, пунктуация), затем выставь баллы строго по числу ошибок из рубрики. ВАЖНО: если К1=0 (задача не решена), то ВСЁ задание = 0 — остальные критерии 0 и totalScore=0.${conserveRu}`;
   }
 
   // эссе длиннее (200-250 слов + corrected) → больше токенов, иначе JSON обрывается

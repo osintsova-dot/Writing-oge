@@ -59,41 +59,43 @@
  {
   "section": "email",
   "task": "Email to a pen-friend (task 37)",
-  "format": "You get an extract from a pen-friend's email on a topic. Write a reply: answer ALL their questions AND ask 3 questions of your own on the given subject. About 100 words, informal style.",
-  "scoring": "Max 6 points: K1 task (all answers + your 3 questions + style), K2 organisation, K3 language. Under 90 words → heavy penalty.",
+  "format": "You get an extract from a pen-friend's email on a topic. Write a reply: answer ALL their questions AND ask 3 questions of your own on the given subject. 100–140 words, informal style.",
+  "scoring": "Max 6 points: K1 task (all answers + your 3 questions + politeness + style), K2 organisation, K3 language. Under 90 words → 0. If K1=0 → the whole task is 0.",
   "strategy": [
-   "Find every question in the extract and answer each one fully.",
-   "Ask 3 real questions on the stated subject — don't forget them, it's a big part of the score.",
-   "Keep an informal style: contractions, simple linkers, an opening, a friendly closing and your name.",
-   "Use paragraphs and linking words — that's a separate criterion.",
-   "Count the words; aim for ~100 (a safe range)."
+   "Answer every question in the extract fully. It's a BASIC-level task — you do NOT need to paraphrase; reusing the wording from the prompt is fine and safer.",
+   "Ask 3 SPECIFIC questions on the stated subject — not vague 'What about…?', no duplicates, nothing already answered in the extract.",
+   "Politeness: thank for the letter + hope for future contact — use 'Hope to hear FROM you' / 'Write back soon' (NOT 'hear you'; 'I look forward to hearing from you' is too formal for a friend).",
+   "Informal style: contractions, simple linkers, an opening, a friendly closing and your first name only. No address or date in an e-mail.",
+   "Use paragraphs and linking words (K2). Aim for ~115–130 words.",
+   "Even if all answers are there, many language errors that blur meaning lower K1 too — keep it clean."
   ],
   "common_mistakes": [
-   "Not asking 3 questions (or asking fewer).",
+   "Not asking 3 questions, or asking vague 'What about…?' questions.",
    "Missing one of the friend's questions.",
-   "Formal style instead of a friendly one.",
-   "Wrong length."
+   "'Hope to hear you' instead of 'hear from you'; a closing that's too formal.",
+   "Formal style, or wrong length (under 90 words = 0)."
   ],
   "time": "~20 minutes: 2–3 min plan, 12–13 min writing, 4–5 min check."
  },
  {
   "section": "essay",
   "task": "Opinion text based on a chart (task 38)",
-  "format": "A written project: you get a project topic and a table/chart. Write a structured text with 6 aspects: an intro to the topic; 2–3 facts from the data; 1–2 problems and a solution; your opinion with reasons; a conclusion. About 200–250 words, neutral style.",
-  "scoring": "Max 14 points across 5 criteria (K1–K5). All 6 aspects must be present; no copying chunks from the prompt.",
+  "format": "A project write-up based on a SURVEY. You get a project topic and a table or pie chart with survey results. Structure (5 content aspects + neutral style, 200–250 words): 1) intro — the project, the topic, that you found a SURVEY, the country and the format (table/chart); 2) 2–3 facts with figures tied to the question the respondents were asked; 3) 1–2 comparisons WITH a developed comment; 4) a realistic problem + a concrete solution; 5) your opinion (I think / In my opinion) with a reason.",
+  "scoring": "Max 14 across 5 criteria (K1 task, K2 organisation, K3 vocabulary, K4 grammar, K5 spelling & punctuation). If K1=0 → the whole task is 0. Copying ≥30% from the prompt → 0. Length 200–250 words.",
   "strategy": [
-   "Plan all 6 aspects before writing — a missing aspect costs a lot.",
-   "Describe 2–3 real numbers from the chart in your own words.",
-   "State a problem AND a solution; give your opinion WITH reasons.",
-   "Use formal linkers and one paragraph per aspect.",
-   "Don't copy phrases from the prompt — paraphrase them.",
-   "Check the length (~200–250) and that every aspect is there."
+   "Intro must name the SURVEY as the data source + the country + the format (table/pie chart), and it is YOUR project — 'I', never 'we', and never say you made the survey.",
+   "Give 2–3 figures tied to the question the respondents were asked; write 'of THE students / the respondents' (with the article) and 'a survey', not 'opinion polls'.",
+   "A comparison needs a comparative structure (while/whereas/twice as many…) AND a developed comment — two facts side by side or a bare 'Surprisingly' is not enough.",
+   "Give a realistic problem and a concrete solution (not 'the government must solve it'); never invent data that isn't in the chart.",
+   "State your opinion explicitly with a marker (I think / In my opinion) + a reason.",
+   "One paragraph per aspect; use 'they' (not 'he') for a student/everyone; start with 'Doing a project… / While doing…' (NOT 'While I was doing'); the apostrophe counts as punctuation."
   ],
   "common_mistakes": [
-   "Missing an aspect (problem/solution/opinion).",
-   "Copying text straight from the prompt.",
-   "No data from the chart, only general talk.",
-   "Wrong length or an informal style."
+   "Intro without the survey source / country / format, or 'we' instead of 'I'.",
+   "Two facts side by side with no comparative structure or no comment.",
+   "A vague solution ('the government must…') or inventing data not in the chart.",
+   "Opinion with no marker (no 'I think / In my opinion') or no reason.",
+   "'opinion polls', '50% of students' (missing 'the'), 'While I was doing a project'."
   ],
   "time": "30–35 minutes: 5 min plan, 20–22 min writing, 5–7 min check."
  },

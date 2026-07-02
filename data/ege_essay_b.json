@@ -1,0 +1,813 @@
+[
+ {
+  "zid": "710069",
+  "prompt": "Imagine that you are doing a project on the preparations for the New Year that Zetlanders consider most important . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Things to do Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with organizing a New Year party and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of preparing for New Year celebrations well in advance .",
+  "ideas": [
+   "Top: tidying house & decorating tree dominate — both about cosy atmosphere",
+   "Comment: presents & new outfit barely matter — people value home over shopping",
+   "Compare tidying (36%) vs new outfit (3%) — a huge twelve-fold gap",
+   "Problem: party planning gets chaotic last-minute; solution — make a checklist early",
+   "Opinion: preparing in advance reduces stress and makes celebration smoother"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Tidy the house",
+     "36"
+    ],
+    [
+     "Decorate a New Year tree",
+     "34"
+    ],
+    [
+     "Cook traditional New Year dishes",
+     "20"
+    ],
+    [
+     "Buy presents for friends and relatives",
+     "7"
+    ],
+    [
+     "Buy a new outfit",
+     "3"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out which New Year preparations Zetlanders consider most important. Doing a project on this subject, I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the most important task is tidying the house, chosen by 36% of the respondents. Decorating a New Year tree is almost equally popular, selected by 34% of the respondents, while 20% of them focus on cooking traditional festive dishes.\n\nComparing the figures, tidying the house (36%) matters twelve times more than buying a new outfit, which was chosen by only 3% of the respondents. This clearly shows that people care far more about a cosy home atmosphere than about their personal appearance during the holiday.\n\nNevertheless, a problem can arise here: party planning often becomes chaotic and stressful at the last minute. A realistic solution is to make a detailed checklist a few weeks in advance and share the tasks between family members.\n\nAs for me, I think preparing for New Year celebrations well in advance is truly important, because careful planning reduces stress and leaves more time for joy. To conclude, a little organisation beforehand turns a busy holiday into a warm and memorable celebration for everyone."
+ },
+ {
+  "zid": "730B2F",
+  "prompt": "Imagine that you are doing a project on why some Zetlanders are not keen on theatre-going . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . The opinion poll question: Why are you not keen on theatre-going? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with choosing a play to watch at the theatre and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of theatre-going .",
+  "ideas": [
+   "Top reason: price (52%) keeps over half of people away from theatres",
+   "Comment: distance & other interests show modern life is busy and varied",
+   "Compare expensive (52%) vs inconvenient time (6%) — money outweighs scheduling",
+   "Problem: hard to pick a worthwhile play; solution — read reviews and ratings",
+   "Opinion: theatre still matters for live emotion and cultural value"
+  ],
+  "table": {
+   "q": "Why are you not keen on theatre-going?",
+   "rows": [
+    [
+     "Too expensive",
+     "52"
+    ],
+    [
+     "Too far from home",
+     "18"
+    ],
+    [
+     "Other interests",
+     "13"
+    ],
+    [
+     "Online broadcasts available",
+     "11"
+    ],
+    [
+     "Inconvenient time of performances",
+     "6"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out why some Zetlanders are not keen on theatre-going. Doing a project on this subject, I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the main reason is that tickets are too expensive, chosen by 52% of the respondents. Being too far from home comes next, selected by 18% of the respondents, while 13% of them simply have other interests.\n\nComparing the figures, the high price (52%) discourages almost nine times more people than the inconvenient time of performances, which was chosen by only 6% of the respondents. This shows that money, rather than scheduling, is the real barrier that keeps audiences away from the theatre.\n\nHowever, another problem can arise: it is often hard to choose a play that is really worth watching. A realistic solution is to read reviews and audience ratings online before booking, so that viewers do not waste money on a disappointing performance.\n\nAs for me, I think theatre-going still matters greatly, because live acting gives emotions and cultural depth that no screen can fully reproduce. To conclude, despite the cost, the theatre remains a valuable experience that everyone should enjoy at least occasionally."
+ },
+ {
+  "zid": "738173",
+  "prompt": "Comment on one of the following statements. University education is essential for young people. One cannot make real friends online. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position",
+  "ideas": [
+   "Intro: paraphrase — is a degree truly necessary for the young?",
+   "Agree: university gives deep knowledge, qualifications, useful connections",
+   "Agree: higher earnings and better career prospects long-term",
+   "Opposing: trades and self-taught skills can succeed without degrees",
+   "Rebut: most stable professions still legally require formal education",
+   "Conclude: degree opens more doors, so I support the statement"
+  ],
+  "model": "Nowadays people often argue about whether a university degree is truly necessary for the young. Some regard it as absolutely essential, while others consider it merely optional.\n\nIn my opinion, higher education is indeed essential for young people. Firstly, university provides deep knowledge and recognised qualifications that many professions clearly demand. Secondly, it helps students build useful professional connections that can support them for years. Moreover, graduates usually enjoy higher earnings and better long-term career prospects than those who have no degree at all.\n\nHowever, some people believe that university is not necessary. They point out that skilled tradespeople and self-taught specialists, especially in modern information technology, can succeed and earn well without any formal diploma.\n\nNevertheless, I cannot fully accept this position. Although a few talented individuals do prosper without degrees, most stable and respected professions, such as medicine or law, still legally require formal education. Therefore, relying on such rare exceptions would be extremely risky for an average young person planning a career.\n\nTo sum up, while occasional success without a diploma is certainly possible, university education remains essential for the majority. It opens more doors, offers greater security and prepares young people far better for an increasingly competitive future."
+ },
+ {
+  "zid": "75EDEE",
+  "prompt": "Comment on the following statement. Clothes people are wearing can influence their behaviour. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don't agree with the opposing opinion − make a conclusion restating your position",
+  "ideas": [
+   "Intro: do clothes really shape how we act?",
+   "Agree: formal wear boosts confidence and focus at interviews",
+   "Agree: uniforms create discipline; sportswear motivates activity",
+   "Opposing: character, not fabric, decides real behaviour",
+   "Rebut: psychology shows 'enclothed cognition' affects mindset measurably",
+   "Conclude: clothing influences mood and conduct, so I agree"
+  ],
+  "model": "People often wonder whether the clothes we wear can actually shape the way we behave. This is a controversial issue on which opinions clearly differ.\n\nI firmly believe that clothing does influence our behaviour. Firstly, formal wear tends to boost confidence and concentration, which is exactly why people feel more serious during interviews and examinations. Secondly, uniforms create a sense of discipline and belonging, while comfortable sportswear naturally encourages us to move and stay active. Moreover, dressing neatly often improves our mood for the entire day.\n\nHowever, some people argue that clothes have no real effect on conduct. According to them, it is a person's character, and not the fabric they happen to wear, that truly decides how they act.\n\nNevertheless, I cannot agree with this claim. Psychologists have described an effect known as \"enclothed cognition\", showing that what we wear can measurably change our mindset and even our performance. Therefore, clothing clearly does far more than simply cover the body.\n\nIn conclusion, I remain convinced that our clothes influence both our mood and our conduct. The way we dress sends powerful signals to ourselves as well as to the people around us, and it quietly shapes the way we behave every day."
+ },
+ {
+  "zid": "7FC7F3",
+  "prompt": "Imagine that you are doing a project on what environmental problems Zetland teenagers consider to be the most dangerous . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . The most dangerous environmental problems Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant; – outline a problem that can arise with the environment in your region and suggest a way of solving it; – conclude by giving your opinion on the importance of environmental protection for teenagers.",
+  "ideas": [
+   "Top: global warming (44%) seen as the gravest threat by teens",
+   "Comment: pollution issues combined nearly match warming concern",
+   "Compare global warming (44%) vs species extinction (6%) — distant feels less urgent",
+   "Problem: local waste and littering; solution — clean-up days and recycling bins",
+   "Opinion: teens caring about ecology shapes a greener future"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Global warming",
+     "44"
+    ],
+    [
+     "Air pollution",
+     "22"
+    ],
+    [
+     "Water pollution",
+     "16"
+    ],
+    [
+     "Deforestation",
+     "12"
+    ],
+    [
+     "Rare species extinction",
+     "6"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out which environmental problems Zetland teenagers consider the most dangerous. Doing a project on this subject, I found a survey carried out among teenagers in Zetland, and its results are presented in the table.\n\nAccording to the data, the gravest threat is global warming, chosen by 44% of the respondents. Air pollution comes second, selected by 22% of the respondents, while 16% of them are most worried about water pollution.\n\nComparing the figures, global warming (44%) alarms more than seven times as many teenagers as rare species extinction, which was chosen by only 6% of the respondents. This suggests that young people worry most about threats they feel in daily life, while distant issues seem far less urgent to them.\n\nHowever, a real problem can arise closer to home: careless littering and waste spoil parks and rivers in my region. A realistic solution is to organise regular clean-up days and place more recycling bins in public spaces, so that people can dispose of rubbish properly.\n\nAs for me, I think environmental protection is extremely important for teenagers, because the habits we form today will shape the planet we live on tomorrow. To conclude, when young people care about ecology, they build a cleaner and greener future for everyone."
+ },
+ {
+  "zid": "80EF23",
+  "prompt": "Imagine that you are doing a project on why some Zetlanders move to big cities . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with moving to a big city and suggest a way of solving it; – conclude by giving and explaining your opinion on living in a big city.",
+  "ideas": [
+   "Top three (job, business, education) cluster tightly around opportunity",
+   "Comment: people move mainly to grow careers, not for fun",
+   "Compare new job (34%) vs new friends (5%) — practical beats social",
+   "Problem: high rents and loneliness in cities; solution — budget and join clubs",
+   "Opinion: cities offer chances but demand adaptation"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "To get a new job",
+     "34"
+    ],
+    [
+     "To develop one’s business",
+     "27"
+    ],
+    [
+     "To get a better education",
+     "26"
+    ],
+    [
+     "To have more entertainment",
+     "8"
+    ],
+    [
+     "To make new friends",
+     "5"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore why some Zetlanders move to big cities. Doing a project on this subject, I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the most common reason is the wish to get a new job, chosen by 34% of the respondents. Developing one's own business comes next, selected by 27% of the respondents, while 26% of them move in order to get a better education.\n\nComparing the figures, finding a new job (34%) motivates almost seven times as many people as making new friends, which was chosen by only 5% of the respondents. This clearly shows that Zetlanders relocate mainly for practical opportunities rather than for a richer social life.\n\nHowever, a serious problem can arise after moving: high rents and loneliness often make newcomers miserable. A realistic solution is to plan a careful monthly budget and to join local clubs, where people can meet others who share their interests.\n\nAs for me, I think living in a big city offers great chances, yet it demands real effort and adaptation. To conclude, a city rewards those who are ready to work hard and stay open to new people and fresh experiences."
+ },
+ {
+  "zid": "83E30B",
+  "prompt": "Imagine that you are doing a project on why people in Zetland keep pets . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant; – outline a problem that can arise with keeping pets and suggest a way of solving it; – conclude by giving your opinion on the role of pets in our lives.",
+  "ideas": [
+   "Top: loneliness (44%) — pets mainly fill an emotional gap",
+   "Comment: happiness and care reasons show pets give purpose",
+   "Compare loneliness (44%) vs stress (8%) — companionship outweighs therapy",
+   "Problem: pets need time and money; solution — plan care and budget",
+   "Opinion: pets enrich lives with comfort and responsibility"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "not to feel lonely",
+     "44"
+    ],
+    [
+     "to feel happy",
+     "22"
+    ],
+    [
+     "to spend more time outdoors",
+     "14"
+    ],
+    [
+     "to take care of someone",
+     "12"
+    ],
+    [
+     "to cope with stress",
+     "8"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out why people in Zetland keep pets. Doing a project on this subject, I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the main reason is not to feel lonely, chosen by 44% of the respondents. A wish to feel happy comes second, selected by 22% of the respondents, while 14% of them keep animals in order to spend more time outdoors.\n\nComparing the figures, fighting loneliness (44%) is more than five times as common as coping with stress, which was chosen by only 8% of the respondents. This suggests that for most owners a pet is above all a faithful companion rather than a kind of therapy.\n\nHowever, a real problem can arise with pets: they need a great deal of time, attention and money. A realistic solution is to plan daily care in advance and set aside a small budget for food and regular visits to the vet.\n\nAs for me, I think pets play a wonderful role in our lives, because they give us comfort and teach us responsibility every single day. To conclude, a pet is far more than an animal in the house; it becomes a loyal and beloved member of the family."
+ },
+ {
+  "zid": "873B9C",
+  "prompt": "Comment on one of the following statements. Volunteering is essential for teenagers. With the Internet we no longer need TV. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position",
+  "ideas": [
+   "Intro: paraphrase — is volunteering a must for teenagers?",
+   "Agree: builds empathy, soft skills, and a strong CV",
+   "Agree: connects youth with community and real problems",
+   "Opposing: studies should come first; volunteering can wait",
+   "Rebut: a few hours weekly need not harm grades",
+   "Conclude: benefits outweigh costs, so I agree it is essential"
+  ],
+  "model": "These days many people discuss whether volunteering should be regarded as a must for teenagers. Some see it as truly essential, whereas others consider it an unnecessary burden.\n\nIn my opinion, volunteering is genuinely essential for young people. Firstly, it develops empathy and valuable soft skills, such as teamwork and communication, which schools rarely teach directly. Secondly, it looks impressive on a CV and helps teenagers stand out when they apply to universities. Moreover, it connects the young with their community and with real social problems that they might otherwise ignore completely.\n\nHowever, some people believe that studies should always come first. They argue that teenagers are already busy with lessons and exams, so volunteering can easily wait until adulthood.\n\nNevertheless, I find this argument rather weak. Dedicating just a few hours a week to helping others need not harm anyone's grades at all. On the contrary, such practical experience often improves time management, responsibility and motivation for study, and it may even help a teenager decide on a future career.\n\nTo sum up, although school certainly remains important, the benefits of volunteering clearly outweigh its costs. It shapes caring, active and responsible citizens, and for this reason I am firmly convinced that volunteering is essential for teenagers."
+ },
+ {
+  "zid": "8B0852",
+  "prompt": "Imagine that you are doing a project on what kinds of video blogs are most popular with Zetland teenagers . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Video blogs about Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant; – outline a problem that can arise with watching video blogs and suggest a way of solving it; – conclude by giving your opinion on the role of video blogs in teenagers’ lives.",
+  "ideas": [
+   "Top: books-and-films blogs (43%) lead teen viewing",
+   "Comment: travel and fitness blogs reflect curiosity and health trends",
+   "Compare books/films (43%) vs cooking (7%) — entertainment over practical",
+   "Problem: too much screen time watching blogs; solution — set limits",
+   "Opinion: blogs inspire hobbies but need balance"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Books and films",
+     "43"
+    ],
+    [
+     "Travelling",
+     "24"
+    ],
+    [
+     "Fitness and sports",
+     "16"
+    ],
+    [
+     "Pets",
+     "10"
+    ],
+    [
+     "Cooking",
+     "7"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out which kinds of video blogs are most popular with Zetland teenagers. Doing a project on this subject, I found a survey carried out among teenagers in Zetland, and its results are presented in the table.\n\nAccording to the data, the most popular blogs are those about books and films, chosen by 43% of the respondents. Travelling blogs come second, selected by 24% of the respondents, while 16% of them prefer channels about fitness and sports.\n\nComparing the figures, blogs about books and films (43%) are roughly six times more popular than cooking blogs, which were chosen by only 7% of the respondents. This shows that teenagers mainly turn to video blogs for entertainment and inspiration rather than for practical everyday skills.\n\nHowever, a serious problem can arise: young people often spend far too much time watching such content. A realistic solution is to set clear daily limits, for example thirty minutes, and to use a timer that reminds viewers to switch off.\n\nAs for me, I think video blogs play a positive role in teenagers' lives, because they inspire new hobbies and broaden interests when watched in moderation. To conclude, blogs can be both fun and useful, as long as young people keep a healthy balance."
+ },
+ {
+  "zid": "8c3193",
+  "prompt": "Imagine that you are doing a project on how Zetlanders help raise awareness about the environment . You have found some data on the subject – the results of a survey conducted among Zetlanders (see the table below) . Comment on the survey data and give your opinion on the subject of the project. The survey question: How do you help raise awareness about the environment? Choose one option Options Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem related to neglecting environmental issues and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of protecting our planetʼs ecology .",
+  "ideas": [
+   "Top: clean-up events (37%) — active hands-on help is most popular",
+   "Comment: reducing waste and supporting orgs show personal commitment",
+   "Compare clean-ups (37%) vs sharing online (13%) — action beats posting",
+   "Problem: people ignore eco issues; solution — school campaigns and rewards",
+   "Opinion: raising awareness protects the planet for all"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Participate in local clean-up events",
+     "37"
+    ],
+    [
+     "Reduce my own waste",
+     "20"
+    ],
+    [
+     "Support environmental organisations",
+     "16"
+    ],
+    [
+     "Educate friends and family",
+     "14"
+    ],
+    [
+     "Share information online",
+     "13"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out how Zetlanders help raise awareness about the environment. Doing a project on this subject, I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the most popular way is to take part in local clean-up events, chosen by 37% of the respondents. Reducing one's own waste comes second, selected by 20% of the respondents, while 16% of them support environmental organisations.\n\nComparing the figures, joining clean-up events (37%) is almost three times as popular as sharing information online, which was chosen by only 13% of the respondents. This suggests that people trust real, hands-on action far more than simply posting messages on social networks.\n\nHowever, a serious problem can arise: many people still ignore environmental issues completely. A realistic solution is to run bright school campaigns and offer small rewards for eco-friendly behaviour, so that caring for nature becomes a normal daily habit.\n\nAs for me, I think raising awareness about the environment is extremely important, because our planet's future depends on the everyday choices of ordinary people. To conclude, when everyone takes even small steps, together we can protect the ecology of our common home."
+ },
+ {
+  "zid": "984B01",
+  "prompt": "Imagine that you are doing a project on why many young Zetlanders choose to major in sports . You have found some data on the subject – the results of a survey (see the table below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: Why have you chosen to major in sports? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that a student of sports may face during competitions and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of professional sport for modern society.",
+  "ideas": [
+   "Top: teamwork (40%) draws students to sports majors",
+   "Comment: career and passion together show practical plus emotional motives",
+   "Compare teamwork (40%) vs scholarships (5%) — values over money",
+   "Problem: injuries and pressure in competitions; solution — proper coaching, rest",
+   "Opinion: professional sport boosts health and national pride"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Teamwork and collaboration",
+     "40"
+    ],
+    [
+     "Career opportunities",
+     "28"
+    ],
+    [
+     "Passion for sports",
+     "18"
+    ],
+    [
+     "Focus on health and fitness",
+     "9"
+    ],
+    [
+     "Scholarship opportunities",
+     "5"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore why many young Zetlanders choose to major in sports. I found a survey carried out among students in Zetland, and its results are presented in the table.\n\nAccording to the data, the most popular reason is teamwork and collaboration, chosen by 40% of the respondents. Career opportunities come second with 28%, while 18% of the respondents named a genuine passion for sports as their main motivation.\n\nComparing the figures, teamwork (40%) attracts eight times as many students as scholarship opportunities (5%). This suggests that young people are drawn to sports mainly by the social side of it, valuing cooperation and belonging far more than any financial reward.\n\nThis leads to a real problem: during competitions, athletes often get injured or crack under pressure. One realistic solution is to provide qualified coaching and regular rest days, so that students train safely and recover properly instead of pushing their bodies too hard.\n\nAs for me, I think professional sport plays an important role in modern society, because it keeps people healthy, unites fans and builds national pride. To conclude, majoring in sports is a worthwhile choice for those who love teamwork and are ready to work hard and look after their health."
+ },
+ {
+  "zid": "9E9969",
+  "prompt": "Imagine that you are doing a project on how Zetlanders choose a school for their children to study at . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . The opinion poll question: Why have you chosen this school for your children? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with choosing the school for one’s children to study at and suggest a way of solving it; – conclude by giving and explaining your opinion on the most important factor for parents in choosing a school for their children.",
+  "ideas": [
+   "Top: teaching quality (48%) — nearly half prioritise learning",
+   "Comment: equipment and sports facilities matter far less",
+   "Compare teaching (48%) vs location (10%) — content over convenience",
+   "Problem: hard to judge a school's real quality; solution — visit and ask parents",
+   "Opinion: teaching quality should guide every parent's choice"
+  ],
+  "table": {
+   "q": "Why have you chosen this school for your children?",
+   "rows": [
+    [
+     "High quality of teaching",
+     "48"
+    ],
+    [
+     "Modern technical equipment",
+     "18"
+    ],
+    [
+     "Excellent sports facilities",
+     "13"
+    ],
+    [
+     "Safety reputation",
+     "11"
+    ],
+    [
+     "Location",
+     "10"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out how Zetlanders choose a school for their children. I found a survey carried out among parents in Zetland, and its results are presented in the table.\n\nAccording to the data, the most important factor is the high quality of teaching, chosen by 48% of the respondents. Modern technical equipment takes second place with 18%, while 13% of the respondents care most about excellent sports facilities.\n\nComparing the figures, the quality of teaching (48%) matters almost five times as much as a school's location (10%). This suggests that parents are willing to travel further if they believe their children will actually learn more, putting real content above everyday convenience.\n\nHowever, a genuine problem arises here: it is very hard to judge a school's true quality from advertising alone. One realistic solution is to visit the school in person, sit in on a lesson and talk to other parents, so that the final decision rests on evidence rather than promises.\n\nIn my opinion, the quality of teaching should always guide a parent's choice, because good teachers shape a child's knowledge, confidence and attitude to learning. To conclude, choosing the right school is a serious decision, and families who focus on teaching are far more likely to make a wise one."
+ },
+ {
+  "zid": "9Fccee",
+  "prompt": "Imagine that you are doing a project on why Zetlanders rarely buy Christmas presents online . You have found some data on the subject – the results of a survey (see the table below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: Why do you rarely buy Christmas presents online? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem connected with buying presents online and suggest a way of solving it; – conclude by giving and explaining your opinion on whether it is advisable to buy presents online .",
+  "ideas": [
+   "Top: quality fears (52%) stop online Christmas shopping",
+   "Comment: deceptive photos and time waste add to distrust",
+   "Compare quality (52%) vs no packaging (6%) — trust beats minor issues",
+   "Problem: items differ from photos; solution — read reviews, buy verified sellers",
+   "Opinion: online buying is handy but needs caution"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Difficult to find a high-quality present",
+     "52"
+    ],
+    [
+     "The photo may be deceptive",
+     "18"
+    ],
+    [
+     "Choosing takes too much time",
+     "13"
+    ],
+    [
+     "Late delivery",
+     "11"
+    ],
+    [
+     "No gift packaging",
+     "6"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore why Zetlanders rarely buy Christmas presents online. I found a survey carried out among shoppers in Zetland, and its results are presented in the table.\n\nAccording to the data, the main reason is that it is difficult to find a high-quality present, chosen by 52% of the respondents. In second place, 18% of the respondents worry that the photo may be deceptive, while 13% feel that choosing online simply takes too much time.\n\nComparing the figures, concern about quality (52%) is almost nine times as common as annoyance at the lack of gift packaging (6%). This suggests that people avoid online shopping mainly because they do not trust it, rather than because of small practical inconveniences.\n\nThis leads to a genuine problem: an item can look wonderful on screen yet disappoint on arrival. One realistic solution is to read customer reviews carefully and buy only from verified sellers, so that shoppers know what to expect before they pay.\n\nIn my opinion, buying presents online is convenient but should be done with caution, because a thoughtful gift matters more than a quick purchase. To conclude, online shopping is advisable only when buyers take the time to check quality and choose trustworthy shops."
+ },
+ {
+  "zid": "A62372",
+  "prompt": "Comment on one of the following statements. Physical Training is the most important school subject. It is better to travel alone. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position.",
+  "ideas": [
+   "Intro: paraphrase — is PE the most important subject?",
+   "Agree: health, energy, and discipline support all learning",
+   "Agree: teamwork and stress relief boost wellbeing",
+   "Opposing: maths and languages matter more for careers",
+   "Rebut: without health, academic success is hard to enjoy",
+   "Conclude: PE is vital but I weigh my final position clearly"
+  ],
+  "model": "People often argue about which school subject deserves to be called the most important. Some are certain that Physical Training holds this title, while others strongly disagree.\n\nIn my opinion, Physical Training, though valuable, is not the most important subject. Firstly, subjects such as mathematics and languages provide knowledge and skills that are needed far more directly in future careers. Secondly, sport alone cannot give the intellectual foundation that universities and employers clearly expect from young people.\n\nHowever, some people believe that Physical Training truly is the most important subject. They argue that health and energy support all other learning, and that sport relieves stress while teaching valuable teamwork.\n\nNevertheless, I cannot fully agree with this opinion. Although health obviously matters a great deal, physical fitness can also be maintained outside school, in a gym or simply outdoors. Academic subjects, by contrast, are much harder to master without proper teaching. Therefore, Physical Training, however useful, should not outrank everything else.\n\nIn conclusion, I am convinced that Physical Training deserves respect and regular practice, yet it is not the single most important subject at school. A good education needs a sensible balance between the body and the mind rather than the dominance of one over the other."
+ },
+ {
+  "zid": "A65718",
+  "prompt": "Comment on one of the following statements. Foreign language is the most important school subject. It is good to have sisters and brothers. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position.",
+  "ideas": [
+   "Intro: paraphrase — is a foreign language the top subject?",
+   "Agree: opens travel, jobs, and global communication",
+   "Agree: trains memory and broadens cultural understanding",
+   "Opposing: maths and native language are equally essential",
+   "Rebut: languages uniquely connect people across borders",
+   "Conclude: hugely important, though I state my balanced view"
+  ],
+  "model": "People often argue about which subject at school matters most of all. Some are convinced that a foreign language holds first place, while others clearly disagree.\n\nIn my opinion, a foreign language really is the most important school subject. Firstly, it opens the doors to travel, international jobs and communication with people all over the world. Secondly, learning a language trains our memory and attention, which helps with every other subject too. Moreover, it broadens cultural understanding and teaches us to respect ways of life different from our own.\n\nHowever, some people believe that other subjects are equally essential. They argue that mathematics develops logical thinking, while the native language is needed for clear expression in daily life.\n\nNevertheless, I cannot fully agree with this position. Although those subjects are certainly important, only a foreign language uniquely connects people across borders in our increasingly globalised world. Without it, even the best knowledge and the brightest ideas often stay locked within the walls of a single country, unable to reach a wider audience.\n\nTo sum up, while every school subject has its own value, I am convinced that a foreign language is the most important of them. It gives young people freedom, opportunities and a genuine window onto the wider world around them."
+ },
+ {
+  "zid": "A8F69F",
+  "prompt": "Comment on the following statement. Sport unites people. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don't agree with the opposing opinion − make a conclusion restating your position",
+  "ideas": [
+   "Intro: does sport truly bring people together?",
+   "Agree: team games build cooperation and friendship",
+   "Agree: big events unite fans across nations and cultures",
+   "Opposing: rivalry and hooliganism can divide people",
+   "Rebut: such conflicts are rare exceptions, not the rule",
+   "Conclude: sport mainly unites, so I agree"
+  ],
+  "model": "It is often said that sport brings people together. Whether this is really true is a question that continues to divide opinion.\n\nIn my opinion, sport genuinely unites people. Firstly, team games build cooperation and friendship, because players must trust and support one another in order to win. Secondly, major sporting events, such as the Olympic Games, unite huge crowds of fans across nations, languages and cultures who cheer side by side. Moreover, playing together helps complete strangers become close friends far more quickly than ordinary conversation ever could.\n\nHowever, some people believe that sport can actually divide us. They point to the fierce rivalry between clubs and to cases of hooliganism, where matches end in bitter quarrels and even violence.\n\nNevertheless, I cannot agree that this is the true nature of sport. Such conflicts are rare exceptions caused by a small minority of aggressive fans, not by sport itself. For the overwhelming majority of people, competition remains friendly and inspiring rather than hostile.\n\nIn conclusion, I firmly believe that sport mainly unites people rather than separating them. It builds friendships, encourages teamwork and brings together millions who might otherwise never meet, and for these reasons I fully agree with the statement."
+ },
+ {
+  "zid": "AFFFEB",
+  "prompt": "Imagine that you are doing a project on how people stay healthy in Zetland . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that can arise with some approaches to staying healthy and suggest a way of solving it; – conclude by giving your opinion on the importance of staying healthy.",
+  "ideas": [
+   "Top: avoiding fast food (42%) seen as key to health",
+   "Comment: balanced diet and sport follow closely behind",
+   "Compare no fast food (42%) vs morning exercise (2%) — diet over routine",
+   "Problem: strict diets can be unbalanced; solution — consult a doctor",
+   "Opinion: health needs both food and activity together"
+  ],
+  "table": {
+   "q": "Staying healthy",
+   "rows": [
+    [
+     "Not eating fast food",
+     "42"
+    ],
+    [
+     "Having a balanced diet",
+     "24"
+    ],
+    [
+     "Doing sports",
+     "22"
+    ],
+    [
+     "Getting to bed early",
+     "10"
+    ],
+    [
+     "Doing morning exercises",
+     "2"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out how people stay healthy in Zetland. I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the most popular approach is avoiding fast food, chosen by 42% of the respondents. Having a balanced diet comes next with 24%, while 22% of the respondents keep fit by doing sports regularly.\n\nComparing the figures, giving up fast food (42%) is over twenty times as popular as doing morning exercises (2%). This suggests that people believe what they eat matters far more for their health than any daily fitness routine, focusing on diet rather than movement.\n\nHowever, a real problem can appear here: strict diets are sometimes badly balanced and leave the body short of important nutrients. One realistic solution is to consult a doctor or a dietitian before cutting out whole food groups, so that healthy eating does not turn into harmful eating.\n\nIn my opinion, staying healthy requires both good food and regular activity, because diet and exercise support each other. To conclude, looking after our health is essential, and the wisest people combine sensible eating with a reasonable amount of sport instead of relying on one alone."
+ },
+ {
+  "zid": "B23D09",
+  "prompt": "Comment on the following statement. Friendship is the greatest gift of life. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you do not agree with the opposing opinion − make a conclusion restating your position",
+  "ideas": [
+   "Intro: is friendship life's greatest gift?",
+   "Agree: friends give support, joy, and emotional security",
+   "Agree: they shape character and share memories",
+   "Opposing: family or health may matter even more",
+   "Rebut: true friends often feel like chosen family",
+   "Conclude: friendship is invaluable, so I agree"
+  ],
+  "model": "Many people say that friendship is the greatest gift that life can offer. Whether it truly deserves this high praise is a matter of ongoing debate.\n\nIn my opinion, friendship really is one of life's greatest gifts. Firstly, good friends give us support, joy and a sense of emotional security in difficult moments. Secondly, they help to shape our character, since we often adopt the values and habits of the people we spend time with. Moreover, the memories we create together make our lives richer and far more meaningful.\n\nHowever, some people believe that other things matter even more. They argue that family provides deeper, lifelong bonds, while good health is the basis of everything else we enjoy.\n\nNevertheless, I cannot fully agree with this view. True friends often feel like a family we choose for ourselves, and they frequently stay beside us when our relatives are far away or too busy to help. Therefore, friendship should not be ranked below other blessings quite so easily, since it supports us throughout our whole life.\n\nIn conclusion, I remain convinced that friendship is one of the most precious gifts in life. It brings happiness, understanding and comfort that money simply cannot buy, and for this reason I wholeheartedly agree with the statement."
+ },
+ {
+  "zid": "BBFA2F",
+  "prompt": "Imagine that you are doing a project on what film genres are popular among teenagers in Zetland . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Film genre Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that can arise with watching films and suggest a way of solving it; – conclude by giving your opinion on the importance of watching movies in our life.",
+  "ideas": [
+   "Top: fantasy/sci-fi (42%) leads teen film tastes",
+   "Comment: horror and comedy reflect desire for strong emotions",
+   "Compare fantasy (42%) vs detective (5%) — escapism over puzzles",
+   "Problem: scary films cause fear; solution — choose age-appropriate ratings",
+   "Opinion: films entertain and expand imagination"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Fantasy, sci-fi",
+     "42"
+    ],
+    [
+     "Horror, thriller",
+     "23"
+    ],
+    [
+     "Comedy",
+     "18"
+    ],
+    [
+     "Drama, melodrama",
+     "12"
+    ],
+    [
+     "Detective films",
+     "5"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore which film genres are popular among teenagers in Zetland. I found a survey carried out among teenagers in Zetland, and its results are presented in the table.\n\nAccording to the data, the favourite genre is fantasy and science fiction, chosen by 42% of the respondents. Horror and thriller films come second with 23%, while 18% of the respondents prefer comedies in order to relax and laugh.\n\nComparing the figures, fantasy and sci-fi (42%) are more than eight times as popular as detective films (5%). This suggests that teenagers watch films mainly to escape into imaginary worlds and experience strong emotions, rather than to solve logical puzzles.\n\nHowever, a real problem can arise here: horror and thriller films sometimes frighten younger viewers and disturb their sleep. One realistic solution is to check the age rating before watching and choose films that suit one's age, so that entertainment does not turn into a source of stress.\n\nIn my opinion, watching films plays a valuable role in our lives, because it entertains us, widens our imagination and shows us different cultures. To conclude, films are well worth watching as long as teenagers choose them wisely and do not let the screen replace real life."
+ },
+ {
+  "zid": "BD469F",
+  "prompt": "Comment on one of the following statements. Education is the most valuable thing for a teenager. Robots will soon replace people in all jobs. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position",
+  "ideas": [
+   "Intro: paraphrase — is education a teenager's most valuable thing?",
+   "Agree: knowledge builds future careers and independence",
+   "Agree: it develops thinking and broadens opportunities",
+   "Opposing: health or family might be more valuable",
+   "Rebut: education enables one to protect both later",
+   "Conclude: education is crucial, so I support the statement"
+  ],
+  "model": "People frequently argue about what matters most in a teenager's life. Some are certain that education is the most valuable thing of all, while others clearly disagree.\n\nIn my opinion, education truly is the most valuable thing for a teenager. Firstly, knowledge builds the foundation for a future career and for genuine independence in adult life. Secondly, studying develops thinking, discipline and the ability to solve problems. Moreover, a good education broadens opportunities and allows young people to choose their own path rather than settle for whatever comes along.\n\nHowever, some people believe that other things are more valuable. They argue that health or a loving family should come first, since without them nothing else can be truly enjoyed.\n\nNevertheless, I cannot fully agree with this position. Education itself teaches teenagers how to look after their health and how to build strong relationships later in life. Therefore, it does not compete with those values but actually helps to protect and strengthen them, giving a young person the wisdom to enjoy them fully.\n\nTo sum up, while family and health are undeniably important, I am convinced that education remains the most valuable thing for a teenager. It shapes the whole future and gives young people the tools they need to succeed."
+ },
+ {
+  "zid": "BF0D1C",
+  "prompt": "Comment on one of the following statements. Doing sports is essential for young people. Travelling in your own country is the best way to learn about it. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position",
+  "ideas": [
+   "Intro: paraphrase — is sport essential for young people?",
+   "Agree: keeps the body fit and the mind focused",
+   "Agree: teaches discipline, teamwork, and stress relief",
+   "Opposing: studies matter more; sport can cause injury",
+   "Rebut: moderate exercise supports, not harms, learning",
+   "Conclude: sport is essential, so I agree"
+  ],
+  "model": "Nowadays people often discuss whether doing sports is truly essential for the young. Some are convinced that it is, while others regard it as merely optional.\n\nIn my opinion, sport is indeed essential for young people. Firstly, regular exercise keeps the body fit and healthy and helps to prevent many illnesses later in life. Secondly, it keeps the mind focused, since physical activity improves concentration and reduces stress before exams. Moreover, team sports teach discipline, teamwork and the ability to cope with both victory and defeat.\n\nHowever, some people believe that studies should always come first. They argue that sport takes up precious time and may even lead to injuries that interrupt a young person's education.\n\nNevertheless, I cannot agree with this opinion. Moderate exercise supports learning rather than harming it, because a rested and healthy student thinks far more clearly and remembers information better. Serious injuries, meanwhile, are rare when sport is done sensibly, with a warm-up and under proper guidance.\n\nTo sum up, although schoolwork is certainly important, I am firmly convinced that doing sports is essential for young people. It strengthens both the body and the mind and prepares teenagers for a healthy and balanced adult life."
+ },
+ {
+  "zid": "C2EAF0",
+  "prompt": "Imagine that you are doing a project on why an IT career is very popular among Zetland teenagers . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with some IT jobs and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of IT in the modern world.",
+  "ideas": [
+   "Top: good salary (33%) attracts teens to IT careers",
+   "Comment: many vacancies and remote work add appeal",
+   "Compare salary (33%) vs constant development (8%) — money over growth",
+   "Problem: IT jobs cause eye strain and burnout; solution — breaks and exercise",
+   "Opinion: IT shapes the modern world and offers freedom"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Good salary",
+     "33"
+    ],
+    [
+     "Many vacancies",
+     "25"
+    ],
+    [
+     "Working from home",
+     "20"
+    ],
+    [
+     "Creative work",
+     "14"
+    ],
+    [
+     "Constant development",
+     "8"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore why an IT career is so popular among Zetland teenagers. I found a survey carried out among teenagers in Zetland, and its results are presented in the table.\n\nAccording to the data, the leading reason is a good salary, chosen by 33% of the respondents. The abundance of job vacancies takes second place with 25%, while 20% of the respondents are attracted by the chance to work from home.\n\nComparing the figures, a good salary (33%) matters more than four times as much as the opportunity for constant development (8%). This suggests that teenagers are drawn to IT mainly by financial security and comfort, rather than by a love of endless learning.\n\nHowever, a real problem can arise here: many IT jobs mean long hours at a screen, which causes eye strain and burnout. One realistic solution is to take regular breaks and exercise during the day, so that workers protect both their eyes and their mental health.\n\nIn my opinion, information technology plays a huge role in the modern world, because it powers communication, business and creativity while offering people real freedom. To conclude, an IT career is an attractive choice, though young people should remember to look after their well-being as well as their income."
+ },
+ {
+  "zid": "C542BF",
+  "prompt": "Imagine that you are doing a project “Family budget: what Zetlanders spend their money on” . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant; – outline a problem that can arise with one’s family budget and suggest a way of solving it; – conclude by giving your opinion on the importance of budgeting carefully.",
+  "ideas": [
+   "Top: housing (35%) takes the largest share of budgets",
+   "Comment: food and medical aid together dominate essentials",
+   "Compare housing (35%) vs other (7%) — needs outweigh extras",
+   "Problem: overspending leaves no savings; solution — track and plan expenses",
+   "Opinion: careful budgeting brings security and freedom"
+  ],
+  "table": {
+   "q": "Item of expenditure",
+   "rows": [
+    [
+     "Housing",
+     "35"
+    ],
+    [
+     "Food",
+     "25"
+    ],
+    [
+     "Medical aid",
+     "17"
+    ],
+    [
+     "Entertainment",
+     "16"
+    ],
+    [
+     "Other",
+     "7"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore what Zetlanders spend their money on. I found a survey carried out among families in Zetland, and its results are presented in the table.\n\nAccording to the data, the largest share of the budget goes on housing, named by 35% of the respondents. Food comes second with 25%, while 17% of the respondents spend a significant part of their income on medical aid.\n\nComparing the figures, housing (35%) takes five times as large a share as the 'other' category (7%). This suggests that most of a family's money is swallowed up by basic necessities, leaving very little for anything beyond everyday survival.\n\nHowever, a real problem can arise here: without careful planning, families overspend and end up with no savings at all. One realistic solution is to keep a monthly record of income and expenses, so that people can see where their money goes and cut back before they run short.\n\nIn my opinion, budgeting carefully is extremely important, because it brings both financial security and a sense of freedom. To conclude, managing a family budget wisely helps households avoid debt and prepare for the future, which is why everyone should learn to plan their spending from an early age."
+ },
+ {
+  "zid": "C6FB7C",
+  "prompt": "Comment on one of the following statements. Science is the first thing to be financed in the modern world. An early choice of a career path is the key to success. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem paraphrasing the given statement) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you do not agree with the opposing opinion − make a conclusion restating your position",
+  "ideas": [
+   "Intro: paraphrase — should science be funded first?",
+   "Agree: science drives medicine, technology, and progress",
+   "Agree: it solves global problems like disease and climate",
+   "Opposing: education and healthcare may deserve priority",
+   "Rebut: science underpins those very fields anyway",
+   "Conclude: science deserves strong funding, so I agree"
+  ],
+  "model": "People often argue about which area of life deserves financial support before all others. Some are certain that science should be funded first, while others strongly disagree.\n\nIn my opinion, science really should be the first thing to be financed in the modern world. Firstly, science drives medicine, technology and general progress, improving the quality of everyday life. Secondly, it offers solutions to enormous global problems, such as dangerous diseases and climate change. Moreover, investment in research today usually brings valuable discoveries and economic benefits in the future.\n\nHowever, some people believe that other areas deserve priority. They argue that education and healthcare have a more immediate effect on ordinary citizens and therefore should receive money first.\n\nNevertheless, I cannot fully agree with this position. Both education and healthcare actually depend on science, since new treatments, effective medicines and modern teaching tools all come from scientific research. Therefore, funding science indirectly strengthens those very fields as well, and neglecting it would eventually weaken them too.\n\nTo sum up, although education and healthcare are undoubtedly important, I am convinced that science deserves strong and early financing. It underpins nearly every area of modern life and prepares humanity to meet the serious challenges that surely lie ahead."
+ },
+ {
+  "zid": "CF0893",
+  "prompt": "Comment on one of the following statements. Literature is the most important school subject. To be healthy, it is enough to eat healthy food. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position.",
+  "ideas": [
+   "Intro: paraphrase — is literature the most important subject?",
+   "Agree: builds empathy, vocabulary, and critical thinking",
+   "Agree: connects us to culture and human experience",
+   "Opposing: maths and sciences are more practical",
+   "Rebut: literature uniquely develops emotional intelligence",
+   "Conclude: literature is vital, though I state my balanced view"
+  ],
+  "model": "People often argue about which school subject deserves to be called the most important. Some are certain that literature holds this place, while others firmly disagree.\n\nIn my opinion, literature, although extremely valuable, is not the most important school subject. Firstly, subjects such as mathematics and the sciences give practical knowledge that is needed directly in most modern professions. Secondly, these subjects develop logical thinking that many careers demand every single day.\n\nHowever, some people believe that literature truly is the most important subject. They argue that reading builds empathy, vocabulary and critical thinking, and that it connects us with our culture and with the wider human experience.\n\nNevertheless, I cannot fully agree with this opinion. Although literature uniquely develops emotional intelligence and imagination, these qualities alone cannot secure a stable career or solve technical problems. A balanced education, therefore, cannot rely on literature at the expense of everything else.\n\nIn conclusion, I am convinced that literature is a vital and enriching subject, yet it should not be regarded as the single most important one. The best education combines the emotional depth of literature with the practical strength of the sciences, giving young people a truly complete preparation for life."
+ },
+ {
+  "zid": "E0980A",
+  "prompt": "Comment on the following statement. It is wrong to make pupils read a lot in summer. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you do not agree with the opposing opinion − make a conclusion restating your position",
+  "ideas": [
+   "Intro: is it wrong to make pupils read a lot in summer?",
+   "Agree: holidays should rest the mind, not add pressure",
+   "Agree: forced reading can kill the love of books",
+   "Opposing: summer reading keeps skills sharp and broadens minds",
+   "Rebut: free choice of books makes it enjoyable, not harmful",
+   "Conclude: I disagree — guided reading benefits pupils"
+  ],
+  "model": "People often argue about whether it is wrong to make pupils read a great deal during their summer holidays. Some consider such a demand harmful, while others disagree.\n\nIn my opinion, guided summer reading is not wrong but genuinely beneficial. Firstly, regular reading during the long break keeps language and thinking skills sharp, so pupils do not forget what they have learned. Secondly, books broaden the mind, enrich vocabulary and introduce young people to new ideas and worlds. Moreover, a steady reading habit makes the return to school in autumn far easier.\n\nHowever, some people believe that forcing pupils to read is wrong. They argue that holidays should rest the mind rather than add pressure, and that compulsory reading can even kill a child's natural love of books.\n\nNevertheless, I cannot agree with this view. When pupils are allowed to choose books that genuinely interest them, reading becomes an enjoyable pleasure rather than a tiresome chore. Therefore, the problem lies not in reading itself but in how it is organised.\n\nTo sum up, I disagree with the statement. Reasonable, freely chosen summer reading harms no one; on the contrary, it keeps young minds active and clearly benefits pupils throughout the rest of the year."
+ },
+ {
+  "zid": "E8F951",
+  "prompt": "Imagine that you are doing a project on why many teenagers in Zetland prefer to spend their summer holidays in a youth camp . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with going to a youth camp and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of summer youth camps.",
+  "ideas": [
+   "Top: making friends (55%) — over half seek social bonds",
+   "Comment: activities and new places show adventure appeal",
+   "Compare friends (55%) vs independence (8%) — connection over self-growth",
+   "Problem: homesickness at camp; solution — keep contact, prepare children",
+   "Opinion: camps build friendships and confidence"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "To make new friends",
+     "55"
+    ],
+    [
+     "To take part in fun activities",
+     "15"
+    ],
+    [
+     "To visit new places",
+     "12"
+    ],
+    [
+     "To take up a new hobby",
+     "10"
+    ],
+    [
+     "To become more independent",
+     "8"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to find out why many teenagers in Zetland prefer to spend their summer holidays in a youth camp. I found a survey carried out among teenagers in Zetland, and its results are presented in the table.\n\nAccording to the data, the most common reason is the wish to make new friends, chosen by 55% of the respondents. Taking part in fun activities comes second with 15%, while 12% of the respondents go to camp in order to visit new places.\n\nComparing the figures, making new friends (55%) is almost seven times as important as becoming more independent (8%). This suggests that teenagers value the social side of camp life above personal growth, seeing the holidays mainly as a chance to connect with others.\n\nHowever, a real problem can arise here: many young people feel homesick once they are far from their families. One realistic solution is to let campers keep in touch with home by phone and prepare them beforehand, so that they settle in and enjoy the experience.\n\nIn my opinion, summer youth camps are truly important, because they help teenagers build friendships, try new things and grow in confidence. To conclude, spending the holidays at a camp is a wonderful choice for young people who want both fun and personal development."
+ },
+ {
+  "zid": "F70942",
+  "prompt": "Comment on the following statement. Computers cannot replace people. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don't agree with the opposing opinion − make a conclusion restating your position",
+  "ideas": [
+   "Intro: can computers really not replace people?",
+   "Agree: machines lack creativity, empathy, and moral judgement",
+   "Agree: human contact is irreplaceable in care and teaching",
+   "Opposing: AI now writes, drives, and diagnoses well",
+   "Rebut: AI still needs human oversight and emotion",
+   "Conclude: computers assist but cannot fully replace us"
+  ],
+  "model": "As technology advances rapidly, people increasingly argue about whether computers could ever replace human beings. Some are certain that they cannot, while others are far less sure.\n\nIn my opinion, computers cannot truly replace people. Firstly, machines lack genuine creativity, empathy and moral judgement, which are essential in countless areas of life. Secondly, human contact is simply irreplaceable in fields such as care, nursing and teaching, where warmth and understanding matter enormously. Moreover, computers only follow instructions and cannot make wise decisions in situations they were never programmed for.\n\nHowever, some people believe that computers are already replacing us. They point out that modern artificial intelligence can write texts, drive vehicles and even help doctors diagnose illnesses with impressive accuracy.\n\nNevertheless, I cannot fully agree with this claim. Even the most advanced systems still require human oversight, careful correction and emotional intelligence in order to be used responsibly. A computer may help a doctor read a scan, yet it cannot comfort a frightened patient or truly understand human fear.\n\nTo sum up, although computers are powerful tools that make our work faster and easier, I am convinced that they cannot fully replace people. They should be seen as helpful assistants rather than as substitutes for human intelligence and feeling."
+ },
+ {
+  "zid": "FC5101",
+  "prompt": "Comment on one of the following statements. To be happy one needs a lot of money. The digital age will soon make some jobs unnecessary. What is your opinion? Do you agree with this statement? Write 200–250 words . Use the following plan: - make an introduction (state the problem paraphrasing the given statement) ; - express your personal opinion and give 2–3 reasons for your opinion ; - express an opposing opinion and give 1–2 reasons for this opposing opinion ; - explain why you do not agree with the opposing opinion ; - write a conclusion restating your position.",
+  "ideas": [
+   "Intro: paraphrase — does happiness require lots of money?",
+   "Agree (or disagree): money buys comfort but not feelings",
+   "Reasons: health, friends, and purpose bring real joy",
+   "Opposing: money reduces stress and funds experiences",
+   "Rebut: rich people can still feel empty and lonely",
+   "Conclude: money helps but happiness needs more"
+  ],
+  "model": "People frequently argue about whether happiness really requires a large amount of money. Some are convinced that it does, while others firmly disagree.\n\nIn my opinion, happiness does not depend on having a lot of money. Firstly, money can buy comfort and possessions, but it cannot buy genuine feelings such as love or friendship. Secondly, the things that bring the deepest joy, such as good health, close friends and a sense of purpose, cannot be purchased at any price. Moreover, many wealthy people admit that riches alone have never made them truly content.\n\nHowever, some people believe that money is the key to happiness. They argue that it reduces stress, provides security and pays for enjoyable experiences and travel.\n\nNevertheless, I cannot fully agree with this position. Even very rich individuals can feel empty and lonely if they lack loving relationships and meaningful goals. Therefore, wealth by itself is clearly not enough to guarantee a happy life.\n\nTo sum up, while a certain amount of money certainly makes life easier and more comfortable, I am convinced that true happiness needs much more than that. It grows from love, health and purpose rather than from the size of one's bank account."
+ },
+ {
+  "zid": "FD7204",
+  "prompt": "Imagine that you are doing a project on why some Zetlanders refuse to go to work by bicycle . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . The opinion poll question: Why do you refuse to go to work by bicycle? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2–3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with riding a bike in a big city and suggest a way of solving it; – conclude by giving and explaining your opinion on the best way of getting around a big city.",
+  "ideas": [
+   "Top: too far (49%) — distance is the main barrier to cycling",
+   "Comment: climate and missing lanes add practical obstacles",
+   "Compare distance (49%) vs too many cars (6%) — geography over traffic",
+   "Problem: cycling in a big city is unsafe; solution — build bike lanes",
+   "Opinion: cycling is healthy but cities must support it"
+  ],
+  "table": {
+   "q": "Why do you refuse to go to work by bicycle?",
+   "rows": [
+    [
+     "Too far to go",
+     "49"
+    ],
+    [
+     "Unfavourable climate conditions",
+     "24"
+    ],
+    [
+     "Few roads with bicycle lanes",
+     "13"
+    ],
+    [
+     "Few bicycle parking lots",
+     "8"
+    ],
+    [
+     "Too many cars on the roads",
+     "6"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore why some Zetlanders refuse to go to work by bicycle. I found a survey carried out among people in Zetland, and its results are presented in the table.\n\nAccording to the data, the main reason is that the distance is simply too far, chosen by 49% of the respondents. Unfavourable climate conditions come second with 24%, while 13% of the respondents complain about the shortage of roads with bicycle lanes.\n\nComparing the figures, long distances (49%) discourage more than eight times as many people as heavy traffic (6%). This suggests that geography, rather than the number of cars, is the real barrier, since most workers live too far from their offices to cycle comfortably.\n\nHowever, a serious problem remains: cycling through a big city can be dangerous. One realistic solution is to build a proper network of separated bicycle lanes, so that riders are protected from cars and feel safe on the road.\n\nIn my opinion, cycling is a healthy and cheap way to travel, but cities must support it before people will switch. To conclude, the best way of getting around a big city is a combination of cycling and public transport, which keeps us fit while saving both time and money."
+ },
+ {
+  "zid": "ceD260",
+  "prompt": "Imagine that you are doing a project on why many young Zetlanders choose the medical profession . You have found some data on the subject – the results of a survey (see the table below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: Why have you chosen a career in medicine? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that students of medicine may face during their course of studies and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of doctors in today’s world.",
+  "ideas": [
+   "Top: desire to help (48%) — nearly half choose medicine to serve",
+   "Comment: passion for biology and public value add motivation",
+   "Compare helping (48%) vs job stability (5%) — purpose over security",
+   "Problem: medical study is stressful and demanding; solution — time management, support",
+   "Opinion: doctors are essential to society's wellbeing"
+  ],
+  "table": {
+   "q": "",
+   "rows": [
+    [
+     "Desire to help people",
+     "48"
+    ],
+    [
+     "Passion for biology",
+     "20"
+    ],
+    [
+     "Public significance",
+     "18"
+    ],
+    [
+     "High salary",
+     "9"
+    ],
+    [
+     "Job stability and demand",
+     "5"
+    ]
+   ]
+  },
+  "model": "As part of my project, I decided to explore why many young Zetlanders choose the medical profession. I found a survey carried out among students in Zetland, and its results are presented in the table.\n\nAccording to the data, the leading reason is a desire to help people, chosen by 48% of the respondents. A passion for biology comes second with 20%, while 18% of the respondents are motivated by the public significance of the work.\n\nComparing the figures, the wish to help others (48%) matters almost ten times as much as job stability and demand (5%). This suggests that young people enter medicine mainly out of compassion and a sense of purpose, rather than for the security of a guaranteed job.\n\nHowever, a real problem can arise here: medical studies are extremely stressful and demanding. One realistic solution is to teach students good time management and offer them regular psychological support, so that they cope with the workload without burning out.\n\nIn my opinion, doctors are absolutely essential in today's world, because they save lives, fight disease and keep whole communities healthy. To conclude, medicine is a demanding but deeply rewarding path, and society should do everything it can to support those who dedicate themselves to caring for others."
+ }
+]

@@ -10,10 +10,10 @@ import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.j
 import { t, EXAM } from '../js/exam.js';
 import { recognize, canRecognize } from '../js/stt.js';
 import { evalSpeaking, evalEgeSpeaking } from '../js/speakeval.js';
+import { evalWriting as evalWritingApi } from '../js/writeeval.js';
 import { renderPrintView, enumerateAnswerKeys } from './print.js';
 import { renderBlankCheck } from './teacher.js';
 
-const WORKER = 'https://oge-eval.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
 
 function norm(s) { return (s || '').toString().toLowerCase().trim().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' '); }
@@ -656,40 +656,22 @@ export async function renderMock(container, cfg) {
     ]);
   }
 
-  // AI-оценка письма — по критериям из задания (ОГЭ-письмо ru / ЕГЭ email|essay en).
+  // AI-оценка письма — единый движок writeeval.js (та же рубрика ФИПИ-2026, что в разделе «Письмо»).
+  // Здесь только маппинг секции пробника → opts и подмешивание данных опроса (зад.38) в контекст.
   async function evalWriting(text, sec) {
-    const wcN = (text.trim().match(/\S+/g) || []).length;
-    const task = sec.task;
-    const crit = sec.criteria || [];
-    const critSpec = crit.map((c) => `${c.code} (max ${c.max}): ${c.name}`).join('; ');
-    const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<...>"}`).join(',');
+    const task = sec.task || {};
     let stim = task.prompt || ((task.context || '') + ' ' + (task.questions || ''));
-    // данные опроса (зад.38) — текстом в промпт, чтобы ИИ мог сверить факты/цифры
     if (task.table && task.table.rows && task.table.rows.length) {
       stim += '\n\n' + (task.table.q || 'Survey data') + '\n' + task.table.rows.map((r) => `- ${r[0]}: ${r[1]}%`).join('\n');
     }
-    const mx = crit.reduce((s, c) => s + c.max, 0);
-    let sys, user;
-    if (sec.lang === 'en') {
-      const kind = sec.wkind === 'essay'
-        ? 'task 38, a data-based opinion essay (200-250 words): opening, report facts, comparisons with comments, a problem and a solution, conclusion with own opinion.'
-        : 'task 37, a personal email (100-140 words): answer the friend\'s questions AND ask 3 questions, correct opening, closing phrase and name.';
-      sys = 'You are a strict but kind English exam examiner. Assess strictly by the official criteria and reply ONLY with valid JSON, no markdown. Comments in English, B1, short.';
-      user = `Task: ${kind}\nCriteria: ${critSpec}.\n\nPrompt:\n"""${stim}"""\n\nStudent's writing (${wcN} words):\n"""${text}"""\n\nReturn JSON exactly: {"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<1-2 sentences, English>"}\ntotalScore = sum of criteria. If К1 (communicative task) is 0, the whole task is 0.`;
-    } else {
-      sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
-      user = `Критерии: ${critSpec}. Объём ${sec.words ? sec.words[0] + '–' + sec.words[1] : '100–120'} слов.\nКонтекст письма друга: ${stim}\n\nПисьмо ученика (${wcN} слов):\n"""${text}"""\n\nВерни JSON строго так:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<1-2 предложения по-русски>"}\nВ ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям. ВАЖНО: если К1=0, всё задание = 0.`;
-    }
-    const r = await fetch(WORKER, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 1500,
-        messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
+    const crit = sec.criteria || [];
+    const sectionId = sec.wkind === 'essay' ? 'essay' : (sec.wkind === 'email' ? 'email' : 'writing');
+    const words = sec.words || (sec.lang === 'en' ? (sectionId === 'essay' ? [200, 250] : [100, 140]) : [100, 120]);
+    return evalWritingApi(text, {
+      lang: sec.lang, sectionId, criteria: crit,
+      max: sec.maxPts || crit.reduce((s, c) => s + c.max, 0),
+      words, stim, essayKind: 'data',
     });
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const d = await r.json();
-    if (d.error) throw new Error(d.error.message || 'err');
-    if (!d.choices || !d.choices[0]) throw new Error('empty');
-    return JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
   }
 
   introScreen();

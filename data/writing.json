@@ -10,7 +10,8 @@
    "объясни, почему именно эта музыка нравится",
    "да, уроки музыки нужны — развивают вкус, расслабляют",
    "назови инструмент (гитара/пианино) и почему хочешь"
-  ]
+  ],
+  "model": "Dear Harry,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what music I like. I'm really into pop, and I never get tired of listening to my favourite band on my way home. I love it because the songs always cheer me up.\n\nDo I think music lessons at school are necessary? Yes, I do. They help us relax after difficult subjects and teach us to understand different styles.\n\nAs for instruments, I'd love to play the guitar one day, because it sounds amazing and you can take it anywhere.\n\nThat's all my news for now. Write back soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Alice",
@@ -23,7 +24,8 @@
    "выбери ТВ или интернет и объясни почему",
    "интернет: больше выбора, общение, учёба",
    "чем ещё занят в свободное время (спорт, друзья)"
-  ]
+  ],
+  "model": "Dear Alice,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how much time I watch TV. To be honest, I don't watch it much these days, maybe an hour after dinner, usually a film or a match with my dad.\n\nAs for TV or the Internet, I definitely prefer the Internet. It gives me much more choice, I can chat with my friends, watch anything I want and even study whenever I need to.\n\nIn my free time I also love playing basketball with my classmates and going for long walks, because sitting at home all day gets boring quite quickly.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nAlex"
  },
  {
   "name": "Andrew",
@@ -36,7 +38,8 @@
    "какие подарки даришь маме (цветы, открытка, рисунок)",
    "назови другие семейные праздники (Новый год, дни рождения)",
    "как обычно их отмечаешь"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou wanted to know about Mother's Day in Russia. We celebrate it on the last Sunday of November. Children make cards, say kind words and try to help their mothers around the house.\n\nAs for presents, I usually give my mum a bunch of her favourite flowers, a handmade card and sometimes sweets. She says my drawings mean much more to her than anything expensive.\n\nWe also celebrate lots of other family holidays, like New Year, birthdays and the eighth of March, when the whole family gets together for a big, tasty dinner.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nNick"
  },
  {
   "name": "Barbara",
@@ -49,7 +52,8 @@
    "планы на это лето (лагерь, море, отдых)",
    "да/нет: любишь ли уезжать из дома и почему",
    "плюсы поездок: новые места, впечатления"
-  ]
+  ],
+  "model": "Dear Barbara,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how I usually spend my holidays. Most of the time I stay in my grandparents' village, help in the garden, ride my bike and meet the local kids almost every day.\n\nThis summer my plans are a bit different. My family is going to the seaside for two weeks, and after that I'll go to a language camp to improve my English.\n\nI definitely prefer spending holidays away from home. Travelling lets me see new places, try unusual food and meet interesting people, so I never feel bored at all.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nKate"
  },
  {
   "name": "Jane",
@@ -62,7 +66,8 @@
    "как готовишься (повторяю темы, решаю задания)",
    "что делаешь, чтобы не нервничать (сон, прогулка, дыхание)",
    "поддержка друзей и родителей помогает"
-  ]
+  ],
+  "model": "Dear Jane,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which exam I find the most difficult. For me it's definitely Maths, because there are so many formulas to remember and one small mistake can ruin the whole task.\n\nTo get ready for it, I revise a topic every evening, solve lots of practice tests and ask my teacher whenever something isn't completely clear to me.\n\nTo avoid being nervous, I try to sleep well, go for a short walk and take deep breaths. Talking to my friends and parents also calms me down a lot.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nMax"
  },
  {
   "name": "Kate",
@@ -75,7 +80,8 @@
    "лучший сувенир по-твоему (магнит, открытка, местная еда)",
    "какое место хотел бы посетить и почему",
    "что там интересного увидеть"
-  ]
+  ],
+  "model": "Dear Kate,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked why people buy souvenirs when they travel. I think they want to keep good memories of a place and bring back small gifts for their family and closest friends.\n\nIn my opinion, the best souvenir is a fridge magnet or a postcard. They are cheap, easy to carry and they always remind you of the trip many years later.\n\nAs for me, I'd love to visit Italy one day. I want to see the ancient buildings, taste real pizza and finally practise the language I've been learning.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nAnna"
  },
  {
   "name": "Lily",
@@ -88,7 +94,8 @@
    "чем занимался (купался, гулял, читал)",
    "какие школьные каникулы любишь больше всего",
    "объясни почему (долгие, летом тепло)"
-  ]
+  ],
+  "model": "Dear Lily,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked where I spent my last summer holidays. I went to a small village near a lake with my grandparents, and I honestly enjoyed every single day there.\n\nDuring my holidays I swam almost every morning, went fishing with my grandad, read a few adventure books and helped pick fresh vegetables in the garden.\n\nMy favourite school holidays are the summer ones. They are the longest, the weather is warm, and you have enough time to relax and try something completely new.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nSam"
  },
  {
   "name": "Emma",
@@ -101,7 +108,8 @@
    "какой музей открыл бы (игр, техники, котов)",
    "почему именно такой музей",
    "чем любишь заниматься в свободное время"
-  ]
+  ],
+  "model": "Dear Emma,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether I find visiting museums interesting. Yes, I really do, because you learn so much about history and art, and you see things you can't find anywhere else.\n\nIf I could set up my own museum, it would be a museum of video games. Visitors could play old consoles and discover how games have changed over the years.\n\nIn my free time I enjoy drawing, watching films with my brother and cycling around the park whenever the weather is nice and warm outside.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nLena"
  },
  {
   "name": "Henry",
@@ -114,7 +122,8 @@
    "что советуют родители выбрать",
    "есть ли работа, на которую не согласишься",
    "объясни почему (опасно, скучно, не нравится)"
-  ]
+  ],
+  "model": "Dear Henry,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about my career plans. I'd like to become a software developer, because I love computers and I want to create useful apps that make people's lives easier.\n\nMy parents advise me to choose medicine, like my aunt did. They think it's a respected and stable job, but I'm not really keen on it, to be honest.\n\nThere is one job I'd never agree to do, a miner. I couldn't work deep underground all day; it seems too dangerous and completely unhealthy to me.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nDan"
  },
  {
   "name": "Ann",
@@ -127,7 +136,8 @@
    "самый интересный кружок в школе и почему",
    "сколько времени уходит на домашку",
    "какие предметы задают больше всего"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I do after my classes. Usually I stay for the football club, then meet my friends in the yard before finally heading home for dinner.\n\nThe most interesting club in my school is the robotics club. I think so because you build real machines with your own hands and learn programming at the same time.\n\nAs for homework, it takes me about two hours every evening. Some subjects, like Maths and Russian, need much more time than the others, unfortunately.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nMia"
  },
  {
   "name": "Tom",
@@ -140,7 +150,8 @@
    "для чего используешь (учёба, игры, общение)",
    "каким профессиям нужны навыки ПК (программист, дизайнер)",
    "почему эти профессии"
-  ]
+  ],
+  "model": "Dear Tom,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how many hours a week I spend on my computer. It's around fifteen, I suppose, mostly in the evenings after I have finished all of my schoolwork.\n\nI use it for lots of things, like writing essays, searching for information, watching videos, playing games and chatting with my friends who live far away.\n\nIn my view, programmers, designers and engineers really need excellent computer skills, because their whole job depends on using special software every single day.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nNina"
  },
  {
   "name": "Andrew",
@@ -153,7 +164,8 @@
    "кинотеатр: большой экран, атмосфера",
    "какие фильмы любишь (комедии, фэнтези, ужасы)",
    "да/нет: популярны ли мультики у тебя и друзей"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether I prefer watching films at home or at the cinema. I love the cinema, because of the huge screen, the loud sound and the special atmosphere you can't get at home.\n\nAs for genres, I'm really into comedies and fantasy films. They help me relax, forget about my problems and dream about magical worlds for a couple of hours.\n\nCartoons are still popular with me and my friends. We often watch new animated films together and laugh just as much as we did when we were little kids.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nLeo"
  },
  {
   "name": "Maggy",
@@ -166,7 +178,8 @@
    "куда хотел бы поехать и почему",
    "как предпочитаешь путешествовать (поезд, самолёт, авто)",
    "плюсы выбранного транспорта"
-  ]
+  ],
+  "model": "Dear Maggy,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked why I think travelling is so popular. People love discovering new places, relaxing far from work and learning about other cultures and traditions around the world.\n\nAs for me, I'd really like to go to Japan. I'm fascinated by its cities, its food and its unusual mix of modern technology and very old traditions.\n\nI prefer travelling by plane, to be honest. It's fast and comfortable, so you don't waste days on the road and you have more time for sightseeing.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nVera"
  },
  {
   "name": "Mike",
@@ -179,7 +192,8 @@
    "что могут делать подростки (сортировка, субботники)",
    "выбери город или деревню и объясни почему",
    "плюсы выбора (чистый воздух / возможности)"
-  ]
+  ],
+  "model": "Dear Mike,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about ecological problems in my country. The most serious ones are air pollution from cars and factories, and huge amounts of rubbish that end up in the wrong places.\n\nTeenagers can do quite a lot to make their hometown cleaner. We can sort our waste, join clean-up days in the parks and stop dropping litter on the streets.\n\nHonestly, I'd rather live in the country. The air is fresh, it's quiet and peaceful, and you're surrounded by nature instead of endless traffic and noise.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nRick"
  },
  {
   "name": "Ann",
@@ -192,7 +206,8 @@
    "что делаешь, чтобы быть в форме (спорт, режим)",
    "какой еды избегаешь (фастфуд, сладкое, чипсы)",
    "почему вредно это есть"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked why people become vegetarians. Some do it to protect their health, while others simply feel sorry for animals and don't want to eat meat for that reason.\n\nTo keep fit, I go swimming twice a week, do my morning exercises and try to walk instead of taking the bus whenever the weather allows me to.\n\nThere's some food I really try to avoid, like chips, fizzy drinks and too many sweets. They're full of sugar and fat, so they're clearly bad for you.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nOlga"
  },
  {
   "name": "Nick",
@@ -205,7 +220,8 @@
    "много ли друзей в школе",
    "чем занят с друзьями в свободное время",
    "примеры: гуляем, играем, ходим в кино"
-  ]
+  ],
+  "model": "Dear Nick,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I like most about my school. Definitely my friends and the friendly teachers, because they make even the hardest lessons feel much more enjoyable.\n\nYes, I've got quite a lot of friends at school. Some of them I've known since first grade, and we still hang out together almost every single day.\n\nIn our free time we usually play football, go to the cinema or just walk around the town, chatting and laughing about everything that happened at school.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nPaul"
  },
  {
   "name": "Kate",
@@ -218,7 +234,8 @@
    "любимый предмет и почему",
    "какие внеклассные занятия есть в школе",
    "примеры: спорт, кружки, олимпиады"
-  ]
+  ],
+  "model": "Dear Kate,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how many lessons I usually have a day. It depends, but normally it's six or seven, and on Wednesdays we even have eight, which is really tiring.\n\nMy favourite subject is English, because I love learning new words, watching films in the original, and I know it will be very useful for my future.\n\nStudents at my school can do lots of after-class activities. There are sports clubs, a drama group, a choir and even school olympiads in different subjects.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nZoe"
  },
  {
   "name": "Ben",
@@ -231,7 +248,8 @@
    "какое хобби хотел бы завести и почему",
    "да/нет: разделяют ли друзья твои интересы",
    "чем занимаетесь вместе"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about hobbies popular with Russian teenagers. Most of my friends are into sports, computer games and music, while some love drawing or making videos for the internet.\n\nI'd really like to take up photography. I think it's a creative hobby, and I'd love to capture beautiful moments and show my city from an unusual angle.\n\nLuckily, my friends share my interests. Two of them already have cameras, so we could go out together, take pictures and teach each other new tricks.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nKim"
  },
  {
   "name": "Paul",
@@ -244,7 +262,8 @@
    "что могут делать молодые (экономить, сортировать, сажать)",
    "да, экологию нужно обсуждать в школе",
    "почему: воспитывает ответственность"
-  ]
+  ],
+  "model": "Dear Paul,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which ecological problem I consider the most serious. For me it's pollution, because dirty air, plastic in the oceans and rivers full of chemicals really worry me.\n\nYoung people can do a lot to protect the environment. We can save water and electricity, recycle rubbish, plant trees and use much less plastic in our daily lives.\n\nI definitely think ecology should be discussed at school. It teaches us to be responsible and shows how our small everyday choices affect the whole planet.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nEva"
  },
  {
   "name": "Ann",
@@ -257,7 +276,8 @@
    "когда начал строить планы на будущее",
    "кем хочешь работать в будущем и почему",
    "что нравится в этой профессии"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which subjects I'm good at. I do best in English and History, because I have a good memory and I genuinely enjoy reading about the past.\n\nI began making plans for my future about a year ago, when our school invited different specialists to tell us about their jobs and how they had chosen them.\n\nIn the future I'd like to become a translator. I love languages, and I think it would be exciting to help people from different countries understand each other.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nRay"
  },
  {
   "name": "Ben",
@@ -270,7 +290,8 @@
    "одобряешь ли экзотических питомцев и почему",
    "опасно/непривычно держать пауков и змей",
    "популярные питомцы в России (кошки, собаки, хомяки)"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked why some people don't want any pets. I think they either have allergies, or they simply don't have enough time and money to look after an animal properly.\n\nAs for exotic pets like spiders or snakes, I don't really approve of keeping them. They can be dangerous, and I believe wild animals belong in their natural home.\n\nIn my country the most popular pets are cats and dogs. Many families also keep hamsters, parrots or goldfish, because they're small and easy to care for.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nVlad"
  },
  {
   "name": "Ben",
@@ -283,7 +304,8 @@
    "кем собираешься стать",
    "да, английский нужен для карьеры",
    "почему: общение, документы, путешествия"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how I find out what's happening in the world. Usually I read news websites on my phone, watch short videos online and sometimes discuss events with my parents.\n\nAs for my future, I'm going to be a journalist. I love writing, I'm curious about everything, and I want to tell people true and interesting stories.\n\nI'm sure English will be necessary for my career. It will help me read foreign sources, interview people from other countries and travel wherever the news takes me.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nNell"
  },
  {
   "name": "Sam",
@@ -296,7 +318,8 @@
    "сколько времени уходит на домашку",
    "чем занят в свободное время (спорт, друзья, хобби)",
    "примеры досуга"
-  ]
+  ],
+  "model": "Dear Sam,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about my favourite subject. It's Biology, without a doubt. I find it fascinating to learn how living things work, and our teacher explains everything so clearly.\n\nAs for homework, it usually takes me around two hours a day. Some evenings, when we get lots of essays and exercises, I need even more time than that.\n\nIn my free time I love playing the guitar, meeting my friends and going cycling. At weekends I also help my dad in the garage, which I really enjoy.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nGleb"
  },
  {
   "name": "Kate",
@@ -309,7 +332,8 @@
    "программа новогоднего вечера (сценки, танцы, конкурсы)",
    "какой подарок хотел бы на Новый год",
    "почему именно его"
-  ]
+  ],
+  "model": "Dear Kate,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what school events we have during the year. We organise a September concert, a winter fair, a spring talent show and a big graduation party in May.\n\nOur New Year party is always great fun. The programme includes funny sketches, dancing competitions, a quiz and, of course, a visit from Father Frost with small presents.\n\nFor this New Year I'd love to get a new pair of skates. I've wanted them for ages so that I can join my friends at the ice rink.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nIris"
  },
  {
   "name": "Mary",
@@ -322,7 +346,8 @@
    "почему они интересны (история, красота)",
    "лучший способ путешествовать по России (поезд, авто)",
    "выбери город или городок и объясни почему"
-  ]
+  ],
+  "model": "Dear Mary,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which small Russian towns I'd recommend. I'd definitely suggest Suzdal and Pskov, because they're full of ancient churches, old fortresses and a special, peaceful atmosphere.\n\nIn my opinion, the best way to travel around Russia is by train. The country is huge, the tickets aren't expensive, and you can watch amazing views through the window.\n\nPersonally, I'd prefer to live in a big city. There are more opportunities to study, more jobs and lots of interesting places to visit at the weekend.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nMark"
  },
  {
   "name": "Ann",
@@ -335,7 +360,8 @@
    "что делаешь, чтобы улучшить английский (фильмы, приложения)",
    "какой ещё язык хотел бы выучить и почему",
    "пример: испанский, китайский — полезен, красивый"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked when I started learning English. I began in the second grade, so I've been studying it for about seven years now, and I still really enjoy it.\n\nTo improve my English, I watch films with subtitles, use language apps every day and try to read simple books in the original whenever I have some time.\n\nBesides English, I'd love to learn Spanish. It sounds beautiful, lots of people speak it, and it would be really useful for travelling around South America.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nDana"
  },
  {
   "name": "Jim",
@@ -348,7 +374,8 @@
    "какие иностранные языки можно учить в школе",
    "самый важный предмет для карьеры и почему",
    "пример: английский, информатика"
-  ]
+  ],
+  "model": "Dear Jim,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how many lessons I usually have a day. Normally it's six, but twice a week we have seven, which makes those days feel especially long and exhausting.\n\nAt my school you can learn two foreign languages, English and German. Most students choose English first, and then add German as a second language a bit later.\n\nI find English the most important subject for my future career. Whatever job I choose, knowing English will help me communicate, read documents and work with people abroad.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nEgor"
  },
  {
   "name": "Ben",
@@ -361,7 +388,8 @@
    "что понравилось больше всего: купание, друзья, погода",
    "какую страну хочешь посетить и почему",
    "мечта: достопримечательности, язык, культура"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked where I spent my last summer. I went to a summer camp by the Black Sea, and it turned out to be one of the best months of my life.\n\nWhat I liked most was swimming in the warm sea every day and making new friends from all over the country during the fun evening activities.\n\nOne day I'd really like to visit Canada. I've seen amazing photos of its lakes and forests, and I'd love to see the wild nature with my own eyes.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nRita"
  },
  {
   "name": "Emily",
@@ -374,7 +402,8 @@
    "обычные причины: проспал, пробки, транспорт",
    "есть ли наказание: замечание, разговор с родителями",
    "своё мнение: справедливо или нет"
-  ]
+  ],
+  "model": "Dear Emily,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether students in my class ever come late. Yes, a few of them are late from time to time, though most of us manage to arrive on time.\n\nTheir usual reasons are pretty simple. Some oversleep because they went to bed too late, while others get stuck in traffic jams or miss their bus in the morning.\n\nThere is a small punishment for latecomers at our school. The teacher writes a note in the register, and after several times they have a serious talk with parents.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nYan"
  },
  {
   "name": "Ben",
@@ -387,7 +416,8 @@
    "правильная одежда защищает от любой погоды",
    "что носишь вне школы: джинсы, худи, кроссовки",
    "любимые цвета одежды и почему"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether I agree with that English proverb. Yes, I completely agree, because if you dress properly you can enjoy any weather, but the wrong clothes can ruin your day.\n\nOut of school I prefer casual clothes. I usually wear jeans, a comfortable hoodie and trainers, because they let me move freely and feel relaxed all day long.\n\nMy favourite colours for clothes are dark blue and grey. They look neat, they suit almost everything, and they never seem to go out of fashion.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nFaye"
  },
  {
   "name": "Jane",
@@ -400,7 +430,8 @@
    "общение, вкусная еда, все вместе",
    "по каким поводам: дни рождения, праздники",
    "лучший повар в семье: мама, бабушка, папа"
-  ]
+  ],
+  "model": "Dear Jane,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether I enjoy having family meals. I really do, because it's the only time when we all sit together, share our news and simply relax after a busy day.\n\nWe have special family meals on important occasions, like birthdays, New Year and other holidays. On those days the table is full of tasty dishes and everyone is happy.\n\nThe best cook in our family is definitely my grandmother. Her soups and pies are amazing, and she always knows the secret to making everything taste perfect.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nNate"
  },
  {
   "name": "Jack",
@@ -413,7 +444,8 @@
    "один гаджет: телефон, всё в одном",
    "звонки, учёба, общение, музыка",
    "что делал бы при свободном времени: спорт, друзья"
-  ]
+  ],
+  "model": "Dear Jack,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how many hours a day I'm online. Honestly, it's around four, mostly for studying, chatting with my friends and watching a few videos in the evening.\n\nIf I could use only one gadget, I'd choose my phone. It does almost everything, from calls and messages to music and photos, so I'd never feel lost without the rest.\n\nIf I had more free time, I'd spend it playing sports, meeting my friends outdoors and finally learning to skateboard, something I've wanted to try for ages.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nVika"
  },
  {
   "name": "Alice",
@@ -426,7 +458,8 @@
    "будешь ли использовать английский в работе",
    "путешествия, общение, документы",
    "что советуют родители стать"
-  ]
+  ],
+  "model": "Dear Alice,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I'd like to be in the future. I dream of becoming a doctor, because I want to help people and I find the human body really fascinating.\n\nI'm sure I'll use English in my job. Doctors read a lot of foreign research, attend international conferences and sometimes even treat patients from other countries.\n\nMy parents advise me to become an engineer, like my dad. They say it's a stable profession, but I'd rather follow my own dream and work in medicine.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nSeva"
  },
  {
   "name": "Peter",
@@ -439,7 +472,8 @@
    "что делаешь в дождь: книги, фильмы, игры",
    "как проводишь выходные: друзья, прогулки",
    "хобби и отдых дома"
-  ]
+  ],
+  "model": "Dear Peter,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about my favourite season. It's summer, without a doubt, because the days are long and warm, school is over, and I can spend hours outside with my friends.\n\nWhen the weather is rainy, I usually stay at home. I read books, watch films, play video games and sometimes bake sweet cookies with my little sister.\n\nI normally spend my weekends actively. I meet my friends, go for long walks, help my parents around the house and try to finish my homework early.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nCody"
  },
  {
   "name": "Ben",
@@ -452,7 +486,8 @@
    "Новый год, дни рождения, 8 марта",
    "любимый праздник и почему",
    "лучший подарок, который получал"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which holidays we celebrate with our family. We celebrate New Year, birthdays, the eighth of March and Victory Day, always gathering together for a big, cheerful dinner.\n\nMy favourite holiday is New Year. I love the decorated tree, the presents under it and that special feeling of magic when the whole family stays up until midnight.\n\nThe best present I've ever received was a mountain bike from my parents. I ride it almost every day, and it gave me the freedom to explore my town.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nNora"
  },
  {
   "name": "Ann",
@@ -465,7 +500,8 @@
    "где и когда познакомились: школа, двор",
    "как проводите время: прогулки, игры, разговоры",
    "общие интересы"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what kind of person my best friend is. Her name is Dasha, and she's kind, honest and always ready to help me whenever I have a problem.\n\nWe met five years ago at the swimming pool, where we both had lessons. We started chatting in the changing room and became close friends almost immediately.\n\nWe spend a lot of time together. We do our homework, go shopping, watch films and share every little secret, because I trust her more than anyone else.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nFred"
  },
  {
   "name": "Molly",
@@ -478,7 +514,8 @@
    "какие экзамены выбрал и почему",
    "интересно, нужно для будущего",
    "планы на лето: отдых, путешествие, друзья"
-  ]
+  ],
+  "model": "Dear Molly,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked when I'm going to have my exams. They start in early June, right at the end of the school year, so I'm revising really hard at the moment.\n\nBesides the compulsory subjects, I've chosen English and Biology. I picked them because I enjoy them, I get good marks, and I'll need both for my future studies.\n\nAs for the summer holidays, my plans are simple but exciting. I'll travel to the seaside with my family and then relax at my grandparents' place with friends.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nJade"
  },
  {
   "name": "Andrew",
@@ -491,7 +528,8 @@
    "много правил, формул, скучно",
    "сколько времени на домашку: 2-3 часа",
    "чем занят после уроков: хобби, спорт, друзья"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which school subject I find the most difficult. For me it's Chemistry, because there are so many formulas and reactions to remember, and I often get confused.\n\nI usually need about two or three hours to do my homework. The exact time depends on the subjects, but written tasks and essays always take me the longest.\n\nAfter classes I try to relax and switch off. I go to the gym, meet my friends and play the guitar, which helps me forget about school for a while.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nMilo"
  },
  {
   "name": "Ben",
@@ -504,7 +542,8 @@
    "слава, деньги, но трудный труд",
    "когда последний раз был в театре",
    "был ли в Большом театре: да или нет"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether it's exciting to be a famous actor. I think it partly is, because you get fame and money, but it's also very hard work with long rehearsals.\n\nI last saw a theatrical performance about a month ago. Our class went to a local theatre to watch a play based on a book we were studying at school.\n\nUnfortunately, I've never been to the Bolshoi Theatre yet, but it's my big dream. I really hope to visit Moscow and finally see a real ballet there one day.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nIvan"
  },
  {
   "name": "Ann",
@@ -517,7 +556,8 @@
    "когда дарите подарки: праздники, дни рождения",
    "как помогаешь по дому: убираю, мою посуду",
    "общие традиции"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how I spend time with my family. In the evenings we have dinner together, and at weekends we often go for walks, watch films or play board games.\n\nWe usually give each other presents on birthdays and big holidays like New Year. Sometimes, though, we surprise one another with small gifts for no special reason at all.\n\nI try to help my parents around the house as much as I can. I wash the dishes, clean my room, do the shopping and sometimes cook a simple dinner.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nNina"
  },
  {
   "name": "Andrew",
@@ -530,7 +570,8 @@
    "спортивные объекты в школе: зал, площадка",
    "какие соревнования: эстафеты, турниры",
    "когда проводятся: осенью, весной"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which sports are popular with teenagers in Russia. Most of my friends love football, basketball and swimming, while lots of girls prefer volleyball and dancing.\n\nAt my school we have quite good sports facilities. There's a large gym, a football pitch, a basketball court and a small area with exercise machines outside.\n\nWe usually hold different sports competitions during the year. In autumn we have relay races, and in spring there are football and basketball tournaments between the classes.\n\nWrite back soon! Hope to hear from you soon.\n\nBest wishes,\nLena"
  },
  {
   "name": "Mark",
@@ -543,7 +584,8 @@
    "на что тратят подростки: еда, игры, одежда",
    "хочешь ли летнюю работу и почему",
    "опыт, деньги, самостоятельность"
-  ]
+  ],
+  "model": "Dear Mark,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how I get my pocket money. My parents give me some every week, and I earn a bit extra by helping my grandma in her garden at weekends.\n\nRussian teenagers usually spend their pocket money on snacks, cinema tickets, computer games and new clothes. Some of us also save up for something bigger, like headphones or a phone.\n\nWould I like a summer job? Definitely! I'd love to earn my own money and become more independent. Besides, a job would give me useful experience for the future.\n\nHope to hear from you soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Jim",
@@ -556,7 +598,8 @@
    "какое новое хобби или спорт хочешь попробовать",
    "что делаешь в свободное время: друзья, музыка",
    "интерес и мотивация"
-  ]
+  ],
+  "model": "Dear Jim,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked if I make New Year resolutions. Yes, I do, because they help me set clear goals and become a better person. This year I promised to read more and exercise regularly.\n\nAs for a new hobby, I'd really like to try rock climbing. It looks exciting and it would make me stronger and braver over time.\n\nIn my free time I usually hang out with my friends, listen to music and play video games. When the weather is nice, we ride our bikes in the park together.\n\nWrite back soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Emily",
@@ -569,7 +612,8 @@
    "как улучшаешь английский: фильмы, приложения, чтение",
    "какой язык кроме английского хочешь учить и почему",
    "красивый, нужен для путешествий"
-  ]
+  ],
+  "model": "Dear Emily,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which subject is the most difficult for me. I'd say it's Chemistry, because there are so many formulas and reactions to remember, and I often get confused during tests.\n\nTo improve my English, I watch films with subtitles, use language apps every day and try to read short stories. Speaking with online friends helps a lot too.\n\nApart from English, I'd love to learn Spanish. It sounds beautiful, millions of people speak it, and it would be really useful when I travel around the world one day.\n\nHope to hear from you soon!\n\nBest wishes,\nLena"
  },
  {
   "name": "Mary",
@@ -582,7 +626,8 @@
    "сколько времени в интернете в день",
    "чем ещё занят: спорт, друзья, хобби",
    "чтение, музыка, прогулки"
-  ]
+  ],
+  "model": "Dear Mary,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I use my computer for. I use it mostly for studying and doing my homework, but I also watch videos, chat with friends and play games in the evenings.\n\nI probably spend around two or three hours a day surfing the Internet. Sometimes it's more at weekends when I have no lessons and lots of free time.\n\nApart from that, I enjoy other things too. I go swimming twice a week, meet my friends outside and read fantasy books before bed. I try not to sit at the screen all day.\n\nWrite back soon!\n\nBest wishes,\nDan"
  },
  {
   "name": "James",
@@ -595,7 +640,8 @@
    "лучший сезон для путешествий по России и почему",
    "лето тепло, осень красиво",
    "достопримечательности: Кремль, музеи, природа"
-  ]
+  ],
+  "model": "Dear James,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how I usually spend my holidays. Most summers I go to my grandparents' village, where I swim in the river, pick berries and ride my bike with the local kids.\n\nIn my opinion, the best season for travelling in Russia is summer. The weather is warm and sunny, the days are long, and you can visit both cities and the countryside comfortably.\n\nIf you come here, I'd recommend seeing the Moscow Kremlin, the beautiful palaces of Saint Petersburg and Lake Baikal. Our nature and old architecture will really impress you.\n\nHope to hear from you soon!\n\nBest wishes,\nKate"
  },
  {
   "name": "Ann",
@@ -608,7 +654,8 @@
    "как готовишься к английскому: слова, тесты",
    "любишь ли сдавать экзамены и почему",
    "стресс или проверка знаний"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how many exams I'm going to take this year. I have four in total: Russian, Maths, English and Geography. It sounds scary, but I've already started revising everything step by step.\n\nTo prepare for my English exam, I do lots of practice tests, learn new words every day and read texts aloud to improve my speaking and pronunciation.\n\nHonestly, I don't really like taking exams because they make me nervous and stressed. Still, I understand that they check our knowledge and help us get into a good school.\n\nWrite back soon!\n\nBest wishes,\nNick"
  },
  {
   "name": "Sophie",
@@ -621,7 +668,8 @@
    "математика, русский, английский для будущего",
    "какой предмет изучал бы больше и почему",
    "какую карьеру хочешь выбрать"
-  ]
+  ],
+  "model": "Dear Sophie,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which school subjects I find the most important. For me, they are Russian, Maths and English, because we need them every day and for almost any job in the future.\n\nThere is one subject I'd love to study more, and that's History. It's fascinating to learn how people lived long ago, but we only have two lessons a week.\n\nIn the future, I'd like to become a lawyer. I enjoy arguing and solving problems, and I really want to help people defend their rights fairly.\n\nHope to hear from you soon!\n\nBest wishes,\nAnna"
  },
  {
   "name": "Harry",
@@ -634,7 +682,8 @@
    "как готовишься к английскому: приложения, фильмы, тесты",
    "планы на лето: отдых, поездка, друзья",
    "море, дача, новые впечатления"
-  ]
+  ],
+  "model": "Dear Harry,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what exams I'm taking this year. Besides Russian and Maths, I've chosen English and Biology, because I might need them for my future studies at university.\n\nTo get ready for my English exam, I practise listening every evening, learn useful phrases and write short essays that my teacher kindly checks for me.\n\nAs for the summer, I can't wait for the holidays! My family and I are going to the seaside for two weeks, and after that I'll relax, meet friends and sleep enough.\n\nWrite back soon!\n\nBest wishes,\nMax"
  },
  {
   "name": "Steve",
@@ -647,7 +696,8 @@
    "что коллекционируешь или хотел бы",
    "монеты, марки, фигурки",
    "хобби подростков: спорт, игры, рисование"
-  ]
+  ],
+  "model": "Dear Steve,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked why people collect things. I think they enjoy it because collecting is relaxing, it brings back nice memories, and some collections can even become valuable over the years.\n\nAs for me, I collect fridge magnets from every place my family visits. I already have more than thirty of them, and each one reminds me of a happy trip.\n\nOther hobbies are popular with teenagers here too. Many of my friends do sport, draw, play the guitar or make videos for social media in their free time.\n\nHope to hear from you soon!\n\nBest wishes,\nLena"
  },
  {
   "name": "Ma",
@@ -660,7 +710,8 @@
    "где ещё нужны роботы: заводы, медицина, космос",
    "интересны ли фантастические фильмы и почему",
    "захватывающе, будущее, фантазия"
-  ]
+  ],
+  "model": "Dear Ma,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what jobs I'd like a robot to do at home. Honestly, I'd love a robot to clean my room, wash the dishes and cook dinner, so I'd have more free time for hobbies.\n\nRobots can also be used in many other places. They already help doctors during operations, work in dangerous factories and even explore space where people cannot go.\n\nDo I find science fiction films interesting? Absolutely! They are exciting and full of amazing ideas, and they make me imagine what our future life might be like.\n\nWrite back soon!\n\nBest wishes,\nDan"
  },
  {
   "name": "Mary",
@@ -673,7 +724,8 @@
    "сколько времени на них тратишь",
    "какие навыки развивают: логику, терпение",
    "почему нравятся"
-  ]
+  ],
+  "model": "Dear Mary,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what hobbies I have. I really enjoy playing basketball and drawing. I also love reading adventure books whenever I get a quiet moment at home.\n\nI usually spend about two hours a day on my hobbies, mostly in the evenings after homework. At weekends I have even more time, so I practise longer.\n\nMy hobbies develop many useful skills. Sport keeps me fit and teaches me teamwork, while drawing improves my patience and imagination. Reading builds my vocabulary and helps me relax.\n\nHope to hear from you soon!\n\nBest wishes,\nKate"
  },
  {
   "name": "Ben",
@@ -686,7 +738,8 @@
    "какие книги любишь: фэнтези, приключения, детективы",
    "хороша ли электронная книга в путешествии и почему",
    "лёгкая, много книг сразу"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how long my school's reading list is. It's quite long, actually about fifteen books for the summer, and some of them are really thick classic novels.\n\nPersonally, I love reading fantasy and detective stories. I enjoy exciting plots with unexpected endings that keep me turning the pages late into the night.\n\nDo I think an e-book is a good choice for travelling? Definitely yes. It's light and small, you can carry hundreds of books in it, and it's perfect when you want a light bag.\n\nWrite back soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Andrew",
@@ -699,7 +752,8 @@
    "что носишь в школу: форму, рубашку, брюки",
    "как проводишь время со школьными друзьями: перемены",
    "разговоры, игры после уроков"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how long it takes me to get to school. It's really close, so I just walk there in about ten minutes. On rainy days my dad sometimes gives me a lift.\n\nAt my school we have a uniform, so I wear dark trousers, a white shirt and a jumper. I quite like it because I don't have to think about clothes every morning.\n\nWith my school friends I have a great time. During the breaks we chat and joke, and after lessons we often play football or grab a pizza together.\n\nHope to hear from you soon!\n\nBest wishes,\nNick"
  },
  {
   "name": "Ann",
@@ -713,7 +767,8 @@
    "хобби в свободное время: спорт, игры, друзья",
    "сколько языков хочешь знать и зачем",
    "польза: путешествия, работа, фильмы"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what time I usually come back from school. On most days I'm home by three o'clock, but on Tuesdays I stay later because of my art club.\n\nIn my free time I love doing lots of things. I meet my friends, listen to music, play video games and sometimes go cycling when the weather is nice.\n\nI'd love to speak at least three foreign languages one day. Knowing languages helps you travel, make friends abroad, watch films in the original and find a better job.\n\nWrite back soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Ben",
@@ -727,7 +782,8 @@
    "причина: культура, путешествия, аниме",
    "мнение о японском: трудный, но интересный",
    "поддержи выбор друга, пожелай удачи"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what languages I learn at school. We study English as our main foreign language, and from this year I've also started learning German, which is quite tricky but fun.\n\nApart from these, I'd really like to learn Italian one day. It sounds so musical, and I dream of visiting Rome and ordering real pizza in the local language.\n\nI think your choice of Japanese is brilliant! It's difficult, of course, but the writing looks amazing and it will help you understand your favourite cartoons. Good luck with it!\n\nHope to hear from you soon!\n\nBest wishes,\nMax"
  },
  {
   "name": "Ben",
@@ -741,7 +797,8 @@
    "как празднуешь: семья, подарки, ёлка",
    "традиции: салат оливье, фейерверк",
    "настроение и ожидание праздника"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about the most popular holidays in Russia. The biggest ones are New Year, Victory Day on the ninth of May and Women's Day on the eighth of March. Everyone loves them.\n\nMy favourite holiday is definitely New Year. I adore the winter atmosphere, the sparkling lights, the presents and the feeling that something magical is about to happen.\n\nWe celebrate it with the whole family. We decorate the tree, cook a huge dinner, watch films and wait for midnight to make our wishes and set off fireworks.\n\nWrite back soon!\n\nBest wishes,\nDan"
  },
  {
   "name": "Jane",
@@ -755,7 +812,8 @@
    "иногда сам, иногда родители вместе",
    "что делаете вместе в свободное время",
    "прогулки, кино, настольные игры"
-  ]
+  ],
+  "model": "Dear Jane,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how I help my parents around the house. I usually wash the dishes, tidy my room and take out the rubbish. Sometimes I also walk our dog in the evenings.\n\nAs for shopping, my mum usually does it, but my dad helps her carry the heavy bags. When they're busy, I pop to the local shop for bread and milk myself.\n\nIn our free time we love doing things together. We watch films, play board games and go for long walks in the park at weekends. Those moments are the best.\n\nHope to hear from you soon!\n\nBest wishes,\nKate"
  },
  {
   "name": "Jim",
@@ -769,7 +827,8 @@
    "чем занять себя дома: книги, сериалы, игры",
    "хобби: рисование, музыка",
    "что делаешь для здоровья: спорт, витамины, сон"
-  ]
+  ],
+  "model": "Dear Jim,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked how often I miss school because of health problems. Luckily, not very often, maybe two or three times a year, usually when I catch a bad cold in winter.\n\nWhen I'm ill and have to stay indoors, I try not to get bored. I read books, watch my favourite series, draw and chat with friends online until I feel better.\n\nTo stay healthy, I do quite a lot. I go jogging, eat fruit and vegetables, drink plenty of water and try to get enough sleep every single night.\n\nWrite back soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Andrew",
@@ -783,7 +842,8 @@
    "как улучшаешь вне школы: фильмы, песни, приложения",
    "общение с носителями онлайн",
    "лучший способ учить язык: практика, погружение"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I find most difficult in learning English. For me, it's definitely the tenses and irregular verbs. There are so many of them, and I often mix them up when I speak.\n\nOutside the classroom I do many things to improve. I watch films in English, listen to songs, use learning apps and even chat with native speakers online.\n\nIn my opinion, the best way to learn a language is constant practice. You should use it every day, not be afraid of mistakes, and try to think in that language.\n\nHope to hear from you soon!\n\nBest wishes,\nLena"
  },
  {
   "name": "Harry",
@@ -797,7 +857,8 @@
    "электронные или бумажные книги и почему",
    "удобство против запаха страниц",
    "другие хобби друзей: спорт, музыка, игры"
-  ]
+  ],
+  "model": "Dear Harry,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what books I like to read. I'm really into fantasy and detective stories. I love exciting adventures and clever mysteries that I can't stop thinking about until the very end.\n\nDo I prefer e-books or paper books? Honestly, I like paper books more. I enjoy the smell of the pages and the feeling of turning them, though e-books are handy for travelling.\n\nApart from reading, my friends have lots of hobbies. Some of them play football, others draw, dance or make short videos for social media in their free time.\n\nWrite back soon!\n\nBest wishes,\nNick"
  },
  {
   "name": "Andrew",
@@ -811,7 +872,8 @@
    "любимый исполнитель",
    "на каком инструменте хотел бы играть",
    "гитара или пианино, почему"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I do in my free time. I usually meet my friends, ride my skateboard and play computer games. When I want to relax, I just lie down and listen to music.\n\nSpeaking of music, I'm really into pop and rock. My favourite band always cheers me up, and I know almost all of their songs by heart.\n\nAs for instruments, I'd love to learn the guitar one day. It sounds cool, you can play it anywhere, and it would be great to perform songs for my friends.\n\nHope to hear from you soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Helen",
@@ -825,7 +887,8 @@
    "часто ли русские ходят в походы и кемпинг",
    "да, особенно летом",
    "куда поехал бы летом и почему"
-  ]
+  ],
+  "model": "Dear Helen,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which natural places in Russia are the most beautiful. In my opinion, Lake Baikal, the Caucasus Mountains and the volcanoes of Kamchatka are absolutely stunning and worth visiting.\n\nDo Russians often go hiking or camping? Yes, quite a lot, especially in summer. Many families love spending weekends in the forest, cooking over a fire and sleeping in tents.\n\nIf I could spend a summer anywhere in Russia, I'd choose Baikal. I'd love to see its crystal-clear water, breathe the fresh air and take amazing photos there.\n\nWrite back soon!\n\nBest wishes,\nKate"
  },
  {
   "name": "Ben",
@@ -839,7 +902,8 @@
    "какие животные водятся в твоём регионе",
    "лисы, белки, зайцы, птицы",
    "видел ли животное в дикой природе"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked where it's better for animals to live. I honestly believe the wild is better, because animals are free there and can live naturally. Still, zoos do protect rare species.\n\nIn my region the most common animals are foxes, squirrels, hares and lots of different birds. Sometimes you can even spot a hedgehog in the garden in summer.\n\nHave I ever seen an animal in the wild? Yes! Once, while walking in the forest, I saw a real fox running between the trees. It was fast and beautiful.\n\nHope to hear from you soon!\n\nBest wishes,\nDan"
  },
  {
   "name": "Ann",
@@ -853,7 +917,8 @@
    "желание выделиться и быть смелым",
    "твой любимый вид спорта",
    "почему он тебе нравится"
-  ]
+  ],
+  "model": "Dear Ann,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which indoor sports are most popular with teenagers here. I'd say basketball, volleyball and swimming are the favourites, because you can do them all year round whatever the weather.\n\nWhy do teenagers often do extreme sports? I think they love the adrenaline and strong emotions. They also want to feel brave, test their limits and stand out from the crowd.\n\nMy favourite sport is football. I enjoy running around with my team, scoring goals and celebrating together. It keeps me fit and always puts me in a great mood.\n\nWrite back soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Andrew",
@@ -867,7 +932,8 @@
    "спортзал, площадка, поле",
    "идеальный спорт для молодёжи и почему",
    "плавание или велосипед: доступно и полезно"
-  ]
+  ],
+  "model": "Dear Andrew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I do to keep fit. I try to stay active every day. I do morning exercises, go jogging in the park and ride my bike whenever I have some free time.\n\nOur school has quite good sports facilities. We have a big gym, a football pitch and an outdoor court where we play basketball and volleyball during PE lessons.\n\nIn my opinion, the ideal sport for young people is swimming. It's safe, it works all your muscles and it's great fun. Cycling is another good choice because it's healthy.\n\nHope to hear from you soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Gerald",
@@ -881,7 +947,8 @@
    "да, страна большая",
    "поезд, машина или самолёт — что выберешь",
    "причина: скорость, виды, комфорт"
-  ]
+  ],
+  "model": "Dear Gerald,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about the most common way of travelling in Russia. In cities most people use buses, the metro and trams, because they are cheap and run very often.\n\nDo people often take long-distance trains? Yes, they do. Our country is huge, so trains are really popular for long journeys, and some trips can even last several days.\n\nIf I could choose, I'd rather travel by plane. It's the fastest way to get somewhere far, so you save loads of time and can start your holiday sooner.\n\nWrite back soon!\n\nBest wishes,\nNick"
  },
  {
   "name": "Ruth",
@@ -895,7 +962,8 @@
    "готовят ли русские дома или едят в кафе",
    "чаще дома, по праздникам в ресторане",
    "твоё любимое блюдо и почему"
-  ]
+  ],
+  "model": "Dear Ruth,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which traditional Russian dishes I'd recommend. You should definitely try pelmeni, bliny with jam, and the famous Olivier salad. Pirozhki with different fillings are delicious too.\n\nDo Russian families cook at home or eat out? Most families cook at home, because it's cheaper and healthier. We usually go to restaurants only on special occasions like birthdays.\n\nMy personal favourite dish is pelmeni. I love them because they're warm, filling and tasty, especially with a spoonful of sour cream. My grandma makes the best ones ever.\n\nHope to hear from you soon!\n\nBest wishes,\nKate"
  },
  {
   "name": "Kate",
@@ -909,7 +977,8 @@
    "да или нет, аргумент",
    "качества хорошего писателя",
    "воображение, упорство, словарный запас"
-  ]
+  ],
+  "model": "Dear Kate,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what kind of books I enjoy. I love reading biographies and science fiction. It's fascinating to learn about great people's lives and to imagine incredible worlds of the future.\n\nWould I like to write a book? Yes, I would! I often make up stories in my head, and it would be amazing to share them with readers all around the world someday.\n\nIn my opinion, a good writer needs several qualities. You must have a rich imagination, a wide vocabulary and, above all, patience, because writing a book takes lots of time.\n\nWrite back soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Ben",
@@ -923,7 +992,8 @@
    "вступил ли ты в кружок и почему",
    "интерес, новые навыки, друзья",
    "что там делаешь"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I like most about my school. My favourite thing is definitely my friends and our kind teachers. The lessons can be hard, but the friendly atmosphere helps a lot.\n\nWe have lots of school clubs. There are sports teams, a drama club, a choir and even a robotics club where students build their own little machines.\n\nHave I joined any of them? Yes, I've joined the drama club, because I love acting and being on stage. It's helped me make new friends and feel much more confident.\n\nHope to hear from you soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Mathew",
@@ -937,7 +1007,8 @@
    "какие виды спорта любишь",
    "что делаете на уроках физкультуры",
    "бег, игры, упражнения"
-  ]
+  ],
+  "model": "Dear Mathew,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether people should do sports. Absolutely, yes! Sport keeps us fit and healthy, gives us energy and lifts our mood. It also teaches us discipline and teamwork.\n\nAs for me, I like swimming and basketball best. I love the feeling of water after a long day, and basketball is exciting because you play it with your friends.\n\nIn our PE lessons we do lots of different activities. We run, do warm-up exercises, play team games and sometimes have small competitions between the groups.\n\nWrite back soon!\n\nBest wishes,\nNick"
  },
  {
   "name": "Lily",
@@ -951,7 +1022,8 @@
    "как празднуешь день рождения",
    "торт, друзья, гости",
    "какой подарок хотел бы получить"
-  ]
+  ],
+  "model": "Dear Lily,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which holiday I like most. My favourite is New Year, because the whole family gets together, we give each other presents, and there's a real feeling of magic in the air.\n\nI usually celebrate my birthday with my closest friends. We have a big cake, play games, listen to music and dance. Sometimes we go bowling or to the cinema together.\n\nFor my next birthday I'd love to get a new smartphone. My old one is really slow now, and a new one would help me study and stay in touch.\n\nHope to hear from you soon!\n\nBest wishes,\nKate"
  },
  {
   "name": "Laura",
@@ -965,7 +1037,8 @@
    "помогают ли подростки по дому",
    "да: уборка, посуда, покупки",
    "опиши обычный учебный день"
-  ]
+  ],
+  "model": "Dear Laura,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what Russian homes are like inside. Most families live in cosy flats with a few rooms, comfortable furniture and lots of family photos on the walls. They feel warm and welcoming.\n\nDo teenagers help their parents with housework? Yes, we do. I clean my room, wash the dishes and sometimes go shopping. Most of my friends help their families in similar ways.\n\nMy usual school day is quite busy. I get up early, spend the morning at school, do my homework in the afternoon and relax with my family in the evening.\n\nWrite back soon!\n\nBest wishes,\nDan"
  },
  {
   "name": "Ben",
@@ -979,7 +1052,8 @@
    "согласны ли родители с выбором",
    "как английский пригодится в карьере",
    "общение, документы, путешествия"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what future career I'd like to have. I dream of becoming a programmer, because I love computers and I find it exciting to create apps and games that people actually use.\n\nDo my parents agree with my choice? Yes, luckily they do. They think it's a modern, well-paid job with a great future, and they always encourage me to study Maths harder.\n\nEnglish will be really useful for my career. Most programming languages and manuals are in English, and I'll need it to read documents and work with foreign colleagues.\n\nHope to hear from you soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Jane",
@@ -993,7 +1067,8 @@
    "какие книги любишь читать",
    "как выбираешь книгу: советы, отзывы, обложка",
    "по жанру и автору"
-  ]
+  ],
+  "model": "Dear Jane,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked about the main advantage of an e-book. In my opinion, it's that you can store hundreds of books in one small, light device. It's perfect for travelling and saves space.\n\nAs for me, I love reading fantasy and adventure stories. I enjoy exciting plots, brave heroes and magical worlds that let me escape from everyday life for a while.\n\nHow do I choose a book? Usually I read reviews online, ask my friends for advice, or pick something by an author I already like. The cover sometimes catches my eye too.\n\nWrite back soon!\n\nBest wishes,\nAnna"
  },
  {
   "name": "Edna",
@@ -1007,7 +1082,8 @@
    "какие фильмы любишь: комедии, фэнтези",
    "часто ли ходишь в кино и почему",
    "атмосфера, большой экран, друзья"
-  ]
+  ],
+  "model": "Dear Edna,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked whether I prefer to read a book or watch its film first. I usually read the book first, because it lets me imagine the characters my own way before I see them on screen.\n\nAs for films, I love comedies and fantasy. I enjoy having a good laugh, and fantasy films take me to amazing worlds full of magic and incredible adventures.\n\nDo I often go to the cinema? Not really, maybe once a month. Tickets are quite expensive, but I still love the huge screen and the special atmosphere with my friends.\n\nHope to hear from you soon!\n\nBest wishes,\nLena"
  },
  {
   "name": "Emma",
@@ -1021,7 +1097,8 @@
    "можешь ли жить без телефона и почему",
    "трудно: привычка и общение",
    "какие гаджеты важны: ноутбук, наушники"
-  ]
+  ],
+  "model": "Dear Emma,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what I use my mobile phone for. I use it for almost everything: calling my parents, chatting with friends, listening to music, taking photos and even doing some homework.\n\nCould I live without my phone? Honestly, it would be really hard. I'm so used to it for staying in touch and finding information that a day without it feels strange.\n\nApart from my phone, I find my laptop and my headphones the most important gadgets. I need the laptop for studying and the headphones to enjoy music on the go.\n\nWrite back soon!\n\nBest wishes,\nNick"
  },
  {
   "name": "Kate",
@@ -1035,7 +1112,8 @@
    "аргумент: им место в природе",
    "какой питомец есть или хотел бы",
    "почему именно он"
-  ]
+  ],
+  "model": "Dear Kate,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked which pets are most popular in my country. Cats and dogs are definitely the favourites, but many people also keep hamsters, parrots and goldfish, especially in small flats.\n\nDo I approve of keeping wild animals as pets? No, I don't really. I think wild animals belong in nature, where they can be free. At home they often feel stressed and unhappy.\n\nAs for me, I have a friendly cat called Simba. I'd also love to get a dog one day, because dogs are loyal and you can go for walks together.\n\nHope to hear from you soon!\n\nBest wishes,\nAlex"
  },
  {
   "name": "Ben",
@@ -1049,7 +1127,8 @@
    "что делаешь для формы: спорт, зарядка",
    "хотел бы заниматься спортом профессионально",
    "да или нет: нагрузки или мечта"
-  ]
+  ],
+  "model": "Dear Ben,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked when I get up in the morning. On school days I usually wake up at seven o'clock, though I'd love to sleep longer. At weekends I stay in bed until nine.\n\nTo keep fit, I do quite a lot. I go jogging, do morning exercises and play football with my friends twice a week. I also try to walk instead of taking the bus.\n\nWould I like to go in for sports professionally? Not really. I enjoy sport as a hobby, but professional athletes train too hard and often get serious injuries.\n\nWrite back soon!\n\nBest wishes,\nDan"
  },
  {
   "name": "Jim",
@@ -1063,7 +1142,8 @@
    "спортзал, площадка, бассейн",
    "привлекает ли карьера профессионального спортсмена",
    "да или нет: слава или травмы"
-  ]
+  ],
+  "model": "Dear Jim,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked what sport I do regularly. I go swimming twice a week at our local pool. I really love it because it keeps me fit and helps me relax after busy school days.\n\nAt school we have good sports facilities. There's a big gym, an outdoor court and a football pitch, so we can play many different games during our PE lessons.\n\nDoes a career as a professional sportsperson attract me? Not really. I admire athletes, but their training is exhausting and injuries are common. I'd rather keep sport as a hobby.\n\nHope to hear from you soon!\n\nBest wishes,\nSam"
  },
  {
   "name": "Nancy",
@@ -1077,6 +1157,7 @@
    "автобус, поезд",
    "какие события отмечаете с классом",
    "Новый год, дни рождения, праздники"
-  ]
+  ],
+  "model": "Dear Nancy,\n\nThanks for your letter! It was great to hear from you.\n\nYou asked where I've been with my class. Last month we visited a local history museum, and in spring we went to an old castle in another town. Both trips were interesting.\n\nWhat transport do we usually use? For short trips we take a bus, but when we travel to another city, we go by train. It's comfortable and we can chat all the way.\n\nWith my class we celebrate lots of events. We have parties for New Year, Women's Day and, of course, everyone's birthdays. Those days are always fun and full of laughter.\n\nWrite back soon!\n\nBest wishes,\nKate"
  }
 ]
